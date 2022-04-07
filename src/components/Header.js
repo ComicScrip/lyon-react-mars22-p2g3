@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 const getActiveLinkStyle = ({ isActive }) => ({
-  color: isActive ? 'orange' : 'white',
+  color: isActive ? '#FFF027' : 'white',
 });
 
 export default function Header() {
