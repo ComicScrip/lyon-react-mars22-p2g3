@@ -1,7 +1,8 @@
 import React from 'react';
+import '../Css/App.css';
 
 function HomePage() {
-  return <div>Home PAge</div>;
+  return <h1 className="title">Bienvenue chez les Cinéchill !</h1>;
 }
 
 export default HomePage;

@@ -1,7 +1,8 @@
 import React from 'react';
+import '../Css/App.css';
 
 function ContactPage() {
-  return <div>Contact PAge</div>;
+  return <h1 className="title"> Page contact</h1>;
 }
 
 export default ContactPage;

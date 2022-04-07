@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../routes/Home';
 import Contact from '../routes/Contact';
 import About from '../routes/About';
+import '../Css/App.css';
 
 export default function Main() {
   return (
