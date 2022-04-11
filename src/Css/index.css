@@ -5,14 +5,21 @@ body,
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header,
+
 footer {
   background-color: #32474D;
   color: white;
   padding: 10px;
+}
+
+header
+ {
+  background-color: #32474D;
+  color: white;
 }
 
 main {
@@ -22,12 +29,15 @@ main {
 }
 
 nav a {
-  margin-right: 10px;
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
 }
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  max-height: 4em;
 }

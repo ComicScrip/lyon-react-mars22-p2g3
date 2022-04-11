@@ -9,6 +9,10 @@ export default function Header() {
     <header>
       <nav>
         <NavLink to="/" style={getActiveLinkStyle}>
+          <img src="logo_cinechill.png" className="logo" alt="my-logo" />
+        </NavLink>
+
+        <NavLink to="/" style={getActiveLinkStyle}>
           Home
         </NavLink>
         <NavLink to="/about" style={getActiveLinkStyle}>
