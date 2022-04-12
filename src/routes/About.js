@@ -1,12 +1,17 @@
 import React from 'react';
 import '../Css/App.css';
+import '../Css/About.css';
+import Caroussel from '../components/Caroussel';
 
 function AboutPage() {
   return (
     <div>
       <h1 className="title">About us</h1>
-      <p>Discover the Cinéchill team and meet cinema enthusiasts from multiple universes.</p>
-      <div>Carousel Image + Description</div>
+      <p className="text-red">
+        Discover the Cinéchill team and meet cinema enthusiasts from multiple
+        universes.
+      </p>
+      <Caroussel />
     </div>
   );
 }
