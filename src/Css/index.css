@@ -5,38 +5,58 @@ body,
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Header de pages du site */
+header{
+  background-color: #32474D;
+  color: white;
+}
+/* corps de pages du site */
+main {
+  padding: 10px;
+  flex-grow: 1;
+  background-color: #486064;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* menu du site page */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2px;
+}
+.logo {
+  text-align: left !important;
+  max-height: 3.1em;
+}
+
+p{
+  color: white;
+}
 footer {
   background-color: #32474D;
   color: white;
   padding: 10px;
 }
 
-header{
-  background-color: #32474D;
-  color: white;
+/* Media quries mobiles */
+@media all and (max-device-width: 480px) 
+{ 
+  main { 
+  /* background-color: #486064; */
+  background-color: chocolate;
 }
-
-main {
-  padding: 10px;
-  flex-grow: 1;
-  background-color: #486064;
-}
-
 nav a {
   color: white;
-  text-decoration: none;
   font-size: 17px;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.logo {
-  max-height: 4em;
-}
+

@@ -7,7 +7,7 @@ const getActiveLinkStyle = ({ isActive }) => ({
 export default function Header() {
   return (
     <header>
-      <nav>
+      <nav className="navbar">
         <NavLink to="/" style={getActiveLinkStyle}>
           <img src="logo_cinechill.png" className="logo" alt="my-logo" />
         </NavLink>
