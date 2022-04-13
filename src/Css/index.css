@@ -5,12 +5,13 @@ body,
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 header,
 footer {
-  background-color: #32474D;
+  background-color: #32474d;
   color: white;
   padding: 10px;
 }
