@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .poster {
-  width: 100%;
-  height: 55vh;
+  max-width: 100vw;
+  max-height: 70vh;
+  overflow: hidden;
 }
 
 h2,
@@ -24,18 +26,33 @@ h2,
 .castPictures {
   width: 35%;
   padding: 1%;
-  margin: 2%;
+  margin: 5% 0%;
 }
 
 p {
   font-size: 18px;
   color: #fcfdef;
+  margin: 1%;
 }
 
 .shareOnSocialMedia {
   width: 200px;
+  margin: 2%;
 }
 
-span {
-  color: #fff129;
+.year {
+  color: #a6b7bb;
+}
+
+.rating {
+  color: #fff027;
+}
+
+.moviePlot {
+  font-size: 15px;
+  text-align: justify;
+  font-weight: normal;
+}
+
+.trailer {
 }
