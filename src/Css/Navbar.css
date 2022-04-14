@@ -24,9 +24,7 @@ nav a {
     justify-content: center;
     align-items: center;
 }
-.items li{
-    display: flex;
-}
+
 .yellow {
     color:#FFF027;
 }
@@ -42,7 +40,7 @@ nav a {
 }
 .navbar_link:hover{
     color: #FFF027; 
- }
+}
 .btnBurger{
     width: 40px;
     height:40px;
@@ -52,17 +50,17 @@ nav a {
     color: inherit;
 }
 
-.navbar ul li {
+/* .navbar ul li {
     text-decoration: none;
     list-style: none;
-} 
+}   */
 
 @media all and (max-width: 767px) 
     {
-.navbar ul li {
-        text-decoration: none;
-        list-style: none;
-    }  
+/* .navbar ul li {
+    text-decoration: none;
+    list-style: none;
+    }   */
 .items{
     flex-direction: column;
     justify-content: center;
@@ -75,19 +73,19 @@ nav a {
     visibility: hidden;
     left: 0;
     align-items: center;
-    /* background-color: #32474D; */
+    background-color: #32474D; 
     transition: all .3s ease-in-out;
 }
 
 .show-nav .items{
     width: 100vw;
     visibility: visible;
-    right: 0;
+    right:0;
 }
 .navbar_link{
     display: block;
     padding: 1.0rem;
-    font-size: 5vw;
+    font-size: 3vw;
     color:#FCFDEF;
 }
     

@@ -20,7 +20,7 @@ function Navabar() {
           src="assets/logo.png"
           className="logo"
           alt="my-logo"
-          width={'93px'}
+          width={'94px'}
         />
       </div>
       <ul className="items">
