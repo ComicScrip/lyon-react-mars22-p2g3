@@ -24,12 +24,11 @@ nav a {
     justify-content: center;
     align-items: center;
 }
-
 .yellow {
     color:#FFF027;
 }
 .logo{
-    max-height: 3.1em;
+    max-height: 3.5em;
 }   
 .navbar_link{
     align-items: center;
@@ -57,10 +56,13 @@ nav a {
 
 @media all and (max-width: 767px) 
     {
-/* .navbar ul li {
-    text-decoration: none;
-    list-style: none;
-    }   */
+
+/* .navbar {
+    background-color: #32474D;
+}  */
+.navbar ul li a {
+        font-size: 16px;
+    } 
 .items{
     flex-direction: column;
     justify-content: center;
@@ -73,7 +75,7 @@ nav a {
     visibility: hidden;
     left: 0;
     align-items: center;
-    background-color: #32474D; 
+    background-color: #32474D;
     transition: all .3s ease-in-out;
 }
 

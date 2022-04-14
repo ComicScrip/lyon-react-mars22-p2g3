@@ -1,11 +1,14 @@
 import React from 'react';
 import '../Css/App.css';
+import Questionnaire from './Questionnaire';
 
 function AboutPage() {
   return (
     <div>
-      <h1 className="title"> Page about</h1>
-      <p>Qui sommes-nous ?</p>
+      {/* <p className="title"> Page about</p> */}
+      {/* <hr /> */}
+      {/* <p>Qui sommes-nous ?</p> */}
+      <Questionnaire />
     </div>
   );
 }
