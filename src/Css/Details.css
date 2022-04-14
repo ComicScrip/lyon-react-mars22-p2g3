@@ -5,10 +5,37 @@
 }
 
 .poster {
-  width: 90vw;
-  height: 50vh;
+  width: 100%;
+  height: 55vh;
 }
 
-h1 {
-  font-size: 40px;
+h2,
+.Cast {
+  font-size: 1.8em;
+  color: #fff129;
+  text-align: left;
+}
+
+.castContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.castPictures {
+  width: 35%;
+  padding: 1%;
+  margin: 2%;
+}
+
+p {
+  font-size: 18px;
+  color: #fcfdef;
+}
+
+.shareOnSocialMedia {
+  width: 200px;
+}
+
+span {
+  color: #fff129;
 }

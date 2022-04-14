@@ -5,23 +5,34 @@ export default function Details() {
   return (
     <div className="main">
       <img
+        src="../pictures/share-Fb.jpg"
+        alt="shareOnSocialMedia"
+        className="shareOnSocialMedia"
+      />
+      <img
         className="poster"
         src="https://imdb-api.com/images/original/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_Ratio0.6837_AL_.jpg"
         alt="movie"
       />
-      <h1 className="title"> title</h1>
+      <h1 className="title"> Title </h1>
       <div className="detailsInfo">
         <p> releaseDate, runtimeStr, genres </p>
         <p> Director </p>
-        <p> Rating </p>
+        <p>
+          <span>&#x2605;</span> Rating
+        </p>
       </div>
-      <h2 className="">Synopsis</h2>
-      <div className="Plot">
+      <h2 className="Plot">
+        Synopsis
         <p>Plot</p>
-      </div>
+      </h2>
       <div className="Cast">
         <p>Cast</p>
-        <img className="cast" alt="cast" />
+        <div className="castContainer">
+          <img src="./pictures/actor1.jpeg" className="castPictures" alt="" />
+          <img src="./pictures/actor2.jpeg" className="castPictures" alt="" />
+          <img src="./pictures/actor3.jpeg" className="castPictures" alt="" />
+        </div>
       </div>
       <iframe
         width="90%"
