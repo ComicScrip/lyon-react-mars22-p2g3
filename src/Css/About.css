@@ -1,5 +1,19 @@
 .title {
-    font-size: 30px;
-    text-align: center;
-    color: #FFF027;
-  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff027;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: 30px 0 20px 0;
+}
+
+.introduction {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  margin: 30px 0 50px 0;
+}

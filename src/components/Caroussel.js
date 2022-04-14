@@ -1,47 +1,57 @@
 import React from 'react';
 import '../Css/Carousel.css';
-import Carousel from 'react-bootstrap/Carousel';
+import { Carousel } from 'react-bootstrap';
+import ImageFB from '../img/FB-photo.png';
+import ImageWM from '../img/WM-photo.jpg';
+import ImageAB from '../img/AB-photo.jpg';
+import ImageLL from '../img/LB-photo.jpg';
+import ImageTD from '../img/T-photo.jpg';
+
+const teamMembers = [
+  {
+    name: 'Félix Berger',
+    image: ImageFB,
+    description:
+      'Passionate about cinema since childhood, i’m a big fan of comedy films',
+  },
+  {
+    name: 'Werner Mona',
+    image: ImageWM,
+    description:
+      'When I was a child, I loved watch movie on cinema with a big box of pop corn',
+  },
+  {
+    name: 'Anna Boval',
+    image: ImageAB,
+    description:
+      "I love watching romantic movies, I've seen over 200 since my childhood",
+  },
+  {
+    name: 'Leo Laborie',
+    image: ImageLL,
+    description:
+      'I watch action movies with a big ice cream. I love Vin Diesel',
+  },
+  {
+    name: 'Thierno Diallo',
+    image: ImageTD,
+    description: `Passionate about cinema since childhood, i’m a big fan of science
+fiction films`,
+  },
+];
 
 function Caroussel() {
   return (
     <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+      {teamMembers.map((item) => (
+        <Carousel.Item>
+          <img className="d-block w-100" src={item.image} alt="test" />
+          <Carousel.Caption>
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 }

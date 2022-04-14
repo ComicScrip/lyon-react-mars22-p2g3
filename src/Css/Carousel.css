@@ -1,2 +1,27 @@
+.carousel {
+  width: 100%;
+  margin: auto;
+}
 
+.carousel-caption {
+  font-size: 15px;
+  position: static !important;
+}
 
+.carousel-caption h3 {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 700px) {
+  .carousel {
+    width: 60%;
+    margin: auto;
+  }
+  .carousel-caption {
+    font-size: 25px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 40px;
+  }
+}

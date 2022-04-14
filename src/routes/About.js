@@ -7,7 +7,7 @@ function AboutPage() {
   return (
     <div>
       <h1 className="title">About us</h1>
-      <p className="text-red">
+      <p className="introduction">
         Discover the Cinéchill team and meet cinema enthusiasts from multiple
         universes.
       </p>
