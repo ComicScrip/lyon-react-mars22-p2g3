@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+.title {
+  text-align: center;
+  color: #fff027;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

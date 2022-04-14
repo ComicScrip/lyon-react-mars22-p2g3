@@ -1,0 +1,68 @@
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+h3 {
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+}
+body {
+  background-image: url(/public/images/incpetion-3.jpg);
+}
+
+.underTitle {
+  width: 100;
+  margin-bottom: 50px;
+}
+
+.welcome {
+  color: white;
+}
+
+.homeContainer {
+  border-radius: 10px;
+  border-color: #fff027;
+}
+
+.homeContainerTwo {
+  border-radius: 10px;
+  border-color: #fff027;
+}
+
+.workContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.descriptionContainer {
+  border: 4px solid #fff027;
+  background-color: #32474d;
+  border-radius: 10px;
+  padding: 16px;
+  width: 40%;
+}
+
+.blockButton {
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+}
+.btn {
+  background-color: #fff027;
+  color: rgb(78, 78, 78);
+  margin: 0.5 auto;
+  padding: 0.5rem 3rem;
+  border: 3px solid #fff027;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.07rem;
+}
+
+.btn:hover {
+  background-color: #32474d;
+  color: rgb(255, 255, 255);
+  margin: 0.5 auto;
+}
