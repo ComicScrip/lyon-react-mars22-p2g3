@@ -8,6 +8,11 @@ function Navabar() {
   const handleShowLinks = () => {
     setshowLinks(!showLinks);
   };
+
+  const getActiveLinkStyle = ({ isActive }) => ({
+    color: isActive ? '#FFF027' : 'white',
+  });
+
   return (
     <nav className={`navbar ${showLinks ? 'show-nav' : 'hidden-nav'}`}>
       <div>
@@ -20,17 +25,32 @@ function Navabar() {
       </div>
       <ul className="items">
         <li className="navbar_item slideInDown-1">
-          <NavLink to="/" className="navbar_link" onClick={handleShowLinks}>
+          <NavLink
+            to="/"
+            className="navbar_link"
+            style={getActiveLinkStyle}
+            onClick={handleShowLinks}
+          >
             Home
           </NavLink>
         </li>
         <li className="navbar_item slideInDown-2">
-          <NavLink to="/contact" className="navbar_link" onClick={handleShowLinks}>
+          <NavLink
+            to="/moviepicker"
+            style={getActiveLinkStyle}
+            className="navbar_link"
+            onClick={handleShowLinks}
+          >
             Movie Picker
           </NavLink>
         </li>
         <li className="navbar_item slideInDown-3">
-          <NavLink to="/about" className="navbar_link" onClick={handleShowLinks}>
+          <NavLink
+            to="/about"
+            style={getActiveLinkStyle}
+            className="navbar_link"
+            onClick={handleShowLinks}
+          >
             About Us
           </NavLink>
         </li>

@@ -14,11 +14,17 @@
     font-weight: bold;
     text-decoration: none;
 }
-
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
 nav a {
     text-decoration: none;
-  }
-.items{
+    justify-content: center;
+    align-items: center;
+}
+.items li{
     display: flex;
 }
 .yellow {
@@ -26,10 +32,11 @@ nav a {
 }
 .logo{
     max-height: 3.1em;
-}
+}   
 .navbar_link{
+    align-items: center;
     padding:0 2rem;
-    justify-content: space-between;
+    justify-content: space-between; 
     text-decoration: none;
     color: inherit;
 }
@@ -53,7 +60,6 @@ nav a {
 @media all and (max-width: 767px) 
     {
 .navbar ul li {
-        font-size: 16px;
         text-decoration: none;
         list-style: none;
     }  
@@ -147,7 +153,6 @@ nav a {
         background: transparent;
     
     }
-
         /* duplicate bar line*/
 .towLine,
 .towLine::before,
@@ -183,7 +188,7 @@ nav a {
         }
 .btnBurger{
     display: block;
-    position: fixed;
+    position: absolute;
     top: 1rem;
     right: 1rem;
     cursor: pointer;

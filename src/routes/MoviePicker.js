@@ -4,7 +4,7 @@ import '../Css/App.css';
 function MoviePicker() {
   return (
     <div>
-      <h1 className="title">Movie Picker</h1>;
+      <h1 className="title">Movie Picker</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
         recusandae animi, odit ducimus nihil quod modi soluta nulla id quisquam
