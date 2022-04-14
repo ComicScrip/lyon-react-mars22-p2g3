@@ -10,33 +10,29 @@ body,
 }
 
 /* Header de pages du site */
-header{
+/* header{
   background-color: #32474D;
   color: white;
-}
+} */
 /* corps de pages du site */
 main {
   padding: 10px;
   flex-grow: 1;
   background-color: #486064;
 }
-nav a {
+/* nav a {
   color: white;
   text-decoration: none;
   font-size: 17px;
-}
+}   */
 
 /* menu du site page */
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   line-height: 2px;
-}
-.logo {
-  text-align: left !important;
-  max-height: 3.1em;
-}
+} */
 
 p{
   color: white;
@@ -48,15 +44,15 @@ footer {
 }
 
 /* Media quries mobiles */
-@media all and (max-device-width: 480px) 
+/* @media all and (max-device-width: 480px) 
 { 
-  main { 
+  /* main { 
   /* background-color: #486064; */
-  background-color: chocolate;
-}
-nav a {
+  /* background-color: chocolate; */
+/* } */
+/* nav a {
   color: white;
   font-size: 17px;
 }
-}
+}  */
 
