@@ -3,20 +3,26 @@ import '../Css/Details.css';
 
 export default function Details() {
   return (
-    <div>
+    <div className="main">
       <img
         className="poster"
         src="https://imdb-api.com/images/original/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_Ratio0.6837_AL_.jpg"
         alt="movie"
       />
-      <h1> title</h1>
-      <p> releaseDate, runtimeStr, genres </p>
-      <p> Director </p>
-      <p> Rating </p>
-      <h2>Synopsis</h2>
-      <p>Plot</p>
-      <p>Cast</p>
-      <img className="cast" alt="cast" />
+      <h1 className="title"> title</h1>
+      <div className="detailsInfo">
+        <p> releaseDate, runtimeStr, genres </p>
+        <p> Director </p>
+        <p> Rating </p>
+      </div>
+      <h2 className="">Synopsis</h2>
+      <div className="Plot">
+        <p>Plot</p>
+      </div>
+      <div className="Cast">
+        <p>Cast</p>
+        <img className="cast" alt="cast" />
+      </div>
       <iframe
         width="90%"
         src="https://www.youtube.com/embed/-FZ-pPFAjYY"

@@ -1,8 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .poster {
   width: 90vw;
   height: 50vh;
 }
 
-Details {
-  text-align: justify;
+h1 {
+  font-size: 40px;
 }
