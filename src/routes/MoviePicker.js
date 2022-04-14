@@ -1,13 +1,10 @@
 import React from 'react';
 import '../Css/App.css';
-import '../Css/Home.css';
 
-function Home() {
+function MoviePicker() {
   return (
     <div>
-      <h1 className="title">
-        <span className="welcome">Welcome to</span> CINECHILL !
-      </h1>
+      <h1 className="title">Movie Picker</h1>;
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
         recusandae animi, odit ducimus nihil quod modi soluta nulla id quisquam
@@ -18,4 +15,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default MoviePicker;

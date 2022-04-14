@@ -6,7 +6,6 @@ function AboutPage() {
     <div>
       <h1 className="title"> Page about</h1>
       <p>Qui sommes-nous ?</p>
-
     </div>
   );
 }

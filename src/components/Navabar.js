@@ -20,17 +20,17 @@ function Navabar() {
       </div>
       <ul className="items">
         <li className="navbar_item slideInDown-1">
-          <NavLink to="/" className="navbar_link">
+          <NavLink to="/" className="navbar_link" onClick={handleShowLinks}>
             Home
           </NavLink>
         </li>
         <li className="navbar_item slideInDown-2">
-          <NavLink to="/contact" className="navbar_link">
+          <NavLink to="/contact" className="navbar_link" onClick={handleShowLinks}>
             Movie Picker
           </NavLink>
         </li>
         <li className="navbar_item slideInDown-3">
-          <NavLink to="/about" className="navbar_link">
+          <NavLink to="/about" className="navbar_link" onClick={handleShowLinks}>
             About Us
           </NavLink>
         </li>
