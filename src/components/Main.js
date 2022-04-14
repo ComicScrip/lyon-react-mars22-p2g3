@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../routes/Home';
 import Contact from '../routes/Contact';
 import About from '../routes/About';
+import Result from '../routes/Result';
 import '../Css/App.css';
 
 export default function Main() {
@@ -11,6 +12,7 @@ export default function Main() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
     </main>
   );
