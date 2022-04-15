@@ -12,31 +12,30 @@ const teamMembers = [
     name: 'Félix Berger',
     image: ImageFB,
     description:
-      'Passionate about cinema since childhood, i’m a big fan of comedy films',
+      'Passionate about cinema since childhood, i’m a big fan of french movie',
   },
   {
     name: 'Werner Mona',
     image: ImageWM,
-    description:
-      'When I was a child, I loved watch movie on cinema with a big box of pop corn',
+    description: 'I hate horror movies because they scare me so much',
   },
   {
     name: 'Anna Boval',
     image: ImageAB,
     description:
-      "I love watching romantic movies, I've seen over 200 since my childhood",
+      'Passionate about cinema since I’m 8, I like Sci-Fi, thriller and detective films',
   },
   {
     name: 'Leo Laborie',
     image: ImageLL,
     description:
-      'I watch action movies with a big ice cream. I love Vin Diesel',
+      'I love eating ice cream while watching a movie. It makes me very happy',
   },
   {
     name: 'Thierno Diallo',
     image: ImageTD,
-    description: `Passionate about cinema since childhood, i’m a big fan of science
-fiction films`,
+    description:
+      'I love science fiction movies because they make me think a lot',
   },
 ];
 

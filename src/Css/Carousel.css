@@ -4,24 +4,32 @@
 }
 
 .carousel-caption {
-  font-size: 15px;
   position: static !important;
+  margin: 10px;
 }
 
 .carousel-caption h3 {
+  font-family: 'Roboto', sans serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.carousel-caption p {
+  font-family: 'Roboto', sans serif;
   font-size: 18px;
+  font-style: italic;
 }
 
 @media screen and (min-width: 700px) {
   .carousel {
-    width: 60%;
+    width: 50%;
     margin: auto;
-  }
-  .carousel-caption {
-    font-size: 25px;
   }
 
   .carousel-caption h3 {
     font-size: 40px;
+  }
+  .carousel-caption p {
+    font-size: 25px;
   }
 }
