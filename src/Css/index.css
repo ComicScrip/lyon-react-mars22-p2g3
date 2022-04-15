@@ -11,7 +11,7 @@ body,
   font-family:'Roboto';
 }
 
-/* corps de pages du site */
+
 main {
   padding: 100px;
   flex-grow: 1;

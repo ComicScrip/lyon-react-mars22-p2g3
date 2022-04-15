@@ -6,7 +6,6 @@ function AboutPage() {
   return (
     <div>
       <h1 className="title">About us page</h1>
-      {/* <h2 className="title">What kind of movies do you like ?</h2> */}
       <p className="welcome">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
         recusandae animi, odit ducimus nihil quod modi soluta nulla id quisquam

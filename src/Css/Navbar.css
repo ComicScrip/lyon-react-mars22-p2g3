@@ -105,7 +105,6 @@ nav a {
 .Burger_Line::after{
     content: "";
     position: absolute;
-    /* left: 0; */
 }
 .navbar_item::after  { 
     content: "";
