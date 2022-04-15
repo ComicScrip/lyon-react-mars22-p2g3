@@ -1,14 +1,12 @@
 import React from 'react';
 import '../Css/App.css';
 import '../Css/Questionnaire.css';
+import '../Css/Navbar.css';
 import Questionnaire from './Questionnaire';
 
 function AboutPage() {
   return (
     <div>
-      {/* <p className="title"> Page about</p> */}
-      {/* <hr /> */}
-      {/* <p>Qui sommes-nous ?</p> */}
       <Questionnaire />
     </div>
   );
