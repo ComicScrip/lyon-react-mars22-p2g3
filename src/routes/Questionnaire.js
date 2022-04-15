@@ -31,6 +31,9 @@ function Questionnaire() {
           </div>
         </div>
       </section>
+      {/* <div className="cercle">
+        <span className="compteur"> 1/2</span>
+      </div> */}
     </div>
   );
 }
