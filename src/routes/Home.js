@@ -8,7 +8,7 @@ function Home() {
       <h1 className="title">
         <span className="welcome">Welcome to</span> CINECHILL !
       </h1>
-      <p>
+      <p className="welcome">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
         recusandae animi, odit ducimus nihil quod modi soluta nulla id quisquam
         aspernatur aliquam atque. Vero ratione asperiores voluptatum sequi

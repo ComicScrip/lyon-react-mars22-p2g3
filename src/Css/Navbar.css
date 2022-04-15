@@ -57,12 +57,13 @@ nav a {
 @media all and (max-width: 767px) 
     {
 
-/* .navbar {
+.navbar {
     background-color: #32474D;
-}  */
+
+} 
 .navbar ul li a {
-        font-size: 16px;
-    } 
+        font-size: 23px;
+} 
 .items{
     flex-direction: column;
     justify-content: center;
@@ -75,11 +76,11 @@ nav a {
     visibility: hidden;
     left: 0;
     align-items: center;
-    background-color: #32474D;
+    background: #32474D;
     transition: all .3s ease-in-out;
 }
 
-.show-nav .items{
+.show-nav .items {
     width: 100vw;
     visibility: visible;
     right:0;
@@ -90,7 +91,6 @@ nav a {
     font-size: 3vw;
     color:#FCFDEF;
 }
-    
 .Burger_Line,
 .Burger_Line::before,
 .Burger_Line::after{
@@ -110,7 +110,6 @@ nav a {
     position: absolute;
     /* left: 0; */
 }
-
 .navbar_item::after  { 
     content: "";
     display: block;
@@ -131,10 +130,10 @@ nav a {
     
     }
 .Burger_Line::after{
-        transform: translateX(-10px);
+    transform: translateX(-10px);
     }
 .Burger_Line::after{
-        transform: translateX(-10px);
+    transform: translateX(-10px);
     }
 
 .show-nav .Burger_Line::before
@@ -149,8 +148,8 @@ nav a {
     }
 .show-nav .Burger_Line
     {
-        width: 0;
-        background: transparent;
+    width: 0;
+    background: transparent;
     
     }
         /* duplicate bar line*/
@@ -173,12 +172,12 @@ nav a {
 
 .show-nav .towLine::before
     {
-        width: 37px;
+    width: 37px;
     
     }
-    .show-nav .towLine::after
+.show-nav .towLine::after
     {
-        width: 37px;
+    width: 37px;
     
     }
 .towLine::after{

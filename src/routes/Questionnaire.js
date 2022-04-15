@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Css/App.css';
+import '../Css/index.css';
 import '../Css/Questionnaire.css';
 
 function Questionnaire() {
@@ -32,5 +33,4 @@ function Questionnaire() {
     </div>
   );
 }
-
 export default Questionnaire;

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Css/App.css';
+import '../Css/Questionnaire.css';
 import Questionnaire from './Questionnaire';
 
 function AboutPage() {
