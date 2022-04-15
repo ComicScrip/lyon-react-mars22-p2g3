@@ -1,42 +1,58 @@
-.title-page{
-    text-align: center;
-    color: #FFF027;
-    padding: 20px;
-    margin-bottom: 40px;
+.title-page {
+  text-align: center;
+  color: #fff027;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.list-movie{
-    display: flex;
-}
-.movie1{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.list-movie {
+  display: flex;
+  justify-content: center;
 }
 
-.movie2{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.movie {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.movie3{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.poster {
+  border-radius: 20px;
+  width: 270px;
+  height: 400px;
+  margin-left: 40px;
+  margin-right: 40px;
+  cursor: pointer;
 }
 
-.poster{
-    border-radius: 20px;
-    width: 70%;
-    height: 90%;
+.movie-details {
+  margin: 5px;
+  margin-bottom: 30px;
 }
 
-.year{
-    text-align: center;
-    color: #fff1277c
+.year {
+  text-align: center;
+  color: #fff1277c;
+  margin: 0px;
+  font-weight: bold;
 }
 
-.rating{
-    text-align: center;
+.title {
+  text-align: center;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.rating {
+  color: white;
+  text-align: center;
+  margin: 0px;
+  font-weight: bold;
+}
+
+@media (min-width: 350px) {
+  .list-movie {
+    flex-wrap: wrap;
+  }
 }
