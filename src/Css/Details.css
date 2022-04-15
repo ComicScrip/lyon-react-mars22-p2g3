@@ -5,34 +5,53 @@
   align-items: center;
 }
 
+h1 {
+  font-family: 'Russo One', sans serif;
+}
+
 .poster {
   max-width: 100vw;
   max-height: 70vh;
-  overflow: hidden;
+  overflow: scroll;
+}
+
+.mainContent {
+  margin: 3%;
 }
 
 h2,
-.Cast {
+.Cast,
+.Plot,
+.trailerTitle {
   font-size: 1.8em;
   color: #fff129;
   text-align: left;
+  font-family: 'Russo One', sans serif;
 }
 
 .castContainer {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  overflow-x: scroll;
 }
 
 .castPictures {
-  width: 35%;
+  width: 100px;
+  height: 100px;
   padding: 1%;
-  margin: 5% 0%;
+  border-radius: 15px;
+}
+
+.actorsInfo {
+  font-size: 1em;
+  text-align: center;
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   color: #fcfdef;
-  margin: 1%;
+  font-family: 'Roboto', sans serif;
 }
 
 .shareOnSocialMedia {
@@ -49,10 +68,26 @@ p {
 }
 
 .moviePlot {
-  font-size: 15px;
+  font-size: 18px;
   text-align: justify;
-  font-weight: normal;
+  margin: 1%;
 }
 
 .trailer {
+  width: 90vw;
+  margin: 2% auto;
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .poster {
+    max-width: 100vw;
+    max-height: 40vh;
+    overflow: hidden;
+  }
 }

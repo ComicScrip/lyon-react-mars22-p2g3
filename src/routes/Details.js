@@ -14,19 +14,19 @@ export default function Details() {
         src="https://imdb-api.com/images/original/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_Ratio0.6837_AL_.jpg"
         alt="movie"
       />
-      <h1 className="title"> Title </h1>
-      <div className="detailsInfo">
-        <p>
-          <span className="year"> releaseDate </span>, runtimeStr, genres
-        </p>
-        <p> Director </p>
-        <p>
-          <span className="rating"> &#x2605; </span>
-          Rating
-        </p>
-      </div>
-      <h2 className="Plot">
-        Synopsis
+      <div className="mainContent">
+        <h1 className="title"> Title </h1>
+        <div className="detailsInfo">
+          <p>
+            <span className="year"> releaseDate </span>, runtimeStr, genres
+          </p>
+          <p> Director </p>
+          <p>
+            <span className="rating"> &#x2605; </span>
+            Rating
+          </p>
+        </div>
+        <h2 className="Plot">Synopsis</h2>
         <p className="moviePlot">
           Dom Cobb is a skilled thief, the absolute best in the dangerous art of
           extraction, stealing valuable secrets from deep within the
@@ -43,24 +43,48 @@ export default function Details() {
           team for the dangerous enemy that seems to predict their every move.
           An enemy that only Cobb could have seen coming.
         </p>
-      </h2>
-      <div className="Cast">
-        Cast
-        <div className="castContainer">
-          <img src="./pictures/actor1.jpeg" className="castPictures" alt="" />
-          <img src="./pictures/actor2.jpeg" className="castPictures" alt="" />
-          <img src="./pictures/actor3.jpeg" className="castPictures" alt="" />
+        <div className="Cast">
+          Cast
+          <div className="castContainer">
+            <div className="actorsInfo">
+              <img
+                src="./pictures/actor1.jpeg"
+                className="castPictures"
+                alt=""
+              />
+              <p>Sam Worthington</p>
+            </div>
+            <div className="actorsInfo">
+              <img
+                src="./pictures/actor2.jpeg"
+                className="castPictures"
+                alt=""
+              />
+              <p>Sam Worthington</p>
+            </div>
+            <div className="actorsInfo">
+              <img
+                src="./pictures/actor3.jpeg"
+                className="castPictures"
+                alt=""
+              />
+              <p>Sam Worthington</p>
+            </div>
+          </div>
+        </div>
+        <div className="trailerTitle">
+          Trailer
+          <iframe
+            className="trailer"
+            width="90%"
+            src="https://www.youtube.com/embed/-FZ-pPFAjYY"
+            title="YouTube video player"
+            frameBorder="10"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen"
+            allowFullScreen
+          />
         </div>
       </div>
-      <iframe
-        className="trailer"
-        width="90%"
-        src="https://www.youtube.com/embed/-FZ-pPFAjYY"
-        title="YouTube video player"
-        frameBorder="10"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen"
-        allowFullScreen
-      />
     </div>
   );
 }
