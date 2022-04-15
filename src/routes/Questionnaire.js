@@ -30,10 +30,10 @@ function Questionnaire() {
             <h4 className="CategoryName">Horror</h4>
           </div>
         </div>
+        <div className="cercle">
+          <span className="compteur"> 1/2</span>
+        </div>
       </section>
-      {/* <div className="cercle">
-        <span className="compteur"> 1/2</span>
-      </div> */}
     </div>
   );
 }

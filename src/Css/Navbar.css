@@ -1,4 +1,4 @@
-/* {} */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .navbar {
     display: flex;
@@ -50,10 +50,6 @@ nav a {
     color: inherit;
 }
 
-/* .navbar ul li {
-    text-decoration: none;
-    list-style: none;
-}   */
 
 @media all and (max-width: 767px) 
     {

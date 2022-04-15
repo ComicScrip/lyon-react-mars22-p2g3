@@ -9,33 +9,15 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-family:'Roboto';
-  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
-/* Header de pages du site */
-/* header{
-  background-color: #32474D;
-  color: white;
-} */
 /* corps de pages du site */
 main {
   padding: 100px;
   flex-grow: 1;
   background-color: #486064;
 }
-/* nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}   */
 
-/* menu du site page */
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  line-height: 2px;
-} */
 
 p{
   color:#FCFDEF;
@@ -46,16 +28,5 @@ footer {
   padding: 12px;
 }
 
-/* Media quries mobiles */
-/* @media all and (max-device-width: 480px) 
-{ 
-  /* main { 
-  /* background-color: #486064; */
-  /* background-color: chocolate; */
-/* } */
-/* nav a {
-  color: white;
-  font-size: 17px;
-}
-}  */
+
 
