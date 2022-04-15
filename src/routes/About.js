@@ -1,13 +1,18 @@
 import React from 'react';
 import '../Css/App.css';
-import '../Css/Questionnaire.css';
 import '../Css/Navbar.css';
-import Questionnaire from './Questionnaire';
 
 function AboutPage() {
   return (
     <div>
-      <Questionnaire />
+      <h1 className="title">About us page</h1>
+      {/* <h2 className="title">What kind of movies do you like ?</h2> */}
+      <p className="welcome">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+        recusandae animi, odit ducimus nihil quod modi soluta nulla id quisquam
+        aspernatur aliquam atque. Vero ratione asperiores voluptatum sequi
+        laborum ex!
+      </p>
     </div>
   );
 }
