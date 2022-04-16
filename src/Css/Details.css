@@ -27,20 +27,22 @@ h2,
   color: #fff129;
   text-align: left;
   font-family: 'Russo One', sans serif;
+  margin: 5% 0%;
 }
 
 .castContainer {
-  width: 100%;
+  width: 350px;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 .castPictures {
   width: 100px;
   height: 100px;
-  padding: 1%;
   border-radius: 15px;
+  margin: 5px;
 }
 
 .actorsInfo {
@@ -52,6 +54,10 @@ p {
   font-size: 20px;
   color: #fcfdef;
   font-family: 'Roboto', sans serif;
+}
+
+.actorsInfo > p {
+  font-size: 15px;
 }
 
 .shareOnSocialMedia {
@@ -70,15 +76,15 @@ p {
 .moviePlot {
   font-size: 18px;
   text-align: justify;
-  margin: 1%;
+  margin: 1% 2%;
 }
 
 .trailer {
-  width: 90vw;
-  margin: 2% auto;
+  width: 85vw;
+  margin: 2% 0%;
 }
 
-@media screen and (min-width: 600px) and (orientation: landscape) {
+@media screen and (min-width: 600px) {
   .main {
     display: flex;
     flex-direction: column;
@@ -87,7 +93,7 @@ p {
   }
   .poster {
     max-width: 100vw;
-    max-height: 40vh;
+    max-height: 30vh;
     overflow: hidden;
   }
 }

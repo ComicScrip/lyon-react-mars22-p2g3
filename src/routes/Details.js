@@ -43,47 +43,35 @@ export default function Details() {
           team for the dangerous enemy that seems to predict their every move.
           An enemy that only Cobb could have seen coming.
         </p>
-        <div className="Cast">
-          Cast
-          <div className="castContainer">
-            <div className="actorsInfo">
-              <img
-                src="./pictures/actor1.jpeg"
-                className="castPictures"
-                alt=""
-              />
-              <p>Sam Worthington</p>
-            </div>
-            <div className="actorsInfo">
-              <img
-                src="./pictures/actor2.jpeg"
-                className="castPictures"
-                alt=""
-              />
-              <p>Sam Worthington</p>
-            </div>
-            <div className="actorsInfo">
-              <img
-                src="./pictures/actor3.jpeg"
-                className="castPictures"
-                alt=""
-              />
-              <p>Sam Worthington</p>
-            </div>
+        <div className="Cast">Cast</div>
+        <div className="castContainer">
+          <div className="actorsInfo">
+            <img src="./pictures/actor1.jpeg" className="castPictures" alt="" />
+            <p>Sam Worthington</p>
+          </div>
+          <div className="actorsInfo">
+            <img src="./pictures/actor2.jpeg" className="castPictures" alt="" />
+            <p>Sam Worthington</p>
+          </div>
+          <div className="actorsInfo">
+            <img src="./pictures/actor3.jpeg" className="castPictures" alt="" />
+            <p>Sam Worthington</p>
+          </div>
+          <div className="actorsInfo">
+            <img src="./pictures/actor1.jpeg" className="castPictures" alt="" />
+            <p>Sam Worthington</p>
           </div>
         </div>
-        <div className="trailerTitle">
-          Trailer
-          <iframe
-            className="trailer"
-            width="90%"
-            src="https://www.youtube.com/embed/-FZ-pPFAjYY"
-            title="YouTube video player"
-            frameBorder="10"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen"
-            allowFullScreen
-          />
-        </div>
+        <div className="trailerTitle">Trailer</div>
+        <iframe
+          className="trailer"
+          width="90%"
+          src="https://www.youtube.com/embed/-FZ-pPFAjYY"
+          title="YouTube video player"
+          frameBorder="10"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen"
+          allowFullScreen
+        />
       </div>
     </div>
   );
