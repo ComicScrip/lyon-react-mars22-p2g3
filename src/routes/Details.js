@@ -9,11 +9,20 @@ export default function Details() {
         alt="shareOnSocialMedia"
         className="shareOnSocialMedia"
       />
-      <img
-        className="poster"
-        src="https://imdb-api.com/images/original/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_Ratio0.6837_AL_.jpg"
-        alt="movie"
-      />
+      <div className="postersTop">
+        <div className="posterContainer">
+          <img
+            className="posterCover"
+            src="https://imdb-api.com/images/original/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_Ratio0.6837_AL_.jpg"
+            alt="movie"
+          />
+        </div>
+        <img
+          className="poster"
+          src="https://imdb-api.com/images/original/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_Ratio0.6837_AL_.jpg"
+          alt="movie"
+        />
+      </div>
       <div className="mainContent">
         <h1 className="title"> Title </h1>
         <div className="detailsInfo">
@@ -55,6 +64,10 @@ export default function Details() {
           </div>
           <div className="actorsInfo">
             <img src="./pictures/actor3.jpeg" className="castPictures" alt="" />
+            <p>Sam Worthington</p>
+          </div>
+          <div className="actorsInfo">
+            <img src="./pictures/actor1.jpeg" className="castPictures" alt="" />
             <p>Sam Worthington</p>
           </div>
           <div className="actorsInfo">
