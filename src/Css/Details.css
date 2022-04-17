@@ -15,7 +15,7 @@ h1 {
   overflow: scroll;
 }
 
-.posterContainer {
+.posterCover {
   display: none;
 }
 .mainContent {
@@ -49,7 +49,6 @@ h2,
 }
 
 .actorsInfo {
-  font-size: 1em;
   text-align: center;
 }
 
@@ -84,7 +83,9 @@ p {
 
 .trailer {
   width: 85vw;
+  border-radius: 10px;
   margin: 2% 0%;
+  border-color: #fff027;
 }
 
 @media screen and (min-width: 600px) {
@@ -95,21 +96,44 @@ p {
     align-items: center;
   }
   .posterContainer {
-    display: initial;
     width: cover;
-    height: 400px;
+    height: 350px;
     overflow: hidden;
   }
 
   .posterCover {
+    display: initial;
     position: relative;
-    top: -20%;
+    top: -30%;
+    filter: brightness(70%);
   }
 
+  .Cast,
+  .Plot,
+  .trailerTitle {
+    margin: 3% 2%;
+  }
   .poster {
     max-width: 30vw;
-    border: 1px solid #fff129;
+    border: 1px solid #fff027;
+  }
+
+  .infoContainer {
+    margin: 2% 5%;
     display: flex;
-    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .castContainer {
+    width: 620px;
+    height: 100%;
+  }
+  .castPictures {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+  .trailer {
+    width: 60vw;
+    height: 50vh;
   }
 }
