@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap');
+
+html,
+body,
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif, Roboto, Russo One;
+}
+
+header,
+footer {
+  background-color: #32474d;
+  color: white;
+  padding: 10px;
+}
+
+main {
+  padding: 10px;
+  flex-grow: 1;
+  background-color: #486064;
+}
+
+nav a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}

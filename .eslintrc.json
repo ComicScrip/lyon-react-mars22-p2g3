@@ -11,8 +11,11 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react"],
-  "rules": {
+    "plugins": ["react"],
+    "rules": {
+    "linebreak-style": 0,
+    "global-require": 0,
+    "eslint linebreak-style": [0, "error", "windows"],
     "react/jsx-filename-extension": "off",
     "no-console": "warn",
     "no-debugger": "warn",
