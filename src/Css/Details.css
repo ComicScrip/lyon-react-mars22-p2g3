@@ -107,27 +107,44 @@ p {
     align-items: center;
   }
 
+  .posterContainer {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .posterCover {
+    display: initial;
+    position: relative;
+    width: 100%;
+    top: -50%;
+    filter: brightness(70%);
+  }
+
   .Cast,
   .Plot,
   .trailerTitle {
     margin: 3% 2%;
   }
 
-  .mainContent {
-    margin: 5% 8%;
+  .title {
+    margin-top: -7%;
   }
 
   .poster {
     max-width: 30vw;
     border-radius: 10px;
-    margin-top: -10%;
+    margin-top: -30%;
+  }
+
+  .mainContent {
+    margin: 2%;
   }
 
   .infoContainer {
-    margin: 2% 10%;
+    margin: -1% 10%;
     display: flex;
     align-items: flex-start;
-    overflow: visible;
     z-index: 1;
   }
 
@@ -143,7 +160,7 @@ p {
   }
 
   .trailer {
-    width: 80vw;
+    width: 60vw;
     height: 50vh;
   }
 }
