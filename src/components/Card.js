@@ -3,7 +3,6 @@ import React from 'react';
 function Card() {
   return (
     <div>
-      <h1 className="title-page">Result</h1>
       <div className="list-movie">
         <div className="movie">
           <img src="../img/poster.jpg" className="poster" alt="poster" />
