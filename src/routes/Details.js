@@ -4,11 +4,16 @@ import '../Css/Details.css';
 export default function Details() {
   return (
     <div className="main">
-      <img
-        src="../pictures/share-Fb.jpg"
-        alt="shareOnSocialMedia"
-        className="shareOnSocialMedia"
-      />
+      <div className="shareOn">
+        <div className="shareText">share on</div>
+        <div className="sharePics">
+          <img
+            src="../pictures/share-Fb.jpg"
+            alt="shareOnSocialMedia"
+            className="shareOnSocialMedia"
+          />
+        </div>
+      </div>
       <div className="posterContainer">
         <img
           className="posterCover"
