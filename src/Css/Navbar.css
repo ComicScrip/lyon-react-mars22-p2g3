@@ -100,7 +100,7 @@ nav a {
     z-index: 1;
     
 }
-/* Line */
+
 .Burger_Line::before,
 .Burger_Line::after{
     content: "";
@@ -148,7 +148,7 @@ nav a {
     background: transparent;
     
     }
-        /* duplicate bar line*/
+        
 .towLine,
 .towLine::before,
 .towLine::after{
