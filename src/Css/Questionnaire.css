@@ -85,9 +85,9 @@
         font-size:18px;
         line-height:25px;
     }
-    .section_card { 
+    /* .section_card { 
         margin-left: 15px;
-    }
+    } */
     .cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -100,10 +100,10 @@
         height: 80px;
 
     } 
-    .CategoryName {
+    /* .CategoryName {
         padding-left: 7px;
         padding-top: 12px;
-    }
+    } */
     .cercle {
         margin-left: 143px;
     }
