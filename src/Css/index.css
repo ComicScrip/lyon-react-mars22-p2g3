@@ -8,7 +8,7 @@ body,
   flex-direction: column;
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+    'Lucida Sans', Arial, sans-serif, Roboto, Russo One;
 }
 
 header,
@@ -20,6 +20,9 @@ footer {
 
 main {
   flex-grow: 1; /*j'ai enlevé le le padding 10px car trop de soucis*/
+
+  flex-grow: 1;
+  background-color: #486064;
 }
 
 nav a {

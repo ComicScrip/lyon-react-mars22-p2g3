@@ -4,19 +4,19 @@ import '../Css/Home.css';
 
 function HomePage() {
   return (
-    <div className="container">
+    <div className="generalContainer">
       <div className="homeContainer">
         <h1 className="title">
           <span className="welcome">Welcome to</span> CINECHILL !
         </h1>
         <h3 className="underTitle">
           Are you tired of spending more time looking for which movie or series
-          to see than watching the movie itself?. You've come to the right
-          place, Cine-Chill is a movie search nd comparison engine that will
-          save you a lot of time.
+          to see than watching the movie itself? You've come to the right place,
+          Cine-Chill is a movie search nd comparison engine that will save you a
+          lot of time.
         </h3>
         <div className="blockButton">
-          <button type="button" className="btn">
+          <button type="button" className="actionBtn">
             ACTION !
           </button>
         </div>

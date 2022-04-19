@@ -11,11 +11,11 @@ export default function Header() {
         <NavLink to="/" style={getActiveLinkStyle}>
           Home
         </NavLink>
-        <NavLink to="/about" style={getActiveLinkStyle}>
-          About
+        <NavLink to="/quizz" style={getActiveLinkStyle}>
+          Movie Picker
         </NavLink>
-        <NavLink to="/contact" style={getActiveLinkStyle}>
-          Contact
+        <NavLink to="/about" style={getActiveLinkStyle}>
+          About Us
         </NavLink>
       </nav>
     </header>
