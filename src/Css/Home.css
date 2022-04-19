@@ -1,52 +1,109 @@
+@media only screen and (max-width: 440px) {
+  .social-container {
+    display: none;
+  }
+  .title {
+    font-size: 46px;
+  }
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .underTitle {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .workContainer {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .descriptionContainer {
+    margin: 20px;
+  }
+
+  .icons {
+    margin-left: 10px;
+  }
+}
+
+/************************************************************ GRAND ECRAN ****************************************/
+
 h1 {
   text-align: center;
   color: #ffffff;
+  font-family: 'Russo One', sans-serif;
 }
 h3 {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 14px;
+  max-width: 600px;
+  margin-top: 0;
   text-align: center;
-}
-body {
-  background-image: url(/public/images/incpetion-3.jpg);
+  font-weight: 500;
 }
 
-.underTitle {
-  width: 100;
-  margin-bottom: 50px;
-}
-
-.welcome {
-  color: white;
+.container {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-image: url(/public/img/incpetion-3.jpg.png);
 }
 
 .homeContainer {
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
   border-color: #fff027;
 }
 
 .homeContainerTwo {
-  border-radius: 10px;
-  border-color: #fff027;
+  background-color: #486064;
+  padding-top: 30px;
 }
 
 .workContainer {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding-bottom: 50px;
 }
 
 .descriptionContainer {
   border: 4px solid #fff027;
   background-color: #32474d;
   border-radius: 10px;
-  padding: 16px;
-  width: 40%;
+  margin: 20px;
+  width: 100%;
+  text-align: center;
 }
 
+.icons {
+  padding: 4px;
+}
+
+.underTitle {
+  display: flex;
+  align-items: center;
+}
+
+.underTitle-2 {
+  font-size: 'Roboto', sans-serif;
+  width: 100%;
+  font-size: 14px;
+}
+
+.welcome {
+  color: white;
+}
 .blockButton {
   width: 100%;
-  margin: 1rem auto;
+  margin: 1rem;
   text-align: center;
 }
 .btn {
@@ -54,10 +111,11 @@ body {
   color: rgb(78, 78, 78);
   margin: 0.5 auto;
   padding: 0.5rem 3rem;
-  border: 3px solid #fff027;
+  border: 4px solid #fff027;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
   letter-spacing: 0.07rem;
 }
 
