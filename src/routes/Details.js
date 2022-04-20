@@ -25,8 +25,8 @@ export default function Details() {
           />
         </div>
         <div className="mainContent">
-          <h1 className="title"> Title </h1>
           <div className="detailsInfo">
+            <h1 className="title"> Title </h1>
             <p>
               <span className="year"> releaseDate </span>, runtimeStr, genres
             </p>
