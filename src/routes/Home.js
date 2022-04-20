@@ -11,8 +11,9 @@ function Home() {
       <p className="welcome">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
         recusandae animi, odit ducimus nihil quod modi soluta nulla id quisquam
-        aspernatur aliquam atque. Vero ratione asperiores voluptatum sequi
-        laborum ex!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sunt fuga
+        deserunt recusandae earum et delectus nemo ea voluptatibus, magnam qui
+        fugit beatae placeat id, blanditiis, cum aperiam in architecto?
       </p>
     </div>
   );

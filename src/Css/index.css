@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap');
+
 html,
 body,
 #root {
@@ -8,25 +8,29 @@ body,
   flex-direction: column;
   margin: 0;
   box-sizing: border-box;
-  font-family:'Roboto';
+  font-family: 'Roboto';
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif, Roboto, Russo One;
 }
 
+header,
+footer {
+  background-color: #32474d;
+  color: white;
+  padding: 10px;
+}
 
 main {
-  padding: 100px;
+  padding: 10px;
   flex-grow: 1;
   background-color: #486064;
 }
 
-
-p{
-  color:#FCFDEF;
+p {
+  color: #fcfdef;
 }
 footer {
-  background: #32474D;
-  color:#FCFDEF;
+  background: #32474d;
+  color: #fcfdef;
   padding: 12px;
 }
-
-
-

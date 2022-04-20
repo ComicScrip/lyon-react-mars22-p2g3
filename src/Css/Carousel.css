@@ -1,0 +1,38 @@
+.carousel {
+  width: 100%;
+  margin: auto;
+}
+.navbar {
+  z-index: 100 !important;
+}
+
+.carousel-caption {
+  position: static !important;
+  margin: 10px;
+}
+
+.carousel-caption h3 {
+  font-family: 'Roboto', sans serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.carousel-caption p {
+  font-family: 'Roboto', sans serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+@media screen and (min-width: 700px) {
+  .carousel {
+    width: 50%;
+    margin: auto;
+  }
+
+  .carousel-caption h3 {
+    font-size: 40px;
+  }
+  .carousel-caption p {
+    font-size: 25px;
+  }
+}
