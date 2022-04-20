@@ -1,3 +1,5 @@
+/* Introduction page */
+
 .title {
   font-style: normal;
   font-size: 30px;
@@ -32,16 +34,91 @@
   }
 }
 
-form {
+/* Formulaire de contact */
+
+.title_form {
+  margin: 40px 0 20px 20px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff027;
+}
+
+.form {
   display: flex;
   flex-direction: column;
+  align-item: center;
   margin: 20px;
 }
 
-.input {
-  background-color: rgb(227, 227, 227);
-  width: 600px;
+.input_form {
   border-radius: 8px;
   margin-bottom: 20px;
   padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.message_form {
+  border-radius: 8px;
+  padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.submit_form {
+  margin: 20px 0;
+  width: 100px;
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid yellow;
+  border-radius: 15px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff027;
+}
+
+.label_form {
+  color: #fcfdef;
+}
+
+@media screen and (min-width: 700px) {
+  .form {
+    margin: 0 200px;
+  }
+
+  .title_form {
+    margin: 500px 0 20px 0;
+    font-size: 35px;
+    margin: 20px 200px;
+  }
+
+  .input_form {
+    margin: 0 0 10px 0;
+  }
+
+  .message_form {
+    margin: 0 0 10px 0;
+  }
+
+  .submit_form {
+    width: 150px;
+    font-size: 20px;
+  }
+
+  .label_form {
+    margin-top: 10px;
+    font-size: 20px;
+  }
 }

@@ -32,4 +32,8 @@
   .carousel-caption p {
     font-size: 25px;
   }
+
+  .carousel-inner {
+    margin-bottom: 90px;
+  }
 }

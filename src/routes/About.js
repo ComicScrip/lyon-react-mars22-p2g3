@@ -1,9 +1,31 @@
-import React from 'react';
+/* eslint-disable no-console */
+import React, { useRef } from 'react';
 import '../Css/App.css';
 import '../Css/About.css';
 import Caroussel from '../components/Caroussel';
+import emailjs from '@emailjs/browser';
 
-function AboutPage() {
+function About() {
+  const form = useRef();
+
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        'service_d3soh6n',
+        'template_pciwueo',
+        form.current,
+        'gz1qumuVuLt8cao9j'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
       <h1 className="title">ABOUT US</h1>
@@ -12,15 +34,24 @@ function AboutPage() {
         universes.
       </p>
       <Caroussel />
-      <h1>Contact</h1>
-      <form className="form">
-        <input type="text" name="name" className="input" />
-        <input type="email" name="email" className="input" />
-        <textarea name="message" className="message" />
-        <input type="submit" value="Send" className="submit" />
+      <h2 className="title_form">Contact</h2>
+      <form ref={form} className="form" onSubmit={sendEmail}>
+        <label htmlFor="name" className="label_form">
+          Name
+        </label>
+        <input type="text" name="name" className="input_form" />
+        <label htmlFor="email" className="label_form">
+          Email
+        </label>
+        <input type="email" name="email" className="input_form" />
+        <label htmlFor="message" className="label_form">
+          Message
+        </label>
+        <textarea name="message" className="message_form" />
+        <input type="submit" value="Submit" className="submit_form" />
       </form>
     </div>
   );
 }
 
-export default AboutPage;
+export default About;
