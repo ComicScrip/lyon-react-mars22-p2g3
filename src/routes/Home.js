@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Css/App.css';
 import '../Css/Home.css';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
@@ -16,9 +17,9 @@ function HomePage() {
           lot of time.
         </h3>
         <div className="blockButton">
-          <button type="button" className="actionBtn">
-            ACTION !
-          </button>
+          <Link to="/moviepicker" className="actionBtn">
+            ACTION
+          </Link>
         </div>
       </div>
 
