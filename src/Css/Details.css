@@ -7,9 +7,8 @@
 
 .shareOn {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin: 2% 0%;
 }
 
 .shareText {
@@ -72,12 +71,6 @@ p {
   font-size: 15px;
 }
 
-.shareOnSocialMedia {
-  width: 40%;
-  height: 20%;
-  margin: 2%;
-}
-
 .year {
   color: #a6b7bb;
 }
@@ -113,6 +106,9 @@ p {
     overflow: hidden;
   }
 
+  .shareOn {
+    margin: 4% 0%;
+  }
   .posterCover {
     display: initial;
     position: relative;
@@ -128,7 +124,7 @@ p {
   }
 
   .title {
-    margin-top: -7%;
+    margin-top: -6%;
   }
 
   .poster {
@@ -138,18 +134,18 @@ p {
   }
 
   .mainContent {
-    margin: 2%;
+    margin: 0% 4%;
   }
 
   .infoContainer {
-    margin: -1% 10%;
+    margin: 0% 10%;
     display: flex;
     align-items: flex-start;
     z-index: 1;
   }
 
   .castContainer {
-    width: 620px;
+    width: 650px;
     height: 100%;
   }
 
@@ -162,5 +158,6 @@ p {
   .trailer {
     width: 60vw;
     height: 50vh;
+    border: 4px solid #fff027;
   }
 }

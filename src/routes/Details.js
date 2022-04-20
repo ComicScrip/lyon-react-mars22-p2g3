@@ -1,19 +1,15 @@
 import '../Css/App.css';
 import '../Css/Details.css';
+import SocialMedia from '../components/SocialMedia';
+
+/* import { BrowserRouter as NavLink } from 'react-router-dom';
+<NavLink to="https://fr-fr.facebook.com/"></NavLink> */
 
 export default function Details() {
   return (
     <div className="main">
-      <div className="shareOn">
-        <div className="shareText">share on</div>
-        <div className="sharePics">
-          <img
-            src="../pictures/share-Fb.jpg"
-            alt="shareOnSocialMedia"
-            className="shareOnSocialMedia"
-          />
-        </div>
-      </div>
+      <SocialMedia />
+
       <div className="posterContainer">
         <img
           className="posterCover"
