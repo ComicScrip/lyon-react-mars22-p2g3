@@ -9,7 +9,6 @@ export default function Details() {
   return (
     <div className="main">
       <SocialMedia />
-
       <div className="posterContainer">
         <img
           className="posterCover"
