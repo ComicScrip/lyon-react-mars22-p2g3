@@ -7,7 +7,7 @@ function Card() {
         <div className="movie">
           <img src="../img/poster.jpg" className="poster" alt="poster" />
           <div className="movie-details">
-            <h3 className="title">Movie title</h3>
+            <h3 className="title-movie">Movie title</h3>
             <p className="year">2016</p>
             <h3 className="rating">
               <img
@@ -22,7 +22,7 @@ function Card() {
         <div className="movie">
           <img src="../img/poster.jpg" className="poster" alt="poster" />
           <div className="movie-details">
-            <h3 className="title">Movie title</h3>
+            <h3 className="title-movie">Movie title</h3>
             <p className="year">2016</p>
             <h3 className="rating">
               <img
@@ -37,7 +37,7 @@ function Card() {
         <div className="movie">
           <img src="../img/poster.jpg" className="poster" alt="poster" />
           <div className="movie-details">
-            <h3 className="title">Movie title</h3>
+            <h3 className="title-movie">Movie title</h3>
             <p className="year">2016</p>
             <h3 className="rating">
               <img
