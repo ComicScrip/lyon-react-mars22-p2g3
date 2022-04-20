@@ -13,6 +13,12 @@ function AboutPage() {
       </p>
       <Caroussel />
       <h1>Contact</h1>
+      <form className="form">
+        <input type="text" name="name" className="input" />
+        <input type="email" name="email" className="input" />
+        <textarea name="message" className="message" />
+        <input type="submit" value="Send" className="submit" />
+      </form>
     </div>
   );
 }
