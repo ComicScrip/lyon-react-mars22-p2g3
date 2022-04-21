@@ -55,6 +55,9 @@ nav a {
     z-index: 100 !important;
   }
 
+  .logo {
+    max-height: 7em;
+  }
   .navbar ul li a {
     font-size: 23px;
   }
