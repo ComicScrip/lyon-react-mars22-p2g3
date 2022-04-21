@@ -12,7 +12,11 @@
 }
 
 .introduction {
-  font-style: normal;
+  font-family: 'Russo One';
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+  /* font-style: normal;
   font-weight: 700;
   font-size: 20px;
   font-family: 'Roboto', sans serif;
@@ -20,7 +24,7 @@
   text-align: center;
   color: #ffffff;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
-  margin: 30px 40px 50px 40px;
+  margin: 30px 40px 50px 40px; */
 }
 
 @media screen and (min-width: 700px) {
