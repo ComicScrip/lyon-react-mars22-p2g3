@@ -1,3 +1,5 @@
+/* Introduction page */
+
 .title {
   font-style: normal;
   font-size: 30px;
@@ -36,5 +38,126 @@
   .introduction {
     font-size: 30px;
     margin: 40px 200px 60px 200px;
+  }
+}
+
+/* Formulaire de contact */
+
+.title_form {
+  margin: 40px 0 20px 20px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff027;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-item: center;
+  margin: 20px;
+}
+
+.input_form_name {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.input_form_email {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.message_form {
+  padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.submit_form {
+  margin: 20px 0;
+  width: 100px;
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid yellow;
+  border-radius: 15px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff027;
+}
+
+.label_form {
+  color: #fcfdef;
+  margin-bottom: 5px;
+}
+
+.name_desk {
+  display: flex;
+  flex-direction: column;
+}
+.email_desk {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 700px) {
+  .form {
+    margin: 0 400px;
+  }
+
+  .title_form {
+    margin: 500px 0 20px 0;
+    font-size: 35px;
+    margin: 20px 400px;
+  }
+
+  .input_form_name {
+    margin: 0 0 10px 0;
+    width: 290px;
+  }
+  .input_form_email {
+    margin: 0 0 10px 0;
+    width: 420px;
+  }
+
+  .email_desk {
+    margin: 0 0 0 50px;
+  }
+
+  .message_form {
+    margin: 0 0 10px 0;
+  }
+
+  .submit_form {
+    width: 150px;
+    font-size: 20px;
+  }
+
+  .label_form {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .info_form {
+    display: flex;
+    justify-content: space-between;
   }
 }

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@expo-google-fonts/russo-one": "^0.2.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
@@ -17,9 +18,7 @@
     "react-bootstrap": "^2.3.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.0",
-    "tw-elements": "^1.0.0-alpha12",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -57,8 +56,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "postcss": "^8.4.12",
-    "prettier": "2.6.2",
-    "tailwindcss": "^3.0.23"
+    "prettier": "2.6.2"
   },
   "lint-staged": {
     "*.{json,js,ts,jsx,tsx,html,css}": [
