@@ -1,52 +1,3 @@
-@media only screen and (max-width: 440px) {
-  .social-container {
-    display: none;
-  }
-
-  h1 {
-    padding-top: 30px;
-  }
-
-  .underTitle {
-    font-size: 14px;
-    width: 100%;
-  }
-
-  .workContainer {
-    display: flex;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-  }
-
-  .descriptionContainer {
-    margin: 20px;
-  }
-
-  .icons {
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (min-width: 440px) and (max-width: 1240px) {
-  .workContainer {
-    display: flex;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-  }
-
-  .homeContainerTwo {
-    margin-top: 40px;
-  }
-
-  .descriptionContainer {
-    margin: 20px;
-  }
-}
-
 /************************************************************ GRAND ECRAN ****************************************/
 
 h1 {
@@ -58,23 +9,23 @@ h3 {
   color: #ffffff;
   max-width: 600px;
   margin-top: 0;
+  margin-bottom: 20px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .generalContainer {
   margin: 0;
   width: 100%;
-  height: 60%;
-  background-size: cover;
-  background-image: url(/public/img/incpetion-3.jpg.png);
 }
 
 .homeContainer {
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-size: cover;
+  height: 400px;
+  background-image: url(/public/img/incpetion-3.jpg.png);
   padding: 30px;
   border-color: #fff027;
 }
@@ -146,4 +97,53 @@ h3 {
 }
 .welcome {
   color: white;
+}
+
+@media only screen and (max-width: 440px) {
+  .social-container {
+    display: none;
+  }
+
+  .underTitle {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .homeContainer {
+    height: 400px;
+  }
+
+  .workContainer {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+
+  .descriptionContainer {
+    margin: 20px;
+  }
+
+  .icons {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 1240px) {
+  .workContainer {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+
+  .homeContainerTwo {
+    margin-top: 40px;
+  }
+
+  .descriptionContainer {
+    margin: 20px;
+  }
 }
