@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from '../routes/Home';
-import Quizz from '../routes/Quizz';
 import About from '../routes/About';
+import MoviePicker from '../routes/MoviePicker';
 import '../Css/App.css';
 
 export default function Main() {
@@ -10,7 +10,7 @@ export default function Main() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/quizz" element={<Quizz />} />
+        <Route path="/moviepicker" element={<MoviePicker />} />
       </Routes>
     </main>
   );

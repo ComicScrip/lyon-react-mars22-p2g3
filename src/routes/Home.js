@@ -3,7 +3,7 @@ import '../Css/App.css';
 import '../Css/Home.css';
 import { Link } from 'react-router-dom';
 
-function HomePage() {
+function Home() {
   return (
     <div className="generalContainer">
       <div className="homeContainer">
@@ -57,4 +57,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home;

@@ -7,6 +7,8 @@ body,
   display: flex;
   flex-direction: column;
   margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif, Roboto, Russo One;
 }
@@ -25,12 +27,11 @@ main {
   background-color: #486064;
 }
 
-nav a {
-  margin-right: 10px;
-  color: white;
-  text-decoration: none;
+p {
+  color: #fcfdef;
 }
-nav {
-  display: flex;
-  justify-content: space-around;
+footer {
+  background: #32474d;
+  color: #fcfdef;
+  padding: 12px;
 }
