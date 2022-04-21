@@ -38,6 +38,10 @@
     flex-direction: column;
   }
 
+  .homeContainerTwo {
+    margin-top: 40px;
+  }
+
   .descriptionContainer {
     margin: 20px;
   }
