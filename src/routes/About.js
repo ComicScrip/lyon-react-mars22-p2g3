@@ -36,14 +36,20 @@ function About() {
       <Caroussel />
       <h2 className="title_form">Contact</h2>
       <form ref={form} className="form" onSubmit={sendEmail}>
-        <label htmlFor="name" className="label_form">
-          Name
-        </label>
-        <input type="text" name="name" className="input_form" />
-        <label htmlFor="email" className="label_form">
-          Email
-        </label>
-        <input type="email" name="email" className="input_form" />
+        <div className="info_form">
+          <div className="name_desk">
+            <label htmlFor="name" className="label_form">
+              Name
+            </label>
+            <input type="text" name="name" className="input_form_name" />
+          </div>
+          <div className="email_desk">
+            <label htmlFor="email" className="label_form">
+              Email
+            </label>
+            <input type="email" name="email" className="input_form_email" />
+          </div>
+        </div>
         <label htmlFor="message" className="label_form">
           Message
         </label>

@@ -53,23 +53,32 @@
   margin: 20px;
 }
 
-.input_form {
+.input_form_name {
   border-radius: 8px;
   margin-bottom: 20px;
   padding: 4px;
   background: #fcfdef;
   border: 3px solid #fff027;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
-.message_form {
+.input_form_email {
   border-radius: 8px;
+  margin-bottom: 20px;
   padding: 4px;
   background: #fcfdef;
   border: 3px solid #fff027;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 15px;
+}
+
+.message_form {
+  padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 
 .submit_form {
@@ -91,21 +100,40 @@
 
 .label_form {
   color: #fcfdef;
+  margin-bottom: 5px;
+}
+
+.name_desk {
+  display: flex;
+  flex-direction: column;
+}
+.email_desk {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 700px) {
   .form {
-    margin: 0 200px;
+    margin: 0 400px;
   }
 
   .title_form {
     margin: 500px 0 20px 0;
     font-size: 35px;
-    margin: 20px 200px;
+    margin: 20px 400px;
   }
 
-  .input_form {
+  .input_form_name {
     margin: 0 0 10px 0;
+    width: 290px;
+  }
+  .input_form_email {
+    margin: 0 0 10px 0;
+    width: 420px;
+  }
+
+  .email_desk {
+    margin: 0 0 0 50px;
   }
 
   .message_form {
@@ -120,5 +148,9 @@
   .label_form {
     margin-top: 10px;
     font-size: 20px;
+  }
+  .info_form {
+    display: flex;
+    justify-content: space-between;
   }
 }
