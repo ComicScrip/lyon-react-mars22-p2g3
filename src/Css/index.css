@@ -21,7 +21,8 @@ footer {
 }
 
 main {
-  padding: 10px;
+  flex-grow: 1; /*j'ai enlevé le le padding 10px car trop de soucis*/
+
   flex-grow: 1;
   background-color: #486064;
 }

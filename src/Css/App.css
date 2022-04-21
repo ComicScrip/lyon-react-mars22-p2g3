@@ -1,14 +1,13 @@
-
 .title {
   text-align: center;
-  color: #FFF027;
+  color: #fff027;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline:none;
+  outline: none;
 }
 
 ul {
@@ -19,9 +18,3 @@ ul {
 a {
   text-decoration: none;
 }
-
-
-
-
-
-
