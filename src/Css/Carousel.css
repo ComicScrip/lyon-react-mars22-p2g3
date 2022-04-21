@@ -2,6 +2,9 @@
   width: 100%;
   margin: auto;
 }
+.navbar {
+  z-index: 100 !important;
+}
 
 .carousel-caption {
   position: static !important;

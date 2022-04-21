@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Css/App.css';
 import '../Css/About.css';
+import '../Css/Navbar.css';
 import Caroussel from '../components/Caroussel';
 
 function AboutPage() {

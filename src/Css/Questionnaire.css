@@ -1,0 +1,132 @@
+.question_title {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-size: 45px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff027;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.question {
+  font-family: 'Russo One';
+  padding: 15px !important;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 43px;
+  color: #ffffff;
+}
+.section_card {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.cardsx {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 2em !important;
+  padding: 10px !important;
+  align-items: center;
+  justify-content: center;
+}
+.cardy {
+  width: 200px !important;
+  height: 110px !important;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: #32474d;
+  border: 3px solid #fff027;
+  border-radius: 20px;
+  z-index: auto !important;
+}
+.CategoryName {
+  color: #fcfdef;
+  font-family: 'Russo One';
+  font-style: normal;
+  margin-left: 23px !important;
+  padding: 39px !important;
+  font-weight: 500;
+  font-size: 22px;
+}
+.cercle {
+  height: 70px;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 315px;
+  border-radius: 50%;
+  background-color: #32474d;
+  border: 2px solid #fff027;
+  cursor: pointer;
+}
+.compteur {
+  width: 40px;
+  height: 40px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 9px;
+  line-height: 60px;
+  color: #fcfdef;
+}
+@media screen and (max-width: 700px) {
+  .question_title {
+    font-family: 'Russo One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .question {
+    font-family: 'Russo One';
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .cardxs {
+    display: grid;
+    background-color: #32474d;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px 1em;
+    padding: 23px !important;
+    margin: 220px !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardy {
+    width: 100px !important;
+    height: 80px !important;
+  }
+  .cercle {
+    padding: 10px;
+    margin-left: 170px;
+    width: 85px;
+    height: 85px;
+  }
+  .CategoryName {
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: -4px !important;
+    padding: 25px 15px 15px 15px !important;
+    margin-right: 1px;
+  }
+  .compteur {
+    font-size: 25px;
+  }
+
+  .question_title {
+    font-style: normal;
+    font-size: 30px;
+    font-family: 'Russo One', 'sans serif';
+    line-height: 40px;
+    color: #fff027;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    margin: 30px 0 20px 0;
+  }
+  .section_card {
+    margin: 10px;
+    padding: 30px;
+  }
+}
