@@ -63,8 +63,8 @@ function About() {
         <label htmlFor="message" className="label_form">
           Message
         </label>
-        <textarea name="message" className="message_form" />
-        <input type="submit" value="Submit" className="submit_form" required />
+        <textarea name="message" className="message_form" required />
+        <input type="submit" value="Submit" className="submit_form" />
       </form>
     </div>
   );
