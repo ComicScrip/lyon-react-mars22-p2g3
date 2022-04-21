@@ -7,15 +7,20 @@ import '../Css/index.css';
 import Question2 from '../components/Question2';
 
 function Questionnaire() {
+  // const divStyle = {
+  //   color: 'blue',
+  // };
   const [isActif, setIsActif] = useState(false);
+  const [count, setCount] = useState(1);
   const handleClick = () => {
     setIsActif(!isActif);
+    setCount(count + 1);
   };
   return (
     <div>
       <h1 className="question_title">QUESTIONS</h1>
       <div className="cercle">
-        <span className="compteur"> 2/3</span>
+        <span className="compteur"> {count}/2</span>
       </div>
       <h2 className="question">What kind of movies do you like ?</h2>
       <section className="section_card">
@@ -40,7 +45,7 @@ function Questionnaire() {
           </button>
         </div>
       </section>
-      <div>{isActif ? <Question2 /> : ''}</div>
+      <div>{isActif ? <Question2 /> : ' '}</div>
     </div>
   );
 }
