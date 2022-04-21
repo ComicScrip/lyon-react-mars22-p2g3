@@ -17,6 +17,7 @@
 
 h1 {
   font-family: 'Russo One', sans serif;
+  filter: drop-shadow(0 0 0.75rem black);
 }
 
 .poster {
@@ -111,6 +112,7 @@ p {
   .shareOn {
     margin: 4% 0%;
   }
+
   .posterCover {
     display: initial;
     position: relative;
@@ -123,6 +125,7 @@ p {
   .Plot,
   .trailerTitle {
     margin: 3% 2%;
+    filter: drop-shadow(0 0 0.75rem black);
   }
 
   .detailsInfo {
@@ -132,11 +135,12 @@ p {
   .poster {
     max-width: 30vw;
     border-radius: 10px;
-    margin-top: -30%;
+    margin-top: -35%;
+    filter: drop-shadow(0 0 0.75rem black);
   }
 
   .mainContent {
-    margin: 0% 4%;
+    margin: 0% 7%;
   }
 
   .infoContainer {
@@ -158,8 +162,9 @@ p {
   }
 
   .trailer {
-    width: 60vw;
+    width: 50vw;
     height: 50vh;
     border: 4px solid #fff027;
+    filter: drop-shadow(0 0 0.75rem black);
   }
 }
