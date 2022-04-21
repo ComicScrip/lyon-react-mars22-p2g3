@@ -1,6 +1,7 @@
 .question_title {
   font-family: 'Russo One';
   font-style: normal;
+  margin: 45px 0 35px 0;
   font-size: 45px;
   font-weight: 300;
   text-align: center;
@@ -26,14 +27,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px 2em !important;
-  padding: 10px !important;
+  padding: auto !important;
   align-items: center;
   justify-content: center;
 }
 .cardy {
   width: 200px !important;
   height: 110px !important;
-  margin: 5px;
+  margin: 20px;
   justify-content: center;
   align-items: center;
   background-color: #32474d;
@@ -45,21 +46,22 @@
   color: #fcfdef;
   font-family: 'Russo One';
   font-style: normal;
-  margin-left: 23px !important;
-  padding: 39px !important;
-  font-weight: 500;
-  font-size: 22px;
+  margin-left: 20px !important;
+  padding: 35px !important;
+  font-weight: 300;
+  font-size: 25px;
+  cursor: pointer;
 }
 .cercle {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
-  margin-left: 315px;
+  margin-left: 370px;
   border-radius: 50%;
   background-color: #32474d;
   border: 2px solid #fff027;
-  cursor: pointer;
 }
 .compteur {
   width: 40px;
@@ -67,31 +69,35 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   margin-left: 9px;
-  line-height: 60px;
+  line-height: 50px;
   color: #fcfdef;
 }
 @media screen and (max-width: 700px) {
   .question_title {
-    font-family: 'Russo One';
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Roboto', sans serif;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 30px 40px 50px 40px;
   }
   .question {
     font-family: 'Russo One';
     font-weight: normal;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 25px;
   }
-  .cardxs {
+  .cardsx {
     display: grid;
-    background-color: #32474d;
+    /* background-color: #32474d !important; */
     grid-template-columns: 1fr 1fr;
     gap: 3px 1em;
-    padding: 23px !important;
-    margin: 220px !important;
+    margin-top: -25px !important;
     align-items: center;
     justify-content: center;
   }
@@ -101,9 +107,10 @@
   }
   .cercle {
     padding: 10px;
-    margin-left: 170px;
-    width: 85px;
-    height: 85px;
+    margin-left: 130px;
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
   }
   .CategoryName {
     font-size: 20px;
@@ -113,7 +120,8 @@
     margin-right: 1px;
   }
   .compteur {
-    font-size: 25px;
+    font-size: 20px;
+    padding-top: 10px;
   }
 
   .question_title {
@@ -126,7 +134,7 @@
     margin: 30px 0 20px 0;
   }
   .section_card {
-    margin: 10px;
-    padding: 30px;
+    margin: auto;
+    padding: auto;
   }
 }

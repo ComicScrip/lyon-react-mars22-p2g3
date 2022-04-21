@@ -12,7 +12,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-decoration: none;
-  z-index: 2 !important;
+  z-index: 3 !important;
 }
 .navbar ul {
   display: flex;
@@ -28,12 +28,13 @@ nav a {
   color: #fff027;
 }
 .logo {
-  max-height: 3.5em;
+  max-height: 3em;
 }
 .navbar_link {
   align-items: center;
   padding: 0 2rem;
   justify-content: space-between;
+  font-size: 22px;
   text-decoration: none;
   color: inherit;
 }
