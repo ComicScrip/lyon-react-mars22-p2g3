@@ -15,9 +15,9 @@ function DisplayMovie({ movie }) {
             <div className="detailsInfo">
               <h1 className="title"> {movie.title} </h1>
               <p>
-                <span className="year"> {movie.year} </span> {movie.runtimeStr}{' '}
-                {movie.genres}
+                <span className="year"> {movie.year} </span> {movie.runtimeStr}
               </p>
+              <p>{movie.genres}</p>
               <p> {movie.directors} </p>
               <p>
                 <span className="rating"> &#x2605; </span>
@@ -27,56 +27,63 @@ function DisplayMovie({ movie }) {
 
             <h2 className="Plot">Synopsis</h2>
             <p className="moviePlot">{movie.plot}</p>
+
             <div className="Cast">Cast</div>
             <div className="castContainer">
-              <div className="actorsInfo">
+              {movie.actorList.slice(0, 6).map((actor) => (
+                <div key={actor.id} className="actorsInfo">
+                  <img
+                    className="castPictures"
+                    src={actor.image}
+                    alt={actor.name}
+                  />
+                  <p>{actor.name}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* <div className="actorsInfo">
+              ici API acteurs
+              <div key="">
                 <img src="" className="castPictures" alt="" />
                 <p>Sam Worthington</p>
               </div>
               <div className="actorsInfo">
-                ici API acteurs
-                <div key="">
-                  <img src="" className="castPictures" alt="" />
-                  <p>Sam Worthington</p>
-                </div>{' '}
-                */
-                <div className="actorsInfo">
-                  <img
-                    src="./pictures/actor3.jpeg"
-                    className="castPictures"
-                    alt=""
-                  />
-                  <p>Sam Worthington</p>
-                </div>
-                <div className="actorsInfo">
-                  <img
-                    src="./pictures/actor1.jpeg"
-                    className="castPictures"
-                    alt=""
-                  />
-                  <p>Sam Worthington</p>
-                </div>
-                <div className="actorsInfo">
-                  <img
-                    src="./pictures/actor1.jpeg"
-                    className="castPictures"
-                    alt=""
-                  />
-                  <p>Sam Worthington</p>
-                </div>
+                <img
+                  src="./pictures/actor3.jpeg"
+                  className="castPictures"
+                  alt=""
+                />
+                <p>Sam Worthington</p>
               </div>
+              <div className="actorsInfo">
+                <img
+                  src="./pictures/actor1.jpeg"
+                  className="castPictures"
+                  alt=""
+                />
+                <p>Sam Worthington</p>
+              </div>
+              <div className="actorsInfo">
+                <img
+                  src="./pictures/actor1.jpeg"
+                  className="castPictures"
+                  alt=""
+                />
+                <p>Sam Worthington</p>
+              </div>
+            </div> */}
 
-              <div className="trailerTitle">Trailer</div>
-              <iframe
-                className="trailer"
-                width="90%"
-                src="https://www.youtube.com/embed/-FZ-pPFAjYY"
-                title="YouTube video player"
-                frameBorder="10"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen"
-                allowFullScreen
-              />
-            </div>
+            <div className="trailerTitle">Trailer</div>
+            <iframe
+              className="trailer"
+              width="90%"
+              src="https://www.youtube.com/embed/-FZ-pPFAjYY"
+              title="YouTube video player"
+              frameBorder="10"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen"
+              allowFullScreen
+            />
           </div>
         </div>
       </>
