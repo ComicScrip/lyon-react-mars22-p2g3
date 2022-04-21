@@ -18,7 +18,7 @@ function HomePage() {
         </h3>
         <div className="blockButton">
           <Link to="/moviepicker" className="actionBtn">
-            ACTION
+            ACTION !
           </Link>
         </div>
       </div>
