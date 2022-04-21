@@ -14,9 +14,12 @@ function DisplayMovie({ movie }) {
           <div className="mainContent">
             <div className="detailsInfo">
               <h1 className="title"> {movie.title} </h1>
-              <p>
-                <span className="year"> {movie.year} </span> {movie.runtimeStr}
-              </p>
+              <div className="movieInfo">
+                <p>
+                  <span className="year">{movie.year}</span>
+                  <span>{movie.runtimeStr}</span> {movie.countries}
+                </p>
+              </div>
               <p>{movie.genres}</p>
               <p> {movie.directors} </p>
               <p>
@@ -42,42 +45,10 @@ function DisplayMovie({ movie }) {
               ))}
             </div>
 
-            {/* <div className="actorsInfo">
-              ici API acteurs
-              <div key="">
-                <img src="" className="castPictures" alt="" />
-                <p>Sam Worthington</p>
-              </div>
-              <div className="actorsInfo">
-                <img
-                  src="./pictures/actor3.jpeg"
-                  className="castPictures"
-                  alt=""
-                />
-                <p>Sam Worthington</p>
-              </div>
-              <div className="actorsInfo">
-                <img
-                  src="./pictures/actor1.jpeg"
-                  className="castPictures"
-                  alt=""
-                />
-                <p>Sam Worthington</p>
-              </div>
-              <div className="actorsInfo">
-                <img
-                  src="./pictures/actor1.jpeg"
-                  className="castPictures"
-                  alt=""
-                />
-                <p>Sam Worthington</p>
-              </div>
-            </div> */}
-
             <div className="trailerTitle">Trailer</div>
             <iframe
               className="trailer"
-              width="90%"
+              width="100%"
               src="https://www.youtube.com/embed/-FZ-pPFAjYY"
               title="YouTube video player"
               frameBorder="10"
