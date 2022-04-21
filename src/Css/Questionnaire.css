@@ -40,16 +40,17 @@
   border: 3px solid #fff027;
   border-radius: 20px;
   z-index: auto !important;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
 }
-.CategoryName {
-  color: #fcfdef;
-  font-family: 'Russo One';
-  font-style: normal;
-  margin-left: 23px !important;
-  padding: 39px !important;
-  font-weight: 500;
-  font-size: 22px;
+
+.cardy:hover {
+  background-color: #fff027;
+  color: #32474d;
 }
+
 .cercle {
   height: 70px;
   width: 70px;
@@ -59,7 +60,6 @@
   border-radius: 50%;
   background-color: #32474d;
   border: 2px solid #fff027;
-  cursor: pointer;
 }
 .compteur {
   width: 40px;
@@ -105,13 +105,13 @@
     width: 85px;
     height: 85px;
   }
-  .CategoryName {
+  /* .CategoryName {
     font-size: 20px;
     font-weight: 100;
     margin-left: -4px !important;
     padding: 25px 15px 15px 15px !important;
     margin-right: 1px;
-  }
+  } */
   .compteur {
     font-size: 25px;
   }
