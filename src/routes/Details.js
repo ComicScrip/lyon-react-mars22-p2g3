@@ -9,12 +9,14 @@ export default function Details() {
 
   useEffect(() => {
     axios
-      .get('https://imdb-api.com/en/API/Title/k_ns4o5sjc/tt1375666')
+      .get('https://imdb-api.com/en/API/Title/k_ns4o5sjc/tt1375666') // /k_ns4o5sjc/${id}
       .then((answer) => answer.data)
       .then((data) => {
         setMovie(data);
       });
   }, []);
+
+  //
 
   return (
     <div className="main">

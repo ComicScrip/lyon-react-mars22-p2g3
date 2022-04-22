@@ -49,7 +49,7 @@ function DisplayMovie({ movie }) {
             <iframe
               className="trailer"
               width="100%"
-              src="https://www.youtube.com/embed/-FZ-pPFAjYY"
+              src="https://www.youtube.com/embed/CPTIgILtna8" // {src }
               title="YouTube video player"
               frameBorder="10"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen"

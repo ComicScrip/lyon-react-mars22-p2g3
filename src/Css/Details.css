@@ -124,8 +124,8 @@ p {
     display: initial;
     position: relative;
     width: 100%;
-    top: -130%;
-    filter: brightness(70%);
+    top: -200%;
+    filter: brightness(60%);
   }
 
   .Cast,
