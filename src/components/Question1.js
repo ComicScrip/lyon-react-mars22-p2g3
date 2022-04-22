@@ -9,13 +9,21 @@ function Question1() {
   const handleClick = () => {
     setIsActif(isActif);
   };
+  const value = () => {
+    console.log('test');
+  };
 
   return (
     <div>
       <h2 className="question">What kind of movies do you like ?</h2>
       <section className="section_card">
         <div className="cardsx">
-          <button type="submit" className="cardy" onClick={handleClick}>
+          <button
+            type="submit"
+            className="cardy"
+            value={value}
+            onClick={handleClick}
+          >
             Comedy
           </button>
           <button type="submit" className="cardy">
