@@ -30,6 +30,13 @@ main {
 p {
   color: #fcfdef;
 }
+
+nav a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
 footer {
   background: #32474d;
   color: #fcfdef;
