@@ -1,8 +1,9 @@
 import '../Css/Details.css';
 
-function DisplayMovie({ movie }) {
+function DisplayMovie({ movie, trailer }) {
   return (
-    movie && (
+    movie,
+    trailer && (
       <>
         <div className="posterContainer" key={movie.id}>
           <img className="posterCover" src={movie.image} alt={movie.title} />
@@ -27,10 +28,8 @@ function DisplayMovie({ movie }) {
                 {movie.imDbRating}
               </p>
             </div>
-
             <h2 className="Plot">Synopsis</h2>
             <p className="moviePlot">{movie.plot}</p>
-
             <div className="Cast">Cast</div>
             <div className="castContainer">
               {movie.actorList.slice(0, 6).map((actor) => (
@@ -44,17 +43,22 @@ function DisplayMovie({ movie }) {
                 </div>
               ))}
             </div>
-
-            <div className="trailerTitle">Trailer</div>
-            <iframe
-              className="trailer"
-              width="100%"
-              src="https://www.youtube.com/embed/CPTIgILtna8" // {src }
-              title="YouTube video player"
-              frameBorder="10"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen"
-              allowFullScreen
-            />
+            <div className="trailerTitle">
+              Trailer
+              <video width="500" height="300" controls autoPlay>
+                <source
+                  src={trailer.url[1]}
+                  className="trailer"
+                  type="video/mp4"
+                />
+                <track
+                  src={trailer.url[1]}
+                  kind="captions"
+                  srcLang="en"
+                  label="english_captions"
+                />
+              </video>
+            </div>
           </div>
         </div>
       </>

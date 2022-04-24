@@ -7,6 +7,8 @@ body,
   display: flex;
   flex-direction: column;
   margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif, Roboto, Russo One;
 }
@@ -19,9 +21,14 @@ footer {
 }
 
 main {
-  padding: 10px;
+  flex-grow: 1; /*j'ai enlevé le le padding 10px car trop de soucis*/
+
   flex-grow: 1;
   background-color: #486064;
+}
+
+p {
+  color: #fcfdef;
 }
 
 nav a {
@@ -30,9 +37,10 @@ nav a {
   text-decoration: none;
   font-size: 18px;
 }
-nav {
-  display: flex;
-  justify-content: space-around;
+footer {
+  background: #32474d;
+  color: #fcfdef;
+  padding: 12px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap');

@@ -46,7 +46,7 @@ function Caroussel() {
         <Carousel.Item>
           <img className="d-block w-100" src={item.image} alt="test" />
           <Carousel.Caption>
-            <h3>{item.name}</h3>
+            <h4>{item.name}</h4>
             <p>{item.description}</p>
           </Carousel.Caption>
         </Carousel.Item>

@@ -6,22 +6,30 @@ import axios from 'axios';
 
 export default function Details() {
   const [movie, setMovie] = useState('');
+  const [trailer, SetTrailer] = useState('');
 
   useEffect(() => {
     axios
-      .get('https://imdb-api.com/en/API/Title/k_ns4o5sjc/tt1375666') // /k_ns4o5sjc/${id}
+      .get('https://imdb-api.com/en/API/Title/k_46zywf07/tt1375666') // /k_ns4o5sjc/${id}
       .then((answer) => answer.data)
       .then((data) => {
         setMovie(data);
       });
   }, []);
 
-  //
+  useEffect(() => {
+    axios
+      .get('https://imdb-api.com/API/YouTube/k_46zywf07/8hP9D6kZseM')
+      .then((answer) => answer.data.videos)
+      .then((movieInfo) => {
+        SetTrailer(movieInfo[1]);
+      });
+  }, []);
 
   return (
     <div className="main">
       <SocialMedia />
-      <DisplayMovie movie={movie} />
+      <DisplayMovie movie={movie} trailer={trailer} />
     </div>
   );
 }
