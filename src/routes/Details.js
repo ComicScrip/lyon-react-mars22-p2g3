@@ -10,7 +10,7 @@ export default function Details() {
 
   useEffect(() => {
     axios
-      .get('https://imdb-api.com/en/API/Title/k_46zywf07/tt1375666') // /k_ns4o5sjc/${id}
+      .get('https://imdb-api.com/en/API/Title/k_ns4o5sjc/tt1375666') // /k_ns4o5sjc/${id} k_46zywf07
       .then((answer) => answer.data)
       .then((data) => {
         setMovie(data);
@@ -19,7 +19,7 @@ export default function Details() {
 
   useEffect(() => {
     axios
-      .get('https://imdb-api.com/API/YouTube/k_46zywf07/8hP9D6kZseM')
+      .get('https://imdb-api.com/API/YouTube/k_ns4o5sjc/8hP9D6kZseM') // k_ns4o5sjc
       .then((answer) => answer.data.videos)
       .then((movieInfo) => {
         SetTrailer(movieInfo[1]);
