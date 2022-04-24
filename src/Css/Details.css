@@ -8,11 +8,17 @@
 .shareOn {
   display: flex;
   align-items: center;
-  margin: 2% 0%;
+  margin: 1%;
 }
 
 .shareText {
   color: #a6b7bb;
+}
+
+svg {
+  border-radius: 50%;
+  padding: 10%;
+  opacity: 90%;
 }
 
 h1 {
@@ -117,7 +123,20 @@ p {
   }
 
   .shareOn {
-    margin: 4% 0%;
+    margin: 2% 0%;
+  }
+
+  svg {
+    opacity: 75%;
+    width: initial;
+    padding: 10%;
+    border-radius: 50%;
+  }
+
+  svg:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+    transition-duration: 0.3s;
   }
 
   .posterCover {
