@@ -5,7 +5,6 @@ import Quizz from '../routes/Quizz';
 import About from '../routes/About';
 import MoviePicker from '../routes/MoviePicker';
 import '../Css/App.css';
-import DisplayMovie from './DisplayMovie';
 
 export default function Main() {
   return (
@@ -15,7 +14,7 @@ export default function Main() {
         <Route path="/about" element={<About />} />
 
         <Route path="/details" element={<Details />} />
-        <Route path="/components/DisplayMovie" element={<DisplayMovie />} />
+
         <Route path="/quizz" element={<Quizz />} />
         <Route path="/moviepicker" element={<MoviePicker />} />
       </Routes>

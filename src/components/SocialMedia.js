@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Css/Details.css';
+import { FacebookShareButton, FacebookIcon } from 'react-share';
 import { Link } from 'react-router-dom';
 
 export default function SocialMedia() {
@@ -7,13 +8,14 @@ export default function SocialMedia() {
     <div>
       <div className="shareOn">
         <div className="shareText">share on</div>
-        <Link to="//fr-fr.facebook.com/" target="_blank">
-          <img
-            src="/pictures/icons8-facebook-30.png"
-            alt="share on Facebook"
-            className="shareOnFacebook"
-          />
-        </Link>
+        <FacebookShareButton
+          url={'http://www.camperstribe.com'}
+          quote={'CinéChill helps you to find the perfect movie !'}
+          hashtag="#cinéchill"
+          className="share on Facebook"
+        >
+          <FacebookIcon size={36} />
+        </FacebookShareButton>
         <Link to="//fr-fr.facebook.com/" target="_blank.">
           <img
             src="/pictures/icons8-facebook-messenger-30.png"

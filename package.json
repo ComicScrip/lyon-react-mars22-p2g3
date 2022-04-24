@@ -19,9 +19,12 @@
     "react": "^18.0.0",
     "react-bootstrap": "^2.3.0",
     "react-dom": "^18.0.0",
+    "react-player": "^2.10.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.1",
+    "react-share": "^4.4.0",
     "react-youtube": "^8.0.0",
+    "share": "^0.7.40",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

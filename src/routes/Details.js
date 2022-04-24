@@ -2,6 +2,7 @@ import '../Css/Details.css';
 import React, { useEffect, useState } from 'react';
 import SocialMedia from '../components/SocialMedia';
 import DisplayMovie from '../components/DisplayMovie';
+import ReactPlayer from 'react-player';
 import axios from 'axios';
 
 export default function Details() {
@@ -30,6 +31,7 @@ export default function Details() {
     <div className="main">
       <SocialMedia />
       <DisplayMovie movie={movie} trailer={trailer} />
+      <ReactPlayer />
     </div>
   );
 }

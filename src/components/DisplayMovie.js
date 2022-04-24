@@ -1,4 +1,5 @@
 import '../Css/Details.css';
+import ReactPlayer from 'react-player';
 
 function DisplayMovie({ movie, trailer }) {
   return (
@@ -45,9 +46,17 @@ function DisplayMovie({ movie, trailer }) {
             </div>
             <div className="trailerTitle">
               Trailer
-              <video width="500" height="300" controls autoPlay>
+              <ReactPlayer
+                url={trailer.url[1]}
+                controls
+                playing
+                muted
+                width="100%"
+                height="100%"
+              />
+              {/* <video autoPlay width="500" height="300" controls>
                 <source
-                  src={trailer.url[1]}
+                  src={t railer.url[1]}
                   className="trailer"
                   type="video/mp4"
                 />
@@ -57,7 +66,7 @@ function DisplayMovie({ movie, trailer }) {
                   srcLang="en"
                   label="english_captions"
                 />
-              </video>
+              </video> */}
             </div>
           </div>
         </div>
