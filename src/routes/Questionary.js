@@ -1,79 +1,76 @@
+/* eslint-disable import/no-duplicates */
 import React, { useState } from 'react';
 import '../Css/App.css';
 import '../Css/Questionnaire.css';
 import '../Css/Navbar.css';
 import '../Css/index.css';
-// import Question1 from '../components/Question1';
-import { useSearchParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-const MOVIES = ['Comedy', 'Action', 'Sci-Fi', 'Drama', 'Thriller', 'Horror'];
-const YEARS = ['1980 - 2000', '2000 - 2015', '2015 - 2022'];
-
-function toObject(searchParams) {
-  const res = {};
-  // eslint-disable-next-line no-return-assign
-  searchParams.forEach((value, key) => (res[key] = value));
-  return res;
-}
+const categories = [
+  'Comedy',
+  'Action',
+  'Sci-Fi',
+  'Drama',
+  'Thriller',
+  'Horror',
+];
+const years = ['1980,1999', '2000,2010', '2011,2022'];
 
 function Questionary() {
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  // const divStyle = {
-  //   color: 'blue',
-  // };
-  const [isActif, setIsActif] = useState(false);
   const [count, setCount] = useState(1);
-  const handleClick = (step, param) => {
-    setIsActif(!isActif);
-    setCount(count + 1);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  // const [selectedYears, setSelectedYears] = useState(null);
+  const navigate = useNavigate();
 
-    if (step === 'movie') {
-      setSearchParams({
-        ...toObject(searchParams),
-        movie_category: param.toLowerCase(),
-      });
-    } else if (step === 'year') {
-      setSearchParams({
-        ...toObject(searchParams),
-        year: param.toLowerCase(),
-      });
-    }
-  };
   return (
     <div>
       <h1 className="question_title">QUESTIONS</h1>
       <div className="cercle">
-        <span className="compteur"> {count}/2</span>
+        <span className="compteur">{count}/2</span>
       </div>
       <h2 className="question">What kind of movies do you like ?</h2>
       <section className="section_card">
         <div className="cardsx">
-          {MOVIES.map((movieCategoryTitle) => (
+          {categories.map((movieCategoryTitle) => (
             <button
               type="submit"
               className="cardy"
-              onClick={() => handleClick('movie', movieCategoryTitle)}
+              onClick={() => {
+                setSelectedCategory(movieCategoryTitle);
+                setCount(count + 1);
+              }}
             >
               {movieCategoryTitle}
             </button>
           ))}
         </div>
       </section>
-      {isActif && (
+      {selectedCategory && (
         <div>
           <h2 className="question">Which year ?</h2>
           <section className="section_card">
             <div className="cardsx">
-              {YEARS.map((year) => (
-                <button
-                  type="submit"
-                  className="cardy"
-                  onClick={() => handleClick('year', year)}
-                >
-                  {year}
-                </button>
-              ))}
+              {years.map((year) => {
+                const yearToDisplay = year;
+                console.log(yearToDisplay);
+                return (
+                  <button
+                    type="submit"
+                    className="cardy"
+                    onClick={() => {
+                      // setSelectedYears(year);
+                      navigate(
+                        `/result?genres=${selectedCategory}&release_date=${year}`,
+                        {
+                          replace: true,
+                        }
+                      );
+                    }}
+                  >
+                    {yearToDisplay}
+                  </button>
+                );
+              })}
             </div>
           </section>
         </div>
