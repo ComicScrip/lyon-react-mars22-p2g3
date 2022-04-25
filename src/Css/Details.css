@@ -8,7 +8,7 @@
 .shareOn {
   display: flex;
   align-items: center;
-  margin: 1%;
+  margin: 3px;
 }
 
 .shareText {
@@ -17,7 +17,7 @@
 
 svg {
   border-radius: 50%;
-  padding: 40%;
+  padding: 10px;
   opacity: 90%;
 }
 
