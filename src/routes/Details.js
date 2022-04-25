@@ -2,6 +2,8 @@ import '../Css/Details.css';
 import React, { useEffect, useState } from 'react';
 import SocialMedia from '../components/SocialMedia';
 import DisplayMovie from '../components/DisplayMovie';
+import '../Css/App.css';
+import '../Css/Navbar.css';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
@@ -12,7 +14,7 @@ export default function Details() {
 
   useEffect(() => {
     axios
-      .get(`https://imdb-api.com/en/API/Title/k_vigm7k1b/${id}`) // /k_ns4o5sjc/${id} k_46zywf07
+      .get(`https://imdb-api.com/en/API/Title/k_vigm7k1b/${id}`) // tt1375666 k_46zywf07
       .then((answer) => answer.data)
       .then((data) => {
         setMovie(data);

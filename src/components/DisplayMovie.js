@@ -1,8 +1,8 @@
 import '../Css/Details.css';
 import ReactPlayer from 'react-player';
+import '../Css/App.css';
 
 function DisplayMovie({ movie, trailer }) {
-  console.log(trailer);
   return (
     movie,
     trailer && (
