@@ -2,6 +2,7 @@ import '../Css/Details.css';
 import ReactPlayer from 'react-player';
 
 function DisplayMovie({ movie, trailer }) {
+  console.log(trailer);
   return (
     movie,
     trailer && (
@@ -47,7 +48,7 @@ function DisplayMovie({ movie, trailer }) {
             <div className="trailerTitle">
               Trailer
               <ReactPlayer
-                url={trailer.url[1]}
+                url={trailer.url}
                 controls
                 playing
                 muted

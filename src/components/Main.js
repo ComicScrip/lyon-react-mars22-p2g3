@@ -14,6 +14,7 @@ export default function Main() {
         <Route path="/about" element={<About />} />
 
         <Route path="/details" element={<Details />} />
+        {/* ${id} */}
 
         <Route path="/quizz" element={<Quizz />} />
         <Route path="/moviepicker" element={<MoviePicker />} />
