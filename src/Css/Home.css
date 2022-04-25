@@ -1,0 +1,149 @@
+/************************************************************ GRAND ECRAN ****************************************/
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Russo One', sans-serif;
+}
+h3 {
+  color: #ffffff;
+  max-width: 600px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.generalContainer {
+  margin: 0;
+  width: 100%;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  height: 400px;
+  background-image: url(/public/img/incpetion-3.jpg.png);
+  padding: 30px;
+  border-color: #fff027;
+}
+
+.homeContainerTwo {
+  background-color: #486064;
+  padding-top: 30px;
+}
+
+.workContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.descriptionContainer {
+  border: 4px solid #fff027;
+  text-align: center;
+  background-color: #32474d;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.icons {
+  padding: 4px;
+}
+
+.underTitle {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.underTitle-2 {
+  font-size: 'Roboto', sans-serif;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+}
+
+.welcome {
+  color: white;
+}
+
+.blockButton {
+  margin-top: 20px;
+}
+
+.actionBtn {
+  background-color: #fff027;
+  text-decoration: none;
+  color: rgb(78, 78, 78);
+  padding: 0.5rem 3rem;
+  border: 2px solid #fff027;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.07rem;
+}
+
+.actionBtn:hover {
+  background-color: #32474d;
+  color: rgb(255, 255, 255);
+  margin: 0.5 auto;
+}
+.welcome {
+  color: white;
+}
+
+@media only screen and (max-width: 440px) {
+  .social-container {
+    display: none;
+  }
+
+  .underTitle {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .homeContainer {
+    height: 400px;
+  }
+
+  .workContainer {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+
+  .descriptionContainer {
+    margin: 20px;
+  }
+
+  .icons {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 1240px) {
+  .workContainer {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+
+  .homeContainerTwo {
+    margin-top: 40px;
+  }
+
+  .descriptionContainer {
+    margin: 20px;
+  }
+}
