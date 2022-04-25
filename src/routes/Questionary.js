@@ -14,13 +14,24 @@ const categories = [
   'Thriller',
   'Horror',
 ];
-const years = ['1980,1999', '2000,2010', '2011,2022'];
+
+const years = [
+  { minYear: 1980, maxYear: 1999 },
+  { minYear: 2000, maxYear: 2010 },
+  { minYear: 2011, maxYear: 2022 },
+];
+
+const formSteps = ['film_categories', 'film_years'].map((step) => ({
+  id: step,
+}));
 
 function Questionary() {
   const [count, setCount] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState(null);
   // const [selectedYears, setSelectedYears] = useState(null);
   const navigate = useNavigate();
+
+  console.log({ selectedCategory });
 
   return (
     <div>
@@ -34,10 +45,14 @@ function Questionary() {
           {categories.map((movieCategoryTitle) => (
             <button
               type="submit"
-              className="cardy"
+              className={`cardy ${
+                selectedCategory === movieCategoryTitle ? 'selected' : ''
+              }`}
               onClick={() => {
                 setSelectedCategory(movieCategoryTitle);
-                setCount(count + 1);
+                if (count < formSteps.length) {
+                  setCount(count + 1);
+                }
               }}
             >
               {movieCategoryTitle}
@@ -50,27 +65,23 @@ function Questionary() {
           <h2 className="question">Which year ?</h2>
           <section className="section_card">
             <div className="cardsx">
-              {years.map((year) => {
-                const yearToDisplay = year;
-                console.log(yearToDisplay);
-                return (
-                  <button
-                    type="submit"
-                    className="cardy"
-                    onClick={() => {
-                      // setSelectedYears(year);
-                      navigate(
-                        `/result?genres=${selectedCategory}&release_date=${year}`,
-                        {
-                          replace: true,
-                        }
-                      );
-                    }}
-                  >
-                    {yearToDisplay}
-                  </button>
-                );
-              })}
+              {years.map(({ minYear, maxYear }) => (
+                <button
+                  type="submit"
+                  className="cardy"
+                  onClick={() => {
+                    // setSelectedYears(year);
+                    navigate(
+                      `/result?genres=${selectedCategory}&release_date=${minYear},${maxYear}`,
+                      {
+                        replace: true,
+                      }
+                    );
+                  }}
+                >
+                  {minYear} - {maxYear}
+                </button>
+              ))}
             </div>
           </section>
         </div>

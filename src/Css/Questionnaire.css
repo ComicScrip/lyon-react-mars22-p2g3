@@ -51,6 +51,11 @@
   color: #32474d;
 }
 
+.cardy.selected {
+  background-color: #fff027;
+  color: #32474d;
+}
+
 .cercle {
   height: 70px;
   width: 70px;
