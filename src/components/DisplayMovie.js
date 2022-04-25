@@ -52,22 +52,10 @@ function DisplayMovie({ movie, trailer }) {
                 controls
                 playing
                 muted
+                className="trailer"
                 width="100%"
                 height="100%"
               />
-              {/* <video autoPlay width="500" height="300" controls>
-                <source
-                  src={t railer.url[1]}
-                  className="trailer"
-                  type="video/mp4"
-                />
-                <track
-                  src={trailer.url[1]}
-                  kind="captions"
-                  srcLang="en"
-                  label="english_captions"
-                />
-              </video> */}
             </div>
           </div>
         </div>
