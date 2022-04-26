@@ -6,23 +6,25 @@
   text-align: center;
   color: #fff027;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: 30px 0 20px 0;
 }
 .question {
   font-family: 'Russo One';
   padding: 15px !important;
+  margin: 30px;
   text-align: center;
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
-  line-height: 43px;
+  font-size: 35px;
   color: #ffffff;
 }
 .section_card {
   display: grid;
   align-items: center;
   justify-content: center;
+  margin: 10px 0 40px 0;
 }
-.cardsx {
+.cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px 2em !important;
@@ -30,9 +32,9 @@
   align-items: center;
   justify-content: center;
 }
-.cardy {
-  width: 200px !important;
-  height: 110px !important;
+.card {
+  width: 250px !important;
+  height: 130px !important;
   margin: 5px;
   justify-content: center;
   align-items: center;
@@ -40,16 +42,23 @@
   border: 3px solid #fff027;
   border-radius: 20px;
   z-index: auto !important;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  font-family: 'Roboto', 'sans serif';
+  font-weight: bold;
 }
-.CategoryName {
-  color: #fcfdef;
-  font-family: 'Russo One';
-  font-style: normal;
-  margin-left: 23px !important;
-  padding: 39px !important;
-  font-weight: 500;
-  font-size: 22px;
+
+.card:hover {
+  background-color: #fff027;
+  color: #32474d;
 }
+
+.card.selected {
+  background-color: #fff027;
+  color: #32474d;
+}
+
 .cercle {
   height: 70px;
   width: 70px;
@@ -59,7 +68,7 @@
   border-radius: 50%;
   background-color: #32474d;
   border: 2px solid #fff027;
-  cursor: pointer;
+  text-align: center;
 }
 .compteur {
   width: 40px;
@@ -67,16 +76,19 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  margin-left: 9px;
-  line-height: 60px;
+  font-size: 28px;
+  line-height: 65px;
   color: #fcfdef;
+}
+
+.click {
+  background: red;
 }
 @media screen and (max-width: 700px) {
   .question_title {
     font-family: 'Russo One';
     font-weight: 400;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 36px;
   }
   .question {
@@ -84,36 +96,28 @@
     font-weight: normal;
     font-size: 22px;
     line-height: 25px;
+    margin: 15px;
   }
-  .cardxs {
-    display: grid;
-    background-color: #32474d;
-    grid-template-columns: 1fr 1fr;
-    gap: 3px 1em;
-    padding: 23px !important;
-    margin: 220px !important;
-    align-items: center;
-    justify-content: center;
-  }
-  .cardy {
-    width: 100px !important;
-    height: 80px !important;
+
+  .card {
+    width: 140px !important;
+    height: 90px !important;
+    font-size: 22px;
   }
   .cercle {
-    padding: 10px;
-    margin-left: 170px;
-    width: 85px;
-    height: 85px;
+    height: 60px;
+    width: 60px;
+    margin: auto;
   }
-  .CategoryName {
-    font-size: 20px;
-    font-weight: 100;
-    margin-left: -4px !important;
-    padding: 25px 15px 15px 15px !important;
-    margin-right: 1px;
-  }
+
   .compteur {
     font-size: 25px;
+  }
+
+  .compteur {
+    font-size: 23px;
+    line-height: 60px;
+    color: #fcfdef;
   }
 
   .question_title {
@@ -127,6 +131,9 @@
   }
   .section_card {
     margin: 10px;
-    padding: 30px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
