@@ -31,8 +31,6 @@ function Questionary() {
   // const [selectedYears, setSelectedYears] = useState(null);
   const navigate = useNavigate();
 
-  console.log({ selectedCategory });
-
   return (
     <div>
       <h1 className="question_title">QUESTIONS</h1>
@@ -41,11 +39,12 @@ function Questionary() {
       </div>
       <h2 className="question">What kind of movies do you like ?</h2>
       <section className="section_card">
-        <div className="cardsx">
+        <div className="cards">
           {categories.map((movieCategoryTitle) => (
             <button
+              key={movieCategoryTitle}
               type="submit"
-              className={`cardy ${
+              className={`card ${
                 selectedCategory === movieCategoryTitle ? 'selected' : ''
               }`}
               onClick={() => {
@@ -62,13 +61,14 @@ function Questionary() {
       </section>
       {selectedCategory && (
         <div>
-          <h2 className="question">Which year ?</h2>
+          <h2 className="question">Which release year ?</h2>
           <section className="section_card">
-            <div className="cardsx">
+            <div className="cards">
               {years.map(({ minYear, maxYear }) => (
                 <button
+                  key={minYear}
                   type="submit"
-                  className="cardy"
+                  className="card"
                   onClick={() => {
                     // setSelectedYears(year);
                     navigate(
