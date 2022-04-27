@@ -46,6 +46,16 @@ function Navabar() {
         </li>
         <li className="navbar_item slideInDown-3">
           <NavLink
+            to="/quote"
+            style={getActiveLinkStyle}
+            className="navbar_link"
+            onClick={handleShowLinks}
+          >
+            Quote
+          </NavLink>
+        </li>
+        <li className="navbar_item slideInDown-3">
+          <NavLink
             to="/about"
             style={getActiveLinkStyle}
             className="navbar_link"

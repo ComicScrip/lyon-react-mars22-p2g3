@@ -1,0 +1,60 @@
+.page-title {
+  font-style: normal;
+  font-size: 30px;
+  font-family: 'Russo One', sans serif;
+  line-height: 36px;
+  color: #fff027;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: 30px 0 20px 0;
+}
+
+.quote-introduction {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+}
+
+.quote-title {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Russo One', sans serif;
+  color: #fff027;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: 30px 0 20px 0;
+}
+
+.quote-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.quote-name {
+  background: #a6b7bb;
+  width: 30%;
+  height: 70px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.quote {
+  background: #a6b7bb;
+  width: 60%;
+  height: 70px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-style: italic;
+}
+
+textarea::placeholder {
+  font-size: 14px;
+  font-style: italic;
+}
