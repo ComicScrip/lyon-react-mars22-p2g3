@@ -58,3 +58,55 @@ textarea::placeholder {
   font-size: 14px;
   font-style: italic;
 }
+
+.form_quote {
+  display: flex;
+  flex-direction: column;
+  align-item: center;
+  margin: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .form_global {
+    width: 600px;
+  }
+
+  .content_desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .page-title {
+    margin: 500px 0 20px 0;
+    font-size: 35px;
+    margin: 20px 400px;
+  }
+
+  .quote-introduction {
+    font-size: 25px;
+    margin: 50px 0;
+  }
+
+  .quote-name {
+    background: #a6b7bb;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 25px;
+    margin-right: 20px;
+  }
+
+  .quote-content {
+  }
+
+  .quote {
+    background: #a6b7bb;
+    width: 500px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 25px;
+  }
+}
