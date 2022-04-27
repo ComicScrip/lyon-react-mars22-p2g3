@@ -32,6 +32,8 @@
 .list-movie {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px;
 }
 
 .movie {
@@ -42,8 +44,6 @@
 
 .poster {
   border-radius: 20px;
-  width: 270px;
-  height: 400px;
   margin-left: 40px;
   margin-right: 40px;
   cursor: pointer;
