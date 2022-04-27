@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Filters from '../components/Filters';
 import Card from '../components/Card';
 import axios from 'axios';
 import '../Css/Result.css';
@@ -16,10 +17,10 @@ export default function Result() {
         setResults(data);
       });
   }, []);
-  console.log(results);
   return (
     <>
       <h1 className="title-result">Result</h1>
+      <Filters />
       <Card movie={results} />
     </>
   );
