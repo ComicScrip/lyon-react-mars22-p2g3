@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Css/App.css';
 import '../Css/Home.css';
 import videoBg from '../img/videoBg.mp4';
+import Sidebar from '../components/Sidebar';
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <div className="homeContainer">
         <video className="videoBg" src={videoBg} autoPlay loop muted />
         <div className="overlay">
+          <Sidebar />
           <h1 className="title">
             <span className="welcome">Welcome to</span> CINECHILL !
           </h1>
