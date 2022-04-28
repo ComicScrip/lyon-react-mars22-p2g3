@@ -70,11 +70,13 @@ export default function Result() {
           <option key={''} value={''}>
             All
           </option>
-          {['Action', 'Comedy', 'Horror'].map((genre) => (
-            <option key={genre} value={genre}>
-              {genre}
-            </option>
-          ))}
+          {['Action', 'Comedy', 'Horror', 'Drama', 'Thriller', 'Animation'].map(
+            (genre) => (
+              <option key={genre} value={genre}>
+                {genre}
+              </option>
+            )
+          )}
         </select>
       </form>
 
