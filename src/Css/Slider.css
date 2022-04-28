@@ -1,0 +1,12 @@
+* {
+  color: #000;
+}
+
+.containerSlide {
+  width: 900px;
+  margin: auto;
+}
+
+.containerSlide img {
+  height: 500px;
+}

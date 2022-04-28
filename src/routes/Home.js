@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Css/App.css';
 import '../Css/Home.css';
-import { Link } from 'react-router-dom';
+import Slideshow from '../components/Slider';
 
 function Home() {
   return (
     <div className="generalContainer">
+      <Slideshow />
       <div className="homeContainer">
         <h1 className="title">
           <span className="welcome">Welcome to</span> CINECHILL !

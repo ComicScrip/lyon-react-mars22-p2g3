@@ -16,7 +16,6 @@ h3 {
 
 .generalContainer {
   margin: 0;
-  width: 100%;
 }
 
 .homeContainer {
@@ -24,7 +23,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   background-size: cover;
-  height: 400px;
+  height: 430px;
   background-image: url(/public/img/incpetion-3.jpg.png);
   padding: 30px;
   border-color: #fff027;
@@ -32,13 +31,14 @@ h3 {
 
 .homeContainerTwo {
   background-color: #486064;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .workContainer {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .descriptionContainer {
@@ -63,7 +63,8 @@ h3 {
 
 .underTitle-2 {
   font-size: 'Roboto', sans-serif;
-  width: 80%;
+  width: 70%;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   font-size: 14px;
@@ -82,7 +83,7 @@ h3 {
   text-decoration: none;
   color: rgb(78, 78, 78);
   padding: 0.5rem 3rem;
-  border: 2px solid #fff027;
+  border: 3px solid #fff027;
   border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -99,14 +100,15 @@ h3 {
   color: white;
 }
 
+/************************************************************ mediaquery ****************************************/
+
 @media only screen and (max-width: 440px) {
   .social-container {
     display: none;
   }
 
   .underTitle {
-    font-size: 14px;
-    width: 100%;
+    font-size: 16px;
   }
 
   .homeContainer {
@@ -139,8 +141,12 @@ h3 {
     flex-direction: column;
   }
 
+  .underTitle {
+    font-size: 18px;
+  }
+
   .homeContainerTwo {
-    margin-top: 40px;
+    margin-top: 10px;
   }
 
   .descriptionContainer {
