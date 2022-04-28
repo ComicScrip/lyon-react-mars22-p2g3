@@ -4,7 +4,7 @@ function Card({ movie }) {
   return (
     movie && (
       <div className="list-movie">
-        {movie.map((movies) => (
+        {movie.slice(0, 10).map((movies) => (
           <div key={movies.id} className="movie">
             <img className="poster" alt={movies.title} src={movies.image} />
             <h3 className="title-movie">{movies.title}</h3>
