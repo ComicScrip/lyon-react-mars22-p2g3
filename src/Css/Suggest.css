@@ -5,16 +5,16 @@
   line-height: 36px;
   color: #fff027;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  margin: 30px 0 20px 0;
+  margin: 30px 0 40px 0;
 }
 
 .quote-introduction {
   font-family: 'Roboto';
   font-weight: bold;
-  font-size: 22px;
-  line-height: 25px;
+  font-size: 25px;
   text-align: center;
   color: white;
+  margin: 50px 0 40px 0;
 }
 
 .quote-title {
@@ -22,13 +22,13 @@
   font-size: 25px;
   font-family: 'Russo One', sans serif;
   color: #fff027;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  margin: 30px 0 20px 0;
+  margin: 40px 0 20px 0;
 }
 
 .quote-content {
   display: flex;
   justify-content: space-around;
+  margin: 20px 10px;
 }
 
 .quote-name {
@@ -45,8 +45,14 @@
   width: 60%;
   height: 70px;
   border-radius: 10px;
-  text-align: center;
-  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote > p {
+  color: black;
+  maring: none !important;
 }
 
 input::placeholder {
@@ -66,6 +72,55 @@ textarea::placeholder {
   margin: 20px;
 }
 
+.input-form-name {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.message-form-quote {
+  padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 0 0 15px 0;
+}
+
+.input-submit-form {
+  margin: auto;
+  width: 100px;
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid yellow;
+  border-radius: 15px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff027;
+}
+
+.input-submit-form:hover {
+  background: #fff027;
+  color: #486064;
+}
+
+.gif {
+  width: 80%;
+  display: block;
+  margin: auto !important;
+  filter: drop-shadow(3px 3px 40px black);
+  border-radius: 10px;
+}
+
 @media screen and (min-width: 700px) {
   .form_global {
     width: 600px;
@@ -78,14 +133,13 @@ textarea::placeholder {
   }
 
   .page-title {
-    margin: 500px 0 20px 0;
-    font-size: 35px;
-    margin: 20px 400px;
+    font-size: 45px;
+    margin: 50px 0 80px 0;
   }
 
   .quote-introduction {
-    font-size: 25px;
-    margin: 50px 0;
+    font-size: 35px;
+    margin-top: 100px;
   }
 
   .quote-name {
@@ -94,7 +148,6 @@ textarea::placeholder {
     height: 70px;
     border-radius: 10px;
     text-align: center;
-    padding-top: 25px;
     margin-right: 20px;
   }
 
@@ -107,6 +160,19 @@ textarea::placeholder {
     height: 70px;
     border-radius: 10px;
     text-align: center;
-    padding-top: 25px;
+  }
+
+  .quote-title {
+    font-size: 28px;
+    margin: 20px 0 20px 0;
+  }
+
+  .gif {
+    width: 40%;
+  }
+
+  .input-submit-form {
+    width: 130px;
+    padding: 5px;
   }
 }

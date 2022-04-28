@@ -1,13 +1,25 @@
-import { useState } from 'react';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+import DisplayQuote from '../components/DisplayQuote';
 import '../Css/Suggest.css';
 
 function Quote() {
   const [form, setForm] = useState({ name: '', quote: '' });
-  // const [quote, setQuote] = useState(false);
+  const [quotes, setQuotes] = useState('');
 
-  const contentQuote = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form.name, form.quote);
+    axios
+      .post(
+        'https://lyon-react-mars22-p2g3-api.comicscrip.duckdns.org/quotes',
+        {
+          name: form.name,
+          comment: form.quote,
+        }
+      )
+      .then((res) =>
+        setQuotes((currentQuotes) => [...currentQuotes, res.data])
+      );
   };
   const updateDisplayQuote = (e) => {
     setForm({
@@ -16,22 +28,35 @@ function Quote() {
     });
   };
 
+  useEffect(() => {
+    axios
+      .get('https://lyon-react-mars22-p2g3-api.comicscrip.duckdns.org/quotes')
+      .then((res) => res.data)
+      .then((data) => {
+        setQuotes(data);
+      });
+  }, []);
+
+  const movieGif = require('../img/movie.gif');
+
   return (
     <div>
       <h1 className="page-title">SUGGEST A QUOTE</h1>
+      <img className="gif" src={movieGif} alt="wait until the page loads" />
       <p className="quote-introduction">
-        You can share a cult quote from a movie
+        Share a cult quote from your favorite movie !
       </p>
       <div className="content_desktop">
         <div className="form_global">
-          <form className="form_quote">
+          <h2 className="quote-title">Fill the form to suggest a quote</h2>
+          <form className="form_quote" onSubmit={handleSubmit}>
             <label htmlFor="name" className="label_form">
               Name
             </label>
             <input
               type="text"
               name="name"
-              className="input_form_name"
+              className="input-form-name"
               placeholder="Enter your name"
               value={form.name}
               onChange={updateDisplayQuote}
@@ -42,27 +67,16 @@ function Quote() {
             </label>
             <textarea
               name="quote"
-              className="message_form"
+              className="message-form-quote"
               placeholder="Enter your favorite quote"
               value={form.quote}
               onChange={updateDisplayQuote}
               required
             />
-            <input
-              type="submit"
-              value="Submit"
-              className="submit_form"
-              onClick={contentQuote}
-            />
+            <input type="submit" value="Submit" className="input-submit-form" />
           </form>
         </div>
-        <div>
-          <h2 className="quote-title">Quote suggested</h2>
-          <div className="quote-content">
-            <div className="quote-name" />
-            <div className="quote" />
-          </div>
-        </div>
+        <DisplayQuote quotes={quotes} />
       </div>
     </div>
   );
