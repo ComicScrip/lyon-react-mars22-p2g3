@@ -3,15 +3,31 @@
 h1 {
   text-align: center;
   color: #ffffff;
+  padding-top: 10px;
   font-family: 'Russo One', sans-serif;
 }
 h3 {
   color: #ffffff;
-  max-width: 600px;
-  margin-top: 0;
+  max-width: 700px;
   margin-bottom: 20px;
+  font-size: 20px !important;
   text-align: center;
-  font-weight: 200;
+}
+
+.overlay {
+  position: absolute;
+  width: 80%;
+  padding-top: 50px;
+}
+.videoBg {
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome {
+  color: white;
 }
 
 .generalContainer {
@@ -23,14 +39,13 @@ h3 {
   flex-direction: column;
   align-items: center;
   background-size: cover;
-  height: 430px;
-  background-image: url(/public/img/incpetion-3.jpg.png);
-  padding: 30px;
+  width: 100%;
+  height: 88vh;
   border-color: #fff027;
 }
 
 .homeContainerTwo {
-  background-color: #486064;
+  /*background-color: #486064;*/
   padding-top: 40px;
 }
 
@@ -39,12 +54,13 @@ h3 {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
 }
 
 .descriptionContainer {
   border: 4px solid #fff027;
   text-align: center;
-  background-color: #32474d;
+  /*background-color: #32474d;*/
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -56,9 +72,8 @@ h3 {
 }
 
 .underTitle {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .underTitle-2 {
@@ -70,12 +85,9 @@ h3 {
   font-size: 14px;
 }
 
-.welcome {
-  color: white;
-}
-
 .blockButton {
-  margin-top: 20px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .actionBtn {
@@ -86,6 +98,7 @@ h3 {
   border: 3px solid #fff027;
   border-radius: 10px;
   font-size: 20px;
+
   font-weight: bold;
   cursor: pointer;
   letter-spacing: 0.07rem;
@@ -94,25 +107,29 @@ h3 {
 .actionBtn:hover {
   background-color: #32474d;
   color: rgb(255, 255, 255);
-  margin: 0.5 auto;
-}
-.welcome {
-  color: white;
 }
 
 /************************************************************ mediaquery ****************************************/
 
 @media only screen and (max-width: 440px) {
+  .title {
+    font-size: 28px !important;
+  }
+  .videoBg {
+    opacity: 0.6;
+  }
+
   .social-container {
     display: none;
   }
 
   .underTitle {
     font-size: 16px;
+    margin-top: 40px;
   }
 
   .homeContainer {
-    height: 400px;
+    height: 380px;
   }
 
   .workContainer {
@@ -139,6 +156,18 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 80%;
+    padding-top: 50px;
+  }
+  .videoBg {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .underTitle {
