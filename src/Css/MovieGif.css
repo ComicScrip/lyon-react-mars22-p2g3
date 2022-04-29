@@ -1,0 +1,50 @@
+.title_h1 {
+  font-style: normal;
+  font-size: 30px;
+  font-family: 'Russo One', sans serif;
+  line-height: 36px;
+  color: #fff027;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: 30px 0 40px 0;
+}
+
+.input-submit-form {
+  margin: auto;
+  width: 100px;
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid yellow;
+  border-radius: 15px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff027;
+}
+.containerAll {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieDiv1 .movieDiv2 {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .containerAll {
+    display: flex;
+  }
+  .movieDiv1 {
+    background: url(../img/movie.png) no-repeat center center/cover;
+    width: 20%;
+    height: 20%;
+    border-radius: 1px;
+  }
+
+  /* .movieDiv2 {
+        
+      } */
+}

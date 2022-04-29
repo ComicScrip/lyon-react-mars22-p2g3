@@ -4,6 +4,7 @@ import Details from '../routes/Details';
 import About from '../routes/About';
 import MoviePicker from '../routes/MoviePicker';
 import Quote from '../routes/Quote';
+import MovieGif from '../routes/MovieGif';
 import '../Css/App.css';
 
 export default function Main() {
@@ -15,6 +16,7 @@ export default function Main() {
         <Route path="/details/:id" element={<Details />} />
         <Route path="/moviepicker" element={<MoviePicker />} />
         <Route path="/quote" element={<Quote />} />
+        <Route path="/movieGif" element={<MovieGif />} />
       </Routes>
     </main>
   );
