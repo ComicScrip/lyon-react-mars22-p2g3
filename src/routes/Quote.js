@@ -9,7 +9,6 @@ function Quote() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setForm(!form);
     axios
       .post(
         'https://lyon-react-mars22-p2g3-api.comicscrip.duckdns.org/quotes',
