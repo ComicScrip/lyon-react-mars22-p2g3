@@ -13,6 +13,8 @@
   },
   "plugins": ["react"],
   "rules": {
+    "function-paren-newline": "off",
+    "implicit-arrow-linebreak": "off",
     "jsx-a11y/media-has-caption": [
       2,
       {
