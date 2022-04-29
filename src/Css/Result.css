@@ -37,7 +37,7 @@
 }
 
 .poster {
-  width: 230px;
+  width: 90%;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -79,7 +79,7 @@
   }
 
   .movie {
-    padding: 49px;
+    padding: 50px;
   }
 }
 
