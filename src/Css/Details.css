@@ -142,15 +142,15 @@ p {
   .posterCover {
     display: initial;
     position: relative;
-    width: 100%;
-    top: -200%;
+    width: 92%;
+    top: -180%;
     filter: brightness(60%);
   }
 
   .Cast,
   .Plot,
   .trailerTitle {
-    margin: 3% 2%;
+    margin: 3% 3%;
     filter: drop-shadow(0 0 0.75rem black);
   }
 
@@ -166,11 +166,11 @@ p {
   }
 
   .mainContent {
-    margin: 0% 7%;
+    margin: 0% 2%;
   }
 
   .infoContainer {
-    margin: 0% 10%;
+    margin: 0% 12%;
     display: flex;
     align-items: flex-start;
     z-index: 1;
@@ -178,7 +178,6 @@ p {
 
   .castContainer {
     width: 650px;
-    height: 100%;
   }
 
   .castPictures {

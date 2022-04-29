@@ -49,9 +49,8 @@ function DisplayMovie({ movie, trailer }) {
               Trailer
               <ReactPlayer
                 url={trailer.url}
+                alt={trailer.title}
                 controls
-                playing
-                muted
                 className="trailer"
                 width="100%"
                 height="100%"
