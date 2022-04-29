@@ -1,0 +1,19 @@
+.social-container {
+  position: fixed;
+  margin-top: 150px;
+  right: 0;
+  background-color: #32474d5d;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+  .social-container {
+    display: none;
+  }
+}
