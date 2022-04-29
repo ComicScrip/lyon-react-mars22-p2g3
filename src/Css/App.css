@@ -1,13 +1,13 @@
-.title {
-  text-align: center;
-  color: #fff027;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
+}
+
+.title {
+  text-align: center;
+  color: #fff027;
 }
 
 ul {
