@@ -113,6 +113,10 @@ h3 {
     font-size: 28px !important;
   }
 
+  .overlay {
+    width: 90%;
+  }
+
   .underTitle {
     font-size: 16px;
     margin-top: 40px;

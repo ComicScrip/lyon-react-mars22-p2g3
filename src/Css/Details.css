@@ -1,0 +1,196 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.shareOn {
+  display: flex;
+  align-items: center;
+  margin: 3px;
+}
+
+.shareText {
+  color: #a6b7bb;
+}
+
+svg {
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 90%;
+}
+
+h1 {
+  font-family: 'Russo One', sans serif;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+.poster {
+  max-width: 100vw;
+  max-height: 70vh;
+}
+
+.posterCover {
+  display: none;
+}
+
+.mainContent {
+  margin: 3%;
+}
+
+h2,
+.Cast,
+.Plot,
+.trailerTitle {
+  font-size: 1.8em;
+  color: #fff129;
+  text-align: left;
+  font-family: 'Russo One', sans serif;
+  margin: 5% 0%;
+}
+
+.castContainer {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+
+.castPictures {
+  width: 110px;
+  height: 130px;
+  border-radius: 15px;
+  margin: 7px;
+}
+
+.actorsInfo {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  color: #fcfdef;
+  font-family: 'Roboto', sans serif;
+}
+
+.actorsInfo > p {
+  font-size: 15px;
+}
+
+.movieInfo span {
+  margin: 10px;
+}
+
+.year {
+  color: #a6b7bb;
+}
+
+.movieInfo > span {
+  margin: 20px;
+}
+
+.rating {
+  color: #fff027;
+}
+
+.moviePlot {
+  font-size: 18px;
+  text-align: justify;
+  margin: 1% 2%;
+}
+
+.trailer {
+  width: 85vw;
+  border-radius: 10px;
+  margin: 2% 0%;
+  border: 2px solid #fff027;
+}
+
+@media screen and (min-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .posterContainer {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .shareOn {
+    margin: 2% 0%;
+  }
+
+  svg {
+    opacity: 75%;
+    width: initial;
+    padding: 10%;
+    border-radius: 50%;
+  }
+
+  svg:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+  }
+
+  .posterCover {
+    display: initial;
+    position: relative;
+    width: 100%;
+    top: -200%;
+    filter: brightness(60%);
+  }
+
+  .Cast,
+  .Plot,
+  .trailerTitle {
+    margin: 3% 2%;
+    filter: drop-shadow(0 0 0.75rem black);
+  }
+
+  .detailsInfo {
+    margin-top: -15%;
+  }
+
+  .poster {
+    max-width: 30vw;
+    border-radius: 10px;
+    margin-top: -35%;
+    filter: drop-shadow(0 0 0.75rem black);
+  }
+
+  .mainContent {
+    margin: 0% 7%;
+  }
+
+  .infoContainer {
+    margin: 0% 10%;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+  }
+
+  .castContainer {
+    width: 650px;
+    height: 100%;
+  }
+
+  .castPictures {
+    width: 130px;
+    height: 150px;
+    margin: 15px;
+  }
+
+  .trailer {
+    width: 100%;
+    height: 40vh;
+    border: 3px solid #fff027;
+    filter: drop-shadow(0 0 0.75rem black);
+  }
+}
