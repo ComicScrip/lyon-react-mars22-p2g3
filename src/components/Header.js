@@ -51,7 +51,7 @@ function Navabar() {
             className="navbar_link"
             onClick={handleShowLinks}
           >
-            Quote
+            Quotes
           </NavLink>
         </li>
         <li className="navbar_item slideInDown-3">

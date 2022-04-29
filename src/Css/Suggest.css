@@ -130,6 +130,10 @@ textarea::placeholder {
   border-radius: 10px;
 }
 
+.content_desktop {
+  margin-bottom: 100px;
+}
+
 @media screen and (min-width: 700px) {
   .form_global {
     width: 600px;
