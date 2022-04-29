@@ -1,4 +1,3 @@
-/* eslint-disable import/no-duplicates */
 import React, { useState } from 'react';
 import '../Css/App.css';
 import '../Css/Questionnaire.css';
