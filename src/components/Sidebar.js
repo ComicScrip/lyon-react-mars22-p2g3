@@ -5,8 +5,8 @@ import '../Css/Sidebar.css';
 function Sidebar() {
   return (
     <div className="social-container">
-      <ul>
-        <Link to="/about">
+      <ul className="social-list">
+        <Link to="/about" className="icono">
           <img src="../img/git.png" className="icons" alt="icons" />
         </Link>
         <Link to="/about">

@@ -68,10 +68,6 @@ h3 {
   border-radius: 10px;
 }
 
-.icons {
-  padding: 4px;
-}
-
 .underTitle {
   margin-left: auto;
   margin-right: auto;
@@ -117,10 +113,6 @@ h3 {
     font-size: 28px !important;
   }
 
-  .social-container {
-    display: none;
-  }
-
   .underTitle {
     font-size: 16px;
     margin-top: 40px;
@@ -128,6 +120,7 @@ h3 {
 
   .homeContainer {
     width: 100%;
+    height: 180vh; /*car le background video ne prends pas toute la hauteur*/
   }
   .workContainer {
     display: flex;
@@ -139,10 +132,6 @@ h3 {
 
   .descriptionContainer {
     margin: 20px;
-  }
-
-  .icons {
-    margin-left: 10px;
   }
 }
 
