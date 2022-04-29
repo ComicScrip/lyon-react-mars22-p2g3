@@ -5,10 +5,11 @@ import '../Css/Suggest.css';
 
 function Quote() {
   const [form, setForm] = useState({ name: '', quote: '' });
-  const [quotes, setQuotes] = useState('');
+  const [quotes, setQuotes] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setForm(!form);
     axios
       .post(
         'https://lyon-react-mars22-p2g3-api.comicscrip.duckdns.org/quotes',
@@ -20,6 +21,7 @@ function Quote() {
       .then((res) =>
         setQuotes((currentQuotes) => [...currentQuotes, res.data])
       );
+    setForm({ name: '', quote: '' });
   };
   const updateDisplayQuote = (e) => {
     setForm({
