@@ -13,6 +13,14 @@ import {
   EmailIcon,
 } from 'react-share';
 
+// let url = 'https://lyon-react-mars22-p2g3.vercel.app';
+// if (typeof window === 'object') {
+//   url = String(window.location);
+//   console.log(url);
+// }
+
+const url = window.location.href;
+
 export default function SocialMedia() {
   return (
     <div className="shareOn">
@@ -21,7 +29,7 @@ export default function SocialMedia() {
       </div>
       <div className="shareLinks">
         <FacebookShareButton
-          url={'http://localhost:3000/details'}
+          url={url}
           quote={'CinéChill helps you to find the perfect movie !'}
           hashtag="#cinéchill"
           className="shareOnFacebook"
@@ -30,7 +38,7 @@ export default function SocialMedia() {
         </FacebookShareButton>
 
         <FacebookMessengerShareButton
-          url={'http://localhost:3000/details'}
+          url={url}
           quote={'CinéChill helps you to find the perfect movie !'}
           hashtag="#cinéchill"
           className="shareOnMessenger"
@@ -39,7 +47,7 @@ export default function SocialMedia() {
         </FacebookMessengerShareButton>
 
         <WhatsappShareButton
-          url={'http://localhost:3000/details'}
+          url={url}
           quote={'CinéChill helps you to find the perfect movie !'}
           hashtag="#cinéchill"
           className="shareOnWhatsApp"
@@ -47,7 +55,7 @@ export default function SocialMedia() {
           <WhatsappIcon />
         </WhatsappShareButton>
         <TwitterShareButton
-          url={'http://localhost:3000/details'}
+          url={url}
           quote={'CinéChill helps you to find the perfect movie !'}
           hashtag="#cinéchill"
           className="shareOnTwitter"
@@ -56,7 +64,7 @@ export default function SocialMedia() {
         </TwitterShareButton>
 
         <EmailShareButton
-          url={'http://localhost:3000/details'}
+          url={url}
           quote={'CinéChill helps you to find the perfect movie !'}
           hashtag="#cinéchill"
           className="shareByEmail"

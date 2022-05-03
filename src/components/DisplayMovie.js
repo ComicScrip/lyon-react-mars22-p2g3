@@ -1,6 +1,5 @@
 import '../Css/Details.css';
 import ReactPlayer from 'react-player';
-import '../Css/App.css';
 
 function DisplayMovie({ movie, trailer }) {
   return (
@@ -12,7 +11,7 @@ function DisplayMovie({ movie, trailer }) {
         </div>
         <div className="infoContainer">
           <div className="infoContainer1">
-            <img className="poster" src={movie.image} alt="movie" />
+            <img className="postermovie" src={movie.image} alt="movie" />
           </div>
           <div className="mainContent">
             <div className="detailsInfo">
@@ -48,9 +47,10 @@ function DisplayMovie({ movie, trailer }) {
             <div className="trailerTitle">
               Trailer
               <ReactPlayer
-                url={trailer.url}
-                alt={trailer.title}
+                url={trailer.videoUrl}
+                alt={`${trailer.title}trailer`}
                 controls
+                onDuration
                 className="trailer"
                 width="100%"
                 height="100%"
