@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Css/App.css';
 import '../Css/Home.css';
-import videoBg from '../img/videoBg.mp4';
+import background from '../img/background.mp4';
 import Sidebar from '../components/Sidebar';
 
 function Home() {
   return (
     <div className="generalContainer">
       <div className="homeContainer">
-        <video className="videoBg" src={videoBg} autoPlay loop muted />
+        <video className="videoBg" src={background} autoPlay loop muted />
         <div className="overlay">
           <Sidebar />
           <h1 className="title">
