@@ -37,9 +37,15 @@
 }
 
 .poster {
-  width: 90%;
+  width: 70%;
   border-radius: 20px;
   cursor: pointer;
+  overflow: hidden;
+  transition: all ease-in-out 0.4s;
+}
+
+.poster:hover {
+  transform: scale(0.9) rotate(3deg);
 }
 
 .title-movie {
@@ -70,12 +76,17 @@
   .filters {
     flex-direction: row;
   }
+
   .list-movie {
     padding-top: 50px;
     display: grid;
     grid-template-columns: 250px 250px;
     column-gap: 80px;
     justify-content: center;
+  }
+
+  .poster {
+    width: 250px;
   }
 
   .movie {

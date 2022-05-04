@@ -14,12 +14,12 @@ function toObject(searchParams) {
 
 export default function Result() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState(10);
 
   useEffect(() => {
     axios
       .get(
-        `https://imdb-api.com/API/AdvancedSearch/k_46zywf07?title_type=feature&${searchParams}`
+        `https://imdb-api.com/API/AdvancedSearch/k_ns4o5sjc?title_type=feature&${searchParams}`
       )
       .then((res) => res.data.results)
       .then((data) => {
