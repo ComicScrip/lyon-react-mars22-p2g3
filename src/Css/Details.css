@@ -102,13 +102,12 @@ p {
 }
 
 .trailer {
-  width: 85vw;
+  margin: auto;
+  border: 3px solid #fff027;
   border-radius: 10px;
-  margin: 2% 0%;
-  border: 2px solid #fff027;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .main {
     display: flex;
     flex-direction: column;
@@ -187,8 +186,7 @@ p {
   }
 
   .trailer {
-    width: 100%;
-    height: 60vh;
+    margin: 3% 0%;
     border: 3px solid #fff027;
     filter: drop-shadow(0 0 0.75rem black);
   }

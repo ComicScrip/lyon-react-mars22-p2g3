@@ -52,8 +52,8 @@ function DisplayMovie({ movie, trailer }) {
                 controls
                 onDuration
                 className="trailer"
-                width="100%"
-                height="100%"
+                width="600px"
+                height="360px"
               />
             </div>
           </div>
