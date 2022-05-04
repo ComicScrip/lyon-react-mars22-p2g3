@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import ReactPaginate from 'react-paginate';
 import Card from '../components/Card';
 import axios from 'axios';
 import '../Css/Result.css';
@@ -29,6 +30,10 @@ export default function Result() {
         alert('No search results');
       });
   }, [searchParams]);
+
+  const handlePageClick = () => {
+    console.log();
+  };
 
   return (
     <>
@@ -93,6 +98,22 @@ export default function Result() {
       </form>
 
       <Card movie={results} />
+
+      <ReactPaginate
+        previousLabel={'previous'}
+        nextLabel={'next'}
+        breakLabel={'...'}
+        pageCount={10}
+        onPageChange={handlePageClick}
+        containerClassName={'pagination justify-content-center'}
+        pageClassName={'page-item'}
+        pageLinkClassName={'page-link'}
+        previousClassName={'page-item'}
+        previousLinkClassName={'page-link'}
+        nextClassName={'page-item'}
+        nextLinkClassName={'page-link'}
+        activeClassName={'active'}
+      />
     </>
   );
 }
