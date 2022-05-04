@@ -77,7 +77,7 @@ textarea::placeholder {
 .form_quote {
   display: flex;
   flex-direction: column;
-  align-item: center;
+  align-items: center;
   margin: 20px;
 }
 
@@ -165,8 +165,8 @@ textarea::placeholder {
     padding-top: 20px;
   }
 
-  .quote-content {
-  }
+  /* .quote-content {
+  } */
 
   .quote {
     background: #a6b7bb;

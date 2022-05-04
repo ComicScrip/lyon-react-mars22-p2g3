@@ -7,8 +7,67 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   margin: 30px 0 40px 0;
 }
+.quote_intro {
+  display: flex;
+  color: #fff027;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 320;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  justify-content: center;
+}
 
-.input-submit-form {
+.paragraphe {
+  display: flex;
+  color: #fff027;
+  justify-content: center;
+}
+.form_gif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  margin: 15px;
+}
+.input-name {
+  border-radius: 8px;
+  width: 70%;
+  margin-bottom: 20px;
+  padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.message-form-gif {
+  padding: 4px;
+  width: 70%;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 0 0 15px 0;
+}
+.name_gifer {
+  width: 30%;
+  height: 15%;
+  margin-left: 35%;
+  padding-top: 5px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  background-color: #a6b7bb;
+  text-align: center !important;
+  color: #000000;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.input-submit {
   margin: auto;
   width: 100px;
   padding: 4px;
@@ -24,27 +83,92 @@
   text-align: center;
   color: #fff027;
 }
-.containerAll {
+/* .containerAll {
   display: flex;
-  flex-direction: column;
-}
-
+  flex-direction: column-reverse;
+} */
 .movieDiv1 .movieDiv2 {
   display: none;
 }
 
-@media screen and (min-width: 700px) {
+/*Les images gifs */
+.gifContainer {
+  display: grid;
+  width: 80%;
+  margin-left: 5%;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 8%;
+}
+.gifquote {
+  width: 320px;
+  height: 130px;
+  align-items: center;
+  justify-content: center;
+  margin: auto !important;
+  border: 2px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 777px) {
   .containerAll {
     display: flex;
   }
+  .page-title {
+    font-size: 40px;
+    margin: 40px 0 70px 0;
+  }
   .movieDiv1 {
-    background: url(../img/movie.png) no-repeat center center/cover;
-    width: 20%;
-    height: 20%;
+    background: url(../img/movie.png) !important;
+    width: 224px;
+    height: 235px;
+    left: 162px;
+    top: 297px;
+    filter: drop-shadow(1px 1px 5px black);
     border-radius: 1px;
   }
-
-  /* .movieDiv2 {
-        
-      } */
+  .movieDiv2 {
+    background: url(../img/movie.png) !important;
+    width: 224px;
+    height: 235px;
+    left: 162px;
+    top: 297px;
+    filter: drop-shadow(1px 1px 5px black);
+    border-radius: 1px;
+  }
+  .quote_intro {
+    color: #fff027;
+    font-family: 'Russo One';
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .global {
+    display: flex;
+    justify-content: space-around;
+  }
+  .paragraphe {
+    justify-content: center;
+    width: 100%;
+    color: #fff027;
+  }
+  /*Les images gifs */
+  .gifContainer {
+    display: grid;
+    width: 80%;
+    margin-left: 10%;
+    grid-template-columns: repeat(4, 1fr) !important;
+    padding-bottom: 5%;
+    column-gap: 1px !important;
+    gap: calc(3px + 2%);
+  }
+  .gifquote {
+    width: 330px;
+    height: 160px;
+    margin: auto !important;
+    border: 2px solid #fff027;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
 }
