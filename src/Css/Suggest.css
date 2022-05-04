@@ -1,3 +1,28 @@
+/* Button */
+
+.buttons-suggest {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.button-quote {
+  width: 120px;
+  height: 50px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff027;
+  background: #32474d;
+  border: 3px solid #fff027;
+  border-radius: 30px;
+  line-height: 40px;
+}
+
+/* Quote display + Form */
+
 .page-title {
   font-style: normal;
   font-size: 30px;
@@ -22,7 +47,7 @@
   font-size: 25px;
   font-family: 'Russo One', sans serif;
   color: #fff027;
-  margin: 40px 0 20px 0;
+  margin: 30px 0 20px 0;
 }
 
 .quote-content {
@@ -33,7 +58,7 @@
 
 .quote-name {
   background: #a6b7bb;
-  width: 30%;
+  width: 28%;
   height: 70px;
   border-radius: 10px;
   text-align: center;
@@ -132,9 +157,57 @@ textarea::placeholder {
 
 .content_desktop {
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.quote-block {
+  margin-bottom: 35px;
+}
+
+.img-trash {
+  width: 25px;
+  height: 25px;
+  margin: auto 0 auto 5px;
+}
+
+.validation-question {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.all-validation-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.validation-button {
+  width: 30%;
+  height: 40%;
+  border: 3px solid #fff027;
+  border-radius: 10px;
+  font-family: 'Russo One';
+  background: transparent;
+  color: #fff027;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.validation-button:hover {
+  background: #fff027;
+  color: #486064;
 }
 
 @media screen and (min-width: 700px) {
+  .validation-question {
+    font-size: 23px;
+  }
+
+  .validation-button {
+    font-size: 20px;
+  }
+
   .form_global {
     width: 600px;
   }
@@ -163,9 +236,6 @@ textarea::placeholder {
     text-align: center;
     margin-right: 20px;
     padding-top: 20px;
-  }
-
-  .quote-content {
   }
 
   .quote {
@@ -197,5 +267,11 @@ textarea::placeholder {
   .input-submit-form {
     width: 130px;
     padding: 5px;
+  }
+
+  .img-trash {
+    width: 30px;
+    height: 30px;
+    margin: auto 0 auto 10px;
   }
 }

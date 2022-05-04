@@ -125,11 +125,11 @@
 
   .input_form_name {
     margin: 0 0 10px 0;
-    width: 290px;
+    width: 100%;
   }
   .input_form_email {
     margin: 0 0 10px 0;
-    width: 420px;
+    width: 100%;
   }
 
   .email_desk {
@@ -138,6 +138,7 @@
 
   .message_form {
     margin: 0 0 10px 0;
+    width: 100%;
   }
 
   .submit_form {
