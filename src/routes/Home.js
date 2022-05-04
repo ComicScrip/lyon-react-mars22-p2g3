@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Css/App.css';
 import '../Css/Home.css';
-import background from '../img/background.mp4';
+import videoBG from '../img/videoBG.mp4';
 import Sidebar from '../components/Sidebar';
 
 function Home() {
   return (
     <div className="generalContainer">
       <div className="homeContainer">
-        <video className="videoBg" src={background} autoPlay loop muted />
+        <video className="videoBg" src={videoBG} autoPlay loop muted />
         <div className="overlay">
           <Sidebar />
           <h1 className="title">
@@ -17,9 +17,9 @@ function Home() {
           </h1>
           <h3 className="underTitle">
             Are you tired of spending more time looking for which movie or
-            series to see than watching the movie itself? You've come to the
-            right place, Cine-Chill is a movie search nd comparison engine that
-            will save you a lot of time.
+            series to see than watching the movie itself ? You've come to the
+            right place, Cinechill is a movie search and comparison engine that
+            will save you a lot of time !
           </h3>
           <div className="blockButton">
             <Link to="/moviepicker" className="actionBtn">

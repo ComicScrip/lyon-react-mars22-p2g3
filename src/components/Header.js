@@ -16,12 +16,14 @@ function Navabar() {
   return (
     <nav className={`navbar ${showLinks ? 'show-nav' : 'hidden-nav'}`}>
       <div>
-        <img
-          src="assets/logo.png"
-          className="logo"
-          alt="my-logo"
-          width={'94px'}
-        />
+        <NavLink to="/" className="navbar_link">
+          <img
+            src="assets/logo.png"
+            className="logo"
+            alt="my-logo"
+            width={'94px'}
+          />
+        </NavLink>
       </div>
       <ul className="items">
         <li className="navbar_item slideInDown-1">
