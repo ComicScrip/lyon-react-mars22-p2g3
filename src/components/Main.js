@@ -12,9 +12,7 @@ export default function Main() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-
         <Route path="/details/:id" element={<Details />} />
-
         <Route path="/quizz" element={<Quizz />} />
         <Route path="/moviepicker" element={<MoviePicker />} />
       </Routes>
