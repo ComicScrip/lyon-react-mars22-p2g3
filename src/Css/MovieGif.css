@@ -51,36 +51,22 @@
   margin: 0 0 15px 0;
 }
 .name_gifer {
-  width: 30%;
-  height: 80%;
+  width: 25%;
+  height: 20%;
   margin-top: 1px;
   margin-left: 35%;
   padding-top: 5px;
   font-family: 'Russo One';
-  /* font-style: normal; */
-  /* font-weight: 400; */
   font-size: 13px;
   line-height: 16px;
   background-color: #a6b7bb;
   text-align: center !important;
   color: #000000;
-  /* align-items: center; */
   border-radius: 5px;
 }
-/* width: 30%;
-  height: 25%;
-  margin-left: 35%;
-  padding-top: 5px;
-  font-family: 'Russo One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  background-color: #a6b7bb;
-  text-align: center !important;
-  color: #000000;
-  align-items: center;
-  border-radius: 5px; */
+.names {
+  margin-top: 30% !important;
+}
 
 .input-submit {
   margin: auto;
@@ -187,6 +173,6 @@
     border-radius: 10px;
   }
   .name_gifer {
-    height: 20%;
+    height: 15%;
   }
 }

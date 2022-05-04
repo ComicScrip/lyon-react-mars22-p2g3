@@ -71,7 +71,11 @@ function MovieGif() {
         {gifs.map((gif) => (
           <div key={gif.id}>
             <img src={gif.gif} alt={gif.name} className="gifquote" />
-            <p className="name_gifer">{gif.name}</p>
+            {/* <div className="names_gif"> */}
+            <p className="name_gifer">
+              <span className="names">{gif.name}</span>
+            </p>
+            {/* </div> */}
           </div>
         ))}
       </div>
