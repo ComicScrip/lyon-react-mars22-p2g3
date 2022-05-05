@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import ReactPaginate from 'react-paginate';
 import Card from '../components/Card';
 import axios from 'axios';
 import '../Css/Result.css';
@@ -15,12 +14,12 @@ function toObject(searchParams) {
 
 export default function Result() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [results, setResults] = useState(10);
+  const [results, setResults] = useState([]);
 
   useEffect(() => {
     axios
       .get(
-        `https://imdb-api.com/API/AdvancedSearch/k_ns4o5sjc?title_type=feature&${searchParams}`
+        `https://imdb-api.com/API/AdvancedSearch/k_vs0p7l26?&title_type=feature&${searchParams}`
       )
       .then((res) => res.data.results)
       .then((data) => {
@@ -31,14 +30,9 @@ export default function Result() {
       });
   }, [searchParams]);
 
-  const handlePageClick = () => {
-    console.log();
-  };
-
   return (
     <>
       <h1 className="title-result">Movies</h1>
-
       <form className="filters">
         <select
           className="genre"
@@ -96,24 +90,7 @@ export default function Result() {
           ))}
         </select>
       </form>
-
       <Card movie={results} />
-
-      <ReactPaginate
-        previousLabel={'previous'}
-        nextLabel={'next'}
-        breakLabel={'...'}
-        pageCount={10}
-        onPageChange={handlePageClick}
-        containerClassName={'pagination justify-content-center'}
-        pageClassName={'page-item'}
-        pageLinkClassName={'page-link'}
-        previousClassName={'page-item'}
-        previousLinkClassName={'page-link'}
-        nextClassName={'page-item'}
-        nextLinkClassName={'page-link'}
-        activeClassName={'active'}
-      />
     </>
   );
 }
