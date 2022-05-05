@@ -49,8 +49,7 @@ function DisplayMovie({ movie, trailer }) {
               <ReactPlayer
                 url={trailer.videoUrl}
                 alt={`${trailer.title}trailer`}
-                controls
-                onDuration
+                controls={trailer.controls}
                 className="trailer"
                 width="60vw"
                 height="26vh"

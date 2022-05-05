@@ -27,9 +27,7 @@ nav a {
 .yellow {
   color: #fff027;
 }
-.logo {
-  max-height: 3.5em;
-}
+
 .logo:hover {
   transform: scale(1.4);
   transition-duration: 0.3s;
@@ -83,7 +81,6 @@ nav a {
     right: 0;
   }
   .navbar_link {
-    display: block;
     padding: 1rem;
     font-size: 3vw;
     color: #fcfdef;
