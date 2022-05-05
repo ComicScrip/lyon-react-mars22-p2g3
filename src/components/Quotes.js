@@ -12,13 +12,10 @@ function Quotes() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(
-        'https://lyon-react-mars22-p2g3-api.comicscrip.duckdns.org/quotes',
-        {
-          name: form.name,
-          comment: form.quote,
-        }
-      )
+      .post(`${process.env.REACT_APP_API_URL}/quotes`, {
+        name: form.name,
+        comment: form.quote,
+      })
       .then((res) =>
         setQuotes((currentQuotes) => [...currentQuotes, res.data])
       );
@@ -38,18 +35,17 @@ function Quotes() {
 
   useEffect(() => {
     axios
-      .get('https://lyon-react-mars22-p2g3-api.comicscrip.duckdns.org/quotes')
+      .get(`${process.env.REACT_APP_API_URL}/quotes`)
       .then((res) => res.data)
       .then((data) => {
         setQuotes(data);
       });
   }, []);
+  console.log(process.env.REACT_APP_API_URL);
 
   const handleDelete = (id) => {
     axios
-      .delete(
-        `https://lyon-react-mars22-p2g3-api.comicscrip.duckdns.org/quotes/${id}`
-      )
+      .delete(`${process.env.REACT_APP_API_URL}/quotes/${id}`)
       .then(() => setQuotes(quotes.filter((quote) => id !== quote.id)))
       .then(setDeleteContainer(false))
       .catch((err) => console.error(err));
