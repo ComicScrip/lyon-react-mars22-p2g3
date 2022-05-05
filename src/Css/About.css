@@ -59,7 +59,6 @@
   padding: 4px;
   background: #fcfdef;
   border: 3px solid #fff027;
-  box-sizing: border-box;
   border-radius: 15px;
 }
 
@@ -69,7 +68,6 @@
   padding: 4px;
   background: #fcfdef;
   border: 3px solid #fff027;
-  box-sizing: border-box;
   border-radius: 15px;
 }
 
@@ -98,6 +96,11 @@
   color: #fff027;
 }
 
+.submit_form:hover {
+  background-color: #32474d;
+  color: #fff027;
+}
+
 .label_form {
   color: #fcfdef;
   margin-bottom: 5px;
@@ -118,18 +121,17 @@
   }
 
   .title_form {
-    margin: 500px 0 20px 0;
     font-size: 35px;
-    margin: 20px 400px;
+    margin: 20px 350px;
   }
 
   .input_form_name {
     margin: 0 0 10px 0;
-    width: 100%;
+    width: 250px;
   }
   .input_form_email {
     margin: 0 0 10px 0;
-    width: 100%;
+    width: 400px;
   }
 
   .email_desk {
@@ -138,11 +140,12 @@
 
   .message_form {
     margin: 0 0 10px 0;
-    width: 100%;
+    width: 700px;
   }
 
   .submit_form {
     width: 150px;
+    height: 35px;
     font-size: 20px;
   }
 
@@ -151,6 +154,7 @@
     font-size: 20px;
   }
   .info_form {
+    width: 700px;
     display: flex;
     justify-content: space-between;
   }
