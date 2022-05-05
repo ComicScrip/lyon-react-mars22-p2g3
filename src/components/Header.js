@@ -16,9 +16,9 @@ function Navabar() {
   return (
     <nav className={`navbar ${showLinks ? 'show-nav' : 'hidden-nav'}`}>
       <div>
-        <NavLink to="/" className="navbar_link">
+        <NavLink to="/" className="navbar_link" onClick={handleShowLinks}>
           <img
-            src="assets/logo.png"
+            src="/assets/logo.png"
             className="logo"
             alt="my-logo"
             width={'94px'}
@@ -26,7 +26,7 @@ function Navabar() {
         </NavLink>
       </div>
       <ul className="items">
-        <li className="navbar_item slideInDown-1">
+        <li className="navbar_items-slideInDown-1">
           <NavLink
             to="/"
             className="navbar_link"
@@ -36,7 +36,7 @@ function Navabar() {
             Home
           </NavLink>
         </li>
-        <li className="navbar_item slideInDown-2">
+        <li className="navbar_item-slideInDown-2">
           <NavLink
             to="/moviepicker"
             style={getActiveLinkStyle}
@@ -44,6 +44,16 @@ function Navabar() {
             onClick={handleShowLinks}
           >
             Movie Picker
+          </NavLink>
+        </li>
+        <li className="navbar_item-slideInDown-3">
+          <NavLink
+            to="/quote"
+            style={getActiveLinkStyle}
+            className="navbar_link"
+            onClick={handleShowLinks}
+          >
+            Quotes
           </NavLink>
         </li>
         <li className="navbar_item slideInDown-3">

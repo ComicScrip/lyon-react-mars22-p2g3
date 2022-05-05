@@ -1,0 +1,202 @@
+.page-title {
+  font-style: normal;
+  font-size: 30px;
+  font-family: 'Russo One', sans serif;
+  line-height: 36px;
+  color: #fff027;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: 30px 0 40px 0;
+}
+
+.quote-introduction {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  margin: 50px 0 40px 0;
+}
+
+.quote-title {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Russo One', sans serif;
+  color: #fff027;
+  margin: 40px 0 20px 0;
+}
+
+.quote-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10px;
+}
+
+.quote-name {
+  background: #a6b7bb;
+  width: 30%;
+  height: 70px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.quotesContainer {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.quote {
+  background: #a6b7bb;
+  width: 60%;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.quote-name > p {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.quote > p {
+  color: black;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-style: italic;
+}
+
+textarea::placeholder {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.form_quote {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.input-form-name {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.message-form-quote {
+  padding: 4px;
+  background: #fcfdef;
+  border: 3px solid #fff027;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 0 0 15px 0;
+}
+
+.input-submit-form {
+  margin: auto;
+  width: 100px;
+  padding: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid yellow;
+  border-radius: 15px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff027;
+}
+
+.input-submit-form:hover {
+  background: #fff027;
+  color: #486064;
+}
+
+.gif {
+  width: 80%;
+  display: block;
+  margin: auto !important;
+  filter: drop-shadow(3px 3px 40px black);
+  border-radius: 10px;
+}
+
+.content_desktop {
+  margin-bottom: 100px;
+}
+
+@media screen and (min-width: 700px) {
+  .form_global {
+    width: 600px;
+  }
+
+  .content_desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .page-title {
+    font-size: 45px;
+    margin: 50px 0 80px 0;
+  }
+
+  .quote-introduction {
+    font-size: 35px;
+    margin-top: 100px;
+  }
+
+  .quote-name {
+    background: #a6b7bb;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 20px;
+    padding-top: 20px;
+  }
+
+  .quote {
+    background: #a6b7bb;
+    width: 500px;
+    height: 70px;
+    border-radius: 10px;
+  }
+
+  .quote-name > p {
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .quote > p {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .quote-title {
+    font-size: 28px;
+    margin: 20px 0 20px 0;
+  }
+
+  .gif {
+    width: 40%;
+  }
+
+  .input-submit-form {
+    width: 130px;
+    padding: 5px;
+  }
+}
