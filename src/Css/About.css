@@ -49,7 +49,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 20px;
 }
 
@@ -117,12 +116,12 @@
 
 @media screen and (min-width: 700px) {
   .form {
-    margin: 0 400px;
+    margin: 0 450px;
   }
 
   .title_form {
     font-size: 35px;
-    margin: 20px 350px;
+    margin: 20px 450px;
   }
 
   .input_form_name {
