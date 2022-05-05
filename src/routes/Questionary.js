@@ -20,21 +20,25 @@ const years = [
   { minYear: 2011, maxYear: 2022 },
 ];
 
-const formSteps = ['film_categories', 'film_years'].map((step) => ({
-  id: step,
-}));
+const awardmovie = [{ name: 'Oscar Winner', value: 'oscar_winners' }];
+
+const formSteps = ['film_categories', 'film_years', 'film_award'].map(
+  (step) => ({
+    id: step,
+  })
+);
 
 function Questionary() {
   const [count, setCount] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  // const [selectedYears, setSelectedYears] = useState(null);
+  const [selectedYears, setSelectedYears] = useState(null);
   const navigate = useNavigate();
-
+  console.log(selectedYears);
   return (
     <div>
       <h1 className="question_title">QUESTIONS</h1>
       <div className="cercle">
-        <span className="compteur">{count}/2</span>
+        <span className="compteur">{count}/3</span>
       </div>
       <h2 className="question">What kind of movies do you like ?</h2>
       <section className="section_card">
@@ -69,13 +73,7 @@ function Questionary() {
                   type="submit"
                   className="card"
                   onClick={() => {
-                    // setSelectedYears(year);
-                    navigate(
-                      `/result?genres=${selectedCategory}&release_date=${minYear},${maxYear}`,
-                      {
-                        replace: true,
-                      }
-                    );
+                    setSelectedYears({ minYear, maxYear });
                   }}
                 >
                   {minYear} - {maxYear}
@@ -85,7 +83,34 @@ function Questionary() {
           </section>
         </div>
       )}
+      {selectedYears && (
+        <div>
+          <h2 className="question">Do you prefer a award-winning movie ?</h2>
+          <section className="section_card">
+            <div className="cards">
+              {awardmovie.map((movieType) => (
+                <button
+                  key={movieType.value}
+                  type="submit"
+                  className="card"
+                  onClick={() => {
+                    navigate(
+                      `/result?genres=${selectedCategory}&release_date=${selectedYears.minYear},${selectedYears.maxYear}&groups=${movieType.value}`,
+                      {
+                        replace: true,
+                      }
+                    );
+                  }}
+                >
+                  {movieType.name}
+                </button>
+              ))}
+            </div>
+          </section>
+        </div>
+      )}
     </div>
   );
 }
+
 export default Questionary;
