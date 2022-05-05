@@ -72,30 +72,6 @@
   font-weight: bold;
 }
 
-.pageNumbers {
-  list-style: none;
-  display: flex;
-}
-
-.pageNumbers li {
-  padding: 10px;
-  border: 1px solid #fff027;
-  cursor: pointer;
-}
-
-.pageNumbers li.active {
-  background-color: #32474d;
-  color: #fff027;
-}
-
-.pageNumbers li button {
-  background-color: transparent;
-  border: none;
-  color: #fff027;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 600px) {
   .filters {
     flex-direction: row;
