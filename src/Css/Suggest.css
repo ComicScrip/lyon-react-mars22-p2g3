@@ -65,6 +65,11 @@
   padding-top: 25px;
 }
 
+.quotesContainer {
+  height: 300px;
+  overflow-y: scroll;
+}
+
 .quote {
   background: #a6b7bb;
   width: 60%;
@@ -102,7 +107,6 @@ textarea::placeholder {
 .form_quote {
   display: flex;
   flex-direction: column;
-  align-item: center;
   margin: 20px;
 }
 
