@@ -14,7 +14,10 @@ h3 {
 }
 
 .underTitle {
-  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px black;
   margin-top: 40px;
 }
 
@@ -69,18 +72,13 @@ h3 {
   border-radius: 10px;
 }
 
-.underTitle {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .underTitle-2 {
-  font-size: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 2px black;
   width: 60%;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .blockButton {
@@ -91,12 +89,13 @@ h3 {
 .actionBtn {
   background-color: #fff027;
   text-decoration: none;
-  color: rgb(78, 78, 78);
+  color: rgb(61, 61, 61);
   padding: 0.5rem 3rem;
   border: 3px solid #fff027;
+  font-family: 'Roboto', sans-serif;
   border-radius: 10px;
-  font-size: 20px;
-
+  font-size: 22px;
+  text-shadow: 1px 1px 2px black;
   font-weight: bold;
   cursor: pointer;
   letter-spacing: 0.07rem;
