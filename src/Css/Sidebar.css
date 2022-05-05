@@ -12,6 +12,11 @@
   flex-direction: column;
 }
 
+.social-icons {
+  height: 50px;
+  padding: 3px;
+}
+
 @media only screen and (max-width: 900px) {
   .social-container {
     display: none;
