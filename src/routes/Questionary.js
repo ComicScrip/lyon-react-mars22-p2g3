@@ -21,7 +21,6 @@ const years = [
 ];
 
 const awardmovie = [{ name: 'Oscar Winner', value: 'oscar_winners' }];
-// ['award-winner movie', 'all movie'] ?
 
 const formSteps = ['film_categories', 'film_years', 'film_award'].map(
   (step) => ({
@@ -33,7 +32,6 @@ function Questionary() {
   const [count, setCount] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedYears, setSelectedYears] = useState(null);
-  // const [selectedType, setSelectedType] = useState(null);
   const navigate = useNavigate();
   console.log(selectedYears);
   return (
