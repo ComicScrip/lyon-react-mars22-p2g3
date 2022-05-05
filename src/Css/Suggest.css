@@ -173,6 +173,7 @@ textarea::placeholder {
   width: 25px;
   height: 25px;
   margin: auto 0 auto 5px;
+  cursor: pointer;
 }
 
 .validation-question {
