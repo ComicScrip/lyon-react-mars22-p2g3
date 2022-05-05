@@ -33,52 +33,54 @@ function MovieGif() {
   return (
     <>
       <h1 className="page-title"> SUGGEST A GIF</h1>
-      <div className="global">
-        <div className="movieDiv1"> </div>
-        <div className="bloc_formes">
-          <h3 className="quote_intro">SUGGEST A CULT MOVIE GIF </h3>
-          <p className="paragraphe">Here you can share a cult movie gif</p>
-          <form className="form_gif" onSubmit={handleSubmit}>
-            <label htmlFor="name" className="label_form">
-              {' '}
-            </label>
-            <input
-              type="text"
-              name="name"
-              className="input-name"
-              value={form.name}
-              onChange={updateDisplayGifs}
-              placeholder="Enter your name"
-              required
-            />
-            <label htmlFor="gif" className="label_form">
-              {' '}
-            </label>
-            <textarea
-              name="gif"
-              className="message-form-gif"
-              placeholder="Enter your favorite gif movie"
-              value={form.gif}
-              onChange={updateDisplayGifs}
-              required
-            />
-            <input type="submit" value="Submit" className="input-submit" />
-          </form>
-        </div>
-        <div className="movieDiv2"> </div>
-      </div>
-      <div className="gifContainer">
-        {gifs.map((gif) => (
-          <div key={gif.id}>
-            <img src={gif.gif} alt={gif.name} className="gifquote" />
-            {/* <div className="names_gif"> */}
-            <p className="name_gifer">
-              <span className="names">{gif.name}</span>
-            </p>
-            {/* </div> */}
+      <section className="alseny">
+        <div className="global">
+          <div className="movieDiv1"> </div>
+          <div className="bloc_formes">
+            <h3 className="quote_intro">
+              We can share your favorite GIFS from a movie
+            </h3>
+            {/* <p className="paragraphe">We can share a famous GIFS from a movie</p> */}
+            <form className="form_gif" onSubmit={handleSubmit}>
+              <label htmlFor="name" className="label_form">
+                {' '}
+              </label>
+              <input
+                type="text"
+                name="name"
+                className="input-name"
+                value={form.name}
+                onChange={updateDisplayGifs}
+                placeholder="Enter your name"
+                required
+              />
+              <label htmlFor="gif" className="label_form">
+                {' '}
+              </label>
+              <textarea
+                name="gif"
+                className="message-form-gif"
+                placeholder="Enter your favorite gif movie"
+                value={form.gif}
+                onChange={updateDisplayGifs}
+                required
+              />
+              <input type="submit" value="Submit" className="input-submit" />
+            </form>
           </div>
-        ))}
-      </div>
+          <div className="movieDiv2"> </div>
+        </div>
+        <div className="gifContainer">
+          {gifs.map((gif) => (
+            <div key={gif.id}>
+              <img src={gif.gif} alt={gif.name} className="gifquote" />
+              <p className="name_gifer">
+                <span className="names">{gif.name}</span>
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }
