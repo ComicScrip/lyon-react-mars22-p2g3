@@ -16,7 +16,7 @@ export default function Details() {
     axios
       .get(
         `${process.env.REACT_APP_IMDB_TITLE}/${process.env.REACT_APP_KEY_API_IMDB}/${id}`
-      ) // tt1375666 k_46zywf07
+      )
       .then((answer) => answer.data)
       .then((data) => {
         setMovie(data);
@@ -27,7 +27,7 @@ export default function Details() {
     axios
       .get(
         `${process.env.REACT_APP_IMDB_TRAILER}/${process.env.REACT_APP_KEY_API_IMDB}/${id}`
-      ) // k_ns4o5sjc
+      )
       .then((res) => res.data)
       .then((data) => {
         setTrailer(data);
