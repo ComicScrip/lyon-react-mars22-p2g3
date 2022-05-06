@@ -20,7 +20,10 @@ const years = [
   { minYear: 2011, maxYear: 2022 },
 ];
 
-const awardmovie = [{ name: 'Oscar Winner', value: 'oscar_winners' }];
+const awardmovie = [
+  { name: 'Oscar Winner', value: 'oscar_winners' },
+  { name: 'All movies', value: '' },
+];
 
 const formSteps = ['film_categories', 'film_years', 'film_award'].map(
   (step) => ({
