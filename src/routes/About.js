@@ -45,6 +45,7 @@ function About() {
             <input
               type="text"
               name="name"
+              placeholder="Enter your name"
               className="input_form_name"
               required
             />
@@ -56,6 +57,7 @@ function About() {
             <input
               type="email"
               name="email"
+              placeholder="Enter your email"
               className="input_form_email"
               required
             />
@@ -64,7 +66,12 @@ function About() {
         <label htmlFor="message" className="label_form">
           Message
         </label>
-        <textarea name="message" className="message_form" required />
+        <textarea
+          name="message"
+          placeholder="Enter your message"
+          className="message_form"
+          required
+        />
         <input type="submit" value="Submit" className="submit_form" />
       </form>
     </div>

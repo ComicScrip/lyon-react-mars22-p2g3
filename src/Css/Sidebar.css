@@ -1,6 +1,6 @@
 .social-container {
   position: fixed;
-  margin-top: 150px;
+  margin-top: 230px;
   right: 0;
   background-color: #32474d5d;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
@@ -10,6 +10,11 @@
 .social-list {
   display: flex;
   flex-direction: column;
+}
+
+.social-icons {
+  height: 50px;
+  padding: 3px;
 }
 
 @media only screen and (max-width: 900px) {
