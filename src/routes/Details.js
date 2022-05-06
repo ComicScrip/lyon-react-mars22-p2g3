@@ -21,7 +21,7 @@ export default function Details() {
       .then((data) => {
         setMovie(data);
       });
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     axios
