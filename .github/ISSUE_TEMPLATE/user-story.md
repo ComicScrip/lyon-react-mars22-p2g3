@@ -4,7 +4,6 @@ about: Décris une histoire utilisateur
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
 # Le besoin
@@ -14,7 +13,7 @@ En tant que ... , je souhaite ... , afin de ...
 ## Critères et considérations spécifiques
 
 - [x] Conformité à l'écran "..." sur la maquette
-- [ ] ... 
+- [ ] ...
 
 ## Scénarios de test
 

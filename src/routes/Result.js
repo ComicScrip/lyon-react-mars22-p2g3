@@ -33,7 +33,6 @@ export default function Result() {
   return (
     <>
       <h1 className="title-result">Movies</h1>
-
       <form className="filters">
         <select
           className="genre"
@@ -91,7 +90,6 @@ export default function Result() {
           ))}
         </select>
       </form>
-
       <Card movie={results} />
     </>
   );
