@@ -2,7 +2,6 @@ import '../Css/Details.css';
 import ReactPlayer from 'react-player';
 
 function DisplayMovie({ movie, trailer }) {
-  console.log(trailer);
   return (
     movie,
     trailer && (
@@ -12,7 +11,7 @@ function DisplayMovie({ movie, trailer }) {
         </div>
         <div className="infoContainer">
           <div className="infoContainer1">
-            <img className="poster" src={movie.image} alt="movie" />
+            <img className="postermovie" src={movie.image} alt="movie" />
           </div>
           <div className="mainContent">
             <div className="detailsInfo">
@@ -34,7 +33,7 @@ function DisplayMovie({ movie, trailer }) {
             <p className="moviePlot">{movie.plot}</p>
             <div className="Cast">Cast</div>
             <div className="castContainer">
-              {movie.actorList.slice(0, 6).map((actor) => (
+              {movie.actorList.slice(0, 7).map((actor) => (
                 <div key={actor.id} className="actorsInfo">
                   <img
                     className="castPictures"
@@ -48,13 +47,13 @@ function DisplayMovie({ movie, trailer }) {
             <div className="trailerTitle">
               Trailer
               <ReactPlayer
-                url={trailer.url}
+                url={trailer.videoUrl}
+                alt={`${trailer.title}trailer`}
                 controls
-                playing
-                muted
+                onDuration
                 className="trailer"
-                width="100%"
-                height="100%"
+                width="60vw"
+                height="26vh"
               />
             </div>
           </div>

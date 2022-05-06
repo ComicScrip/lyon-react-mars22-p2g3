@@ -19,7 +19,7 @@ export default function Result() {
   useEffect(() => {
     axios
       .get(
-        `https://imdb-api.com/API/AdvancedSearch/k_46zywf07?title_type=feature&${searchParams}`
+        `${process.env.REACT_APP_IMDB_SEARCH}/${process.env.REACT_APP_KEY_API_IMDB}?title_type=feature&${searchParams}`
       )
       .then((res) => res.data.results)
       .then((data) => {

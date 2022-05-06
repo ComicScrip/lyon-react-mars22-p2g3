@@ -2,17 +2,21 @@ import '../Css/Details.css';
 import React, { useEffect, useState } from 'react';
 import SocialMedia from '../components/SocialMedia';
 import DisplayMovie from '../components/DisplayMovie';
+import '../Css/App.css';
+import '../Css/Navbar.css';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 export default function Details() {
   const [movie, setMovie] = useState('');
-  const [trailer, SetTrailer] = useState('');
+  const [trailer, setTrailer] = useState('');
   const { id } = useParams();
 
   useEffect(() => {
     axios
-      .get(`https://imdb-api.com/en/API/Title/k_vigm7k1b/${id}`) // /k_ns4o5sjc/${id} k_46zywf07
+      .get(
+        `${process.env.REACT_APP_IMDB_TITLE}/${process.env.REACT_APP_KEY_API_IMDB}/${id}`
+      )
       .then((answer) => answer.data)
       .then((data) => {
         setMovie(data);
@@ -21,16 +25,18 @@ export default function Details() {
 
   useEffect(() => {
     axios
-      .get('https://imdb-api.com/API/YouTube/k_vigm7k1b/8hP9D6kZseM') // k_ns4o5sjc
-      .then((answer) => answer.data.videos)
-      .then((movieInfo) => {
-        SetTrailer(movieInfo[1]);
+      .get(
+        `${process.env.REACT_APP_IMDB_TRAILER}/${process.env.REACT_APP_KEY_API_IMDB}/${id}`
+      )
+      .then((res) => res.data)
+      .then((data) => {
+        setTrailer(data);
       });
   }, []);
 
   return (
     <div className="main">
-      <SocialMedia />
+      <SocialMedia url={window.location.href} />
       <DisplayMovie movie={movie} trailer={trailer} />
     </div>
   );
