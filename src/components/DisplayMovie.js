@@ -33,7 +33,7 @@ function DisplayMovie({ movie, trailer }) {
             <p className="moviePlot">{movie.plot}</p>
             <div className="Cast">Cast</div>
             <div className="castContainer">
-              {movie.actorList.slice(0, 7).map((actor) => (
+              {movie.actorList.map((actor) => (
                 <div key={actor.id} className="actorsInfo">
                   <img
                     className="castPictures"
