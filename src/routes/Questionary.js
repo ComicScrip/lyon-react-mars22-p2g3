@@ -25,23 +25,35 @@ const awardmovie = [
   { name: 'All movies', value: '' },
 ];
 
-const formSteps = ['film_categories', 'film_years', 'film_award'].map(
-  (step) => ({
-    id: step,
-  })
-);
+const countries = [
+  { name: 'France', value: 'fr' },
+  { name: 'USA', value: 'us' },
+  { name: 'UK', value: 'gb' },
+  { name: 'Italy', value: 'it' },
+];
+
+const formSteps = [
+  'film_categories',
+  'film_years',
+  'film_award',
+  'film_country',
+].map((step) => ({
+  id: step,
+}));
 
 function Questionary() {
   const [count, setCount] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedYears, setSelectedYears] = useState(null);
+  const [selectedType, setSelectedType] = useState(null);
   const navigate = useNavigate();
-  console.log(selectedYears);
+  console.log(selectedType);
+
   return (
     <div>
       <h1 className="question_title">QUESTIONS</h1>
       <div className="cercle">
-        <span className="compteur">{count}/3</span>
+        <span className="compteur">{count}/4</span>
       </div>
       <h2 className="question">What kind of movies do you like ?</h2>
       <section className="section_card">
@@ -97,15 +109,36 @@ function Questionary() {
                   type="submit"
                   className="card"
                   onClick={() => {
+                    setSelectedType(movieType);
+                  }}
+                >
+                  {movieType.name}
+                </button>
+              ))}
+            </div>
+          </section>
+        </div>
+      )}
+      {selectedType && (
+        <div>
+          <h2 className="question">A movie from which country ?</h2>
+          <section className="section_card">
+            <div className="cards">
+              {countries.map((country) => (
+                <button
+                  key={country.value}
+                  type="submit"
+                  className="card"
+                  onClick={() => {
                     navigate(
-                      `/result?genres=${selectedCategory}&release_date=${selectedYears.minYear},${selectedYears.maxYear}&groups=${movieType.value}`,
+                      `/result?genres=${selectedCategory}&release_date=${selectedYears.minYear},${selectedYears.maxYear}&groups=${selectedType.value}&countries=${country.value}`,
                       {
                         replace: true,
                       }
                     );
                   }}
                 >
-                  {movieType.name}
+                  {country.name}
                 </button>
               ))}
             </div>
