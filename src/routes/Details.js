@@ -17,21 +17,19 @@ export default function Details() {
       .get(
         `${process.env.REACT_APP_IMDB_TITLE}/${process.env.REACT_APP_KEY_API_IMDB}/${id}`
       )
-      .then((answer) => answer.data)
-      .then((data) => {
-        setMovie(data);
+      // .then((answer) => answer.data)
+      .then((res) => {
+        setMovie(res.data);
       });
-  }, [id]);
+  }, []);
 
   useEffect(() => {
     axios
       .get(
         `${process.env.REACT_APP_IMDB_TRAILER}/${process.env.REACT_APP_KEY_API_IMDB}/${id}`
       )
-      .then((res) => res.data)
-      .then((data) => {
-        setTrailer(data);
-      });
+      .then((res) => setTrailer(res.data));
+    // .then((data) => {
   }, []);
 
   return (
