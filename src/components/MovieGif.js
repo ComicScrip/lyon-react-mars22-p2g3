@@ -44,7 +44,7 @@ function MovieGif() {
       .delete(`${process.env.REACT_APP_API_URL}/gifs/${id}`)
       .then(() => setGifs(gifs.filter((gif) => id !== gif.id)))
       .then(setDeleteContainer(false))
-      .catch((err) => console.error(err));
+      .catch((err) => err);
   };
   return (
     <>
