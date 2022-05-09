@@ -1,7 +1,7 @@
 import '../Css/Suggest.css';
 
 import Quotes from '../components/Quotes';
-import MovieGifs from '../components/MovieGifs';
+import MovieGif from '../components/MovieGif';
 import { useState } from 'react';
 
 function Suggest() {
@@ -35,7 +35,7 @@ function Suggest() {
           GIFS
         </button>
       </div>
-      <div>{displaySuggest ? <Quotes /> : <MovieGifs />}</div>
+      <div>{displaySuggest ? <Quotes /> : <MovieGif />}</div>
     </>
   );
 }

@@ -201,8 +201,8 @@ textarea::placeholder {
 }
 
 .validation-button:hover {
-  background: #fff027;
-  color: #486064;
+  background: red;
+  color: white;
 }
 
 @media screen and (min-width: 700px) {

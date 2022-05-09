@@ -67,7 +67,7 @@ function Navabar() {
             About Us
           </NavLink>
         </li>
-        <li className="navbar_item slideInDown-3">
+        {/* <li className="navbar_item slideInDown-3">
           <NavLink
             to="/movieGif"
             style={getActiveLinkStyle}
@@ -76,7 +76,7 @@ function Navabar() {
           >
             Give a Gif
           </NavLink>
-        </li>
+        </li> */}
       </ul>
       <button type="button" className="btnBurger" onClick={handleShowLinks}>
         <span className="Burger_Line towLine" />

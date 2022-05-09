@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../Css/MovieGif.css';
+import ImageTrash from '../img/trash-can.png';
 
 function MovieGif() {
   const [form, setForm] = useState({ name: '', gif: '' });
   const [gifs, setGifs] = useState([]);
+  const [deleteContainer, setDeleteContainer] = useState(false);
+  const [idToDelete, setIdToDelete] = useState('');
+
+  const handleDeleteContainer = (id) => {
+    setDeleteContainer(true);
+    setIdToDelete(id);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,12 +32,20 @@ function MovieGif() {
   };
   useEffect(() => {
     axios
-      .get('https://lyon-react-mars22-p2g3-api.comicscrip.duckdns.org/gifs')
+      .get(`${process.env.REACT_APP_API_URL}/gifs`)
       .then((res) => res.data)
       .then((data) => {
         setGifs(data);
       });
   }, []);
+
+  const handleDelete = (id) => {
+    axios
+      .delete(`${process.env.REACT_APP_API_URL}/gifs/${id}`)
+      .then(() => setGifs(gifs.filter((gif) => id !== gif.id)))
+      .then(setDeleteContainer(false))
+      .catch((err) => console.error(err));
+  };
   return (
     <>
       <h1 className="page-title-gif"> SUGGEST A GIF</h1>
@@ -65,21 +81,58 @@ function MovieGif() {
                 onChange={updateDisplayGifs}
                 required
               />
-              <input type="submit" value="Submit" className="input-submit" />
+              <input
+                type="submit"
+                value="Submit"
+                className="input-gif-submit"
+              />
             </form>
           </div>
           <div className="movieDiv2"> </div>
         </div>
-        <div className="gifContainer">
-          {gifs.map((gif) => (
-            <div key={gif.id}>
-              <img src={gif.gif} alt={gif.name} className="gifquote" />
-              <p className="name_gifer">
-                <span className="names">{gif.name}</span>
-              </p>
+        {!deleteContainer ? (
+          <div className="gifContainer">
+            {gifs.map((gif) => (
+              <div key={gif.id}>
+                <img src={gif.gif} alt={gif.name} className="gifquote" />
+                <div className="toto">
+                  <p className="name_gifer">
+                    <span className="names">{gif.name}</span>
+                  </p>
+                  <img
+                    src={ImageTrash}
+                    alt="Trash"
+                    onClick={() => {
+                      handleDeleteContainer(gif.id);
+                    }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="validation-container-gif">
+            <p className="validation-question-gif">
+              Are you sure to delete the gif ?{' '}
+            </p>
+            <div className="all-validation-button-gif">
+              <button
+                type="button"
+                onClick={() => setDeleteContainer(!deleteContainer)}
+                className="validation-button-gif"
+              >
+                No
+              </button>
+              <button
+                type="button"
+                onClick={() => handleDelete(idToDelete)}
+                className="validation-button-gif"
+              >
+                Yes
+              </button>
             </div>
-          ))}
-        </div>
+          </div>
+        )}
       </section>
     </>
   );
