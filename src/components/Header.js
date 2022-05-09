@@ -49,12 +49,12 @@ function Navabar() {
         </li>
         <li className="navbar_item-slideInDown-3">
           <NavLink
-            to="/quote"
+            to="/suggest"
             style={getActiveLinkStyle}
             className="navbar_link"
             onClick={handleShowLinks}
           >
-            Quotes
+            Suggest
           </NavLink>
         </li>
         <li className="navbar_item slideInDown-3">

@@ -13,12 +13,6 @@ import {
   EmailIcon,
 } from 'react-share';
 
-// let url = 'https://lyon-react-mars22-p2g3.vercel.app';
-// if (typeof window === 'object') {
-//   url = String(window.location);
-//   console.log(url);
-// }
-
 const url = window.location.href;
 
 export default function SocialMedia() {
