@@ -53,11 +53,9 @@
   margin: 0 0 15px 0;
 }
 .name_gifer {
-  width: 25%;
-  height: 20%;
-  margin-top: 4px;
+  width: 30%;
+  height: 60%;
   margin-left: 35%;
-  padding: 5px;
   font-family: 'Russo One';
   font-size: 13px;
   line-height: 16px;
@@ -66,8 +64,10 @@
   color: #000000;
   border-radius: 5px;
 }
+
 .names {
-  margin-top: 30% !important;
+  text-align: center;
+  line-height: 30px;
 }
 
 .input-gif-submit {
@@ -108,10 +108,10 @@
   height: 130px;
   align-items: center;
   justify-content: center;
-  margin: auto !important;
   border: 2px solid #fff027;
   box-sizing: border-box;
   border-radius: 10px;
+  margin-bottom: 5px;
 }
 .alseny {
   display: flex;
@@ -123,14 +123,21 @@
   color: #486064;
 }
 
-.toto {
+.gif-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.toto img {
+.gif-display {
+  display: flex;
+  margin-top: 10px;
+}
+
+.gif-display img {
   width: 20px;
   height: 20px;
-  margin: 7px 0 0 30px;
+  margin: 0 0 0 30px;
 }
 
 .validation-container-gif {
@@ -243,8 +250,5 @@
     border: 2px solid #fff027;
     box-sizing: border-box;
     border-radius: 10px;
-  }
-  .name_gifer {
-    height: 15%;
   }
 }

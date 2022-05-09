@@ -93,9 +93,9 @@ function MovieGif() {
         {!deleteContainer ? (
           <div className="gifContainer">
             {gifs.map((gif) => (
-              <div key={gif.id}>
+              <div className="gif-container" key={gif.id}>
                 <img src={gif.gif} alt={gif.name} className="gifquote" />
-                <div className="toto">
+                <div className="gif-display">
                   <p className="name_gifer">
                     <span className="names">{gif.name}</span>
                   </p>
