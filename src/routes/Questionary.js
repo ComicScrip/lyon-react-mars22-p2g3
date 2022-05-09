@@ -15,13 +15,13 @@ const categories = [
 ];
 
 const years = [
-  { minYear: 1980, maxYear: 1999 },
-  { minYear: 2000, maxYear: 2010 },
-  { minYear: 2011, maxYear: 2022 },
+  { name: '1980-2000', value: '1980,2000' },
+  { name: '2000-2010', value: '2000,2010' },
+  { name: '2010-2022', value: '2010,2022' },
 ];
 
 const awardmovie = [
-  { name: 'Oscar Winner', value: 'oscar_winners' },
+  { name: 'Oscar Winners', value: 'oscar_winners' },
   { name: 'All movies', value: '' },
 ];
 
@@ -29,7 +29,6 @@ const countries = [
   { name: 'France', value: 'fr' },
   { name: 'USA', value: 'us' },
   { name: 'UK', value: 'gb' },
-  { name: 'Italy', value: 'it' },
 ];
 
 const formSteps = [
@@ -47,7 +46,6 @@ function Questionary() {
   const [selectedYears, setSelectedYears] = useState(null);
   const [selectedType, setSelectedType] = useState(null);
   const navigate = useNavigate();
-  console.log(selectedType);
 
   return (
     <div>
@@ -82,21 +80,19 @@ function Questionary() {
           <h2 className="question">Which release year ?</h2>
           <section className="section_card">
             <div className="cards">
-              {years.map(({ minYear, maxYear }) => (
+              {years.map((year) => (
                 <button
-                  key={(minYear, maxYear)}
+                  key={year.value}
                   type="submit"
-                  className={`card ${
-                    (selectedYears === minYear, maxYear ? 'selected' : '')
-                  }`}
+                  className={`card ${selectedYears === year ? 'selected' : ''}`}
                   onClick={() => {
-                    setSelectedYears({ minYear, maxYear });
+                    setSelectedYears(year);
                     if (count < formSteps.length) {
                       setCount(count + 1);
                     }
                   }}
                 >
-                  {minYear} - {maxYear}
+                  {year.name}
                 </button>
               ))}
             </div>
@@ -141,7 +137,7 @@ function Questionary() {
                   className="card"
                   onClick={() => {
                     navigate(
-                      `/result?genres=${selectedCategory}&release_date=${selectedYears.minYear},${selectedYears.maxYear}&groups=${selectedType.value}&countries=${country.value}`,
+                      `/result?genres=${selectedCategory}&release_date=${selectedYears.value}&groups=${selectedType.value}&countries=${country.value}`,
                       {
                         replace: true,
                       }
