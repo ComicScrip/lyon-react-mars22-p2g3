@@ -84,11 +84,16 @@ function Questionary() {
             <div className="cards">
               {years.map(({ minYear, maxYear }) => (
                 <button
-                  key={minYear}
+                  key={(minYear, maxYear)}
                   type="submit"
-                  className="card"
+                  className={`card ${
+                    (selectedYears === minYear, maxYear ? 'selected' : '')
+                  }`}
                   onClick={() => {
                     setSelectedYears({ minYear, maxYear });
+                    if (count < formSteps.length) {
+                      setCount(count + 1);
+                    }
                   }}
                 >
                   {minYear} - {maxYear}
@@ -107,9 +112,14 @@ function Questionary() {
                 <button
                   key={movieType.value}
                   type="submit"
-                  className="card"
+                  className={`card ${
+                    selectedType === movieType ? 'selected' : ''
+                  }`}
                   onClick={() => {
                     setSelectedType(movieType);
+                    if (count < formSteps.length) {
+                      setCount(count + 1);
+                    }
                   }}
                 >
                   {movieType.name}
@@ -136,6 +146,9 @@ function Questionary() {
                         replace: true,
                       }
                     );
+                    if (count < formSteps.length) {
+                      setCount(count + 1);
+                    }
                   }}
                 >
                   {country.name}
