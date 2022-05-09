@@ -47,6 +47,14 @@ function Questionary() {
   const [selectedType, setSelectedType] = useState(null);
   const navigate = useNavigate();
 
+  // function handleScroll() {
+  //   window.scroll({
+  //     top: document.body.offsetHeight,
+  //     left: 0,
+  //     behavior: 'smooth',
+  //   });
+  // }
+
   return (
     <div>
       <h1 className="question_title">QUESTIONS</h1>
@@ -54,7 +62,7 @@ function Questionary() {
         <span className="compteur">{count}/4</span>
       </div>
       <h2 className="question">What kind of movies do you like ?</h2>
-      <section className="section_card">
+      <section className="section_card" id="section1">
         <div className="cards">
           {categories.map((movieCategoryTitle) => (
             <button
@@ -78,7 +86,7 @@ function Questionary() {
       {selectedCategory && (
         <div>
           <h2 className="question">Which release year ?</h2>
-          <section className="section_card">
+          <section className="section_card" id="section1">
             <div className="cards">
               {years.map((year) => (
                 <button
@@ -90,6 +98,7 @@ function Questionary() {
                     if (count < formSteps.length) {
                       setCount(count + 1);
                     }
+                    // && {handleScroll}
                   }}
                 >
                   {year.name}
