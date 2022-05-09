@@ -48,7 +48,7 @@ function MovieGif() {
   };
   return (
     <>
-      <h1 className="page-title-gif"> SUGGEST A GIF</h1>
+      <h1 className="page-title"> SUGGEST A GIF</h1>
       <section className="alseny">
         <div className="global">
           <div className="movieDiv1"> </div>
