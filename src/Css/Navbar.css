@@ -9,6 +9,7 @@
   color: #fcfdef;
   background-color: #32474d;
   font-family: 'Roboto', sans-serif;
+
   font-weight: bold;
   text-decoration: none;
   z-index: 2 !important;
@@ -28,6 +29,10 @@ nav a {
 }
 .logo {
   max-height: 3.5em;
+}
+.logo:hover {
+  transform: scale(1.4);
+  transition-duration: 0.3s;
 }
 .navbar_link {
   align-items: center;

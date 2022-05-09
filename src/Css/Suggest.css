@@ -40,6 +40,11 @@
   padding-top: 25px;
 }
 
+.quotesContainer {
+  height: 300px;
+  overflow-y: scroll;
+}
+
 .quote {
   background: #a6b7bb;
   width: 60%;
@@ -164,9 +169,6 @@ textarea::placeholder {
     margin-right: 20px;
     padding-top: 20px;
   }
-
-  /* .quote-content {
-  } */
 
   .quote {
     background: #a6b7bb;

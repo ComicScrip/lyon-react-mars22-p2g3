@@ -32,18 +32,18 @@ function MovieGif() {
   }, []);
   return (
     <>
-      <h1 className="page-title"> SUGGEST A GIF</h1>
+      <h1 className="title"> SUGGEST A GIF</h1>
       <section className="alseny">
         <div className="global">
           <div className="movieDiv1"> </div>
           <div className="bloc_formes">
             <h3 className="quote_intro">
-              We can share your favorite GIFS from a movie
+              You can share your favorite GIFS from a movie
             </h3>
             {/* <p className="paragraphe">We can share a famous GIFS from a movie</p> */}
             <form className="form_gif" onSubmit={handleSubmit}>
-              <label htmlFor="name" className="label_form">
-                {' '}
+              <label htmlFor="name" className="label_form_gif">
+                {''}
               </label>
               <input
                 type="text"
@@ -54,18 +54,22 @@ function MovieGif() {
                 placeholder="Enter your name"
                 required
               />
-              <label htmlFor="gif" className="label_form">
-                {' '}
+              <label htmlFor="gif" className="label_form_gif">
+                {''}
               </label>
               <textarea
                 name="gif"
                 className="message-form-gif"
-                placeholder="Enter your favorite gif movie"
+                placeholder="Enter the link of your favorite gif movie"
                 value={form.gif}
                 onChange={updateDisplayGifs}
                 required
               />
-              <input type="submit" value="Submit" className="input-submit" />
+              <input
+                type="submit"
+                value="Submit"
+                className="input-gif-submit"
+              />
             </form>
           </div>
           <div className="movieDiv2"> </div>

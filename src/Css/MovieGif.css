@@ -17,6 +17,7 @@
   line-height: 30px;
   text-align: center;
   justify-content: center;
+  margin: 0 10px;
 }
 
 .paragraphe {
@@ -31,6 +32,7 @@
   padding-left: 15px;
   margin: 15px;
 }
+
 .input-name {
   border-radius: 8px;
   width: 70%;
@@ -53,7 +55,7 @@
 .name_gifer {
   width: 25%;
   height: 20%;
-  margin-top: 1px;
+  margin-top: 4px;
   margin-left: 35%;
   padding-top: 5px;
   font-family: 'Russo One';
@@ -68,7 +70,7 @@
   margin-top: 30% !important;
 }
 
-.input-submit {
+.input-gif-submit {
   margin: auto;
   width: 100px;
   padding: 4px;
@@ -85,7 +87,7 @@
   color: #fff027;
 }
 .bloc_formes {
-  display: flex;
+  /* display: flex; */
   flex-direction: column-reverse !important;
 }
 .movieDiv1 .movieDiv2 {
@@ -97,6 +99,7 @@
   display: grid;
   width: 80%;
   margin-left: 5%;
+  margin-top: 20px;
   grid-template-columns: repeat(1, 1fr);
   padding-bottom: 8%;
 }
@@ -113,6 +116,11 @@
 .alseny {
   display: flex;
   flex-direction: column-reverse;
+  margin-left: 15px;
+}
+.input-gif-submit:hover {
+  background: #fff027;
+  color: #486064;
 }
 
 @media screen and (min-width: 846px) {
@@ -123,7 +131,7 @@
   .alseny {
     display: initial;
   }
-  .page-title {
+  .title {
     font-size: 40px;
     margin: 40px 0 70px 0;
   }
@@ -133,7 +141,6 @@
     height: 235px;
     left: 162px;
     top: 297px;
-    filter: drop-shadow(1px 1px 5px black);
     border-radius: 1px;
   }
   .movieDiv2 {
@@ -142,7 +149,6 @@
     height: 235px;
     left: 162px;
     top: 297px;
-    filter: drop-shadow(1px 1px 5px black);
     border-radius: 1px;
   }
   .quote_intro {
