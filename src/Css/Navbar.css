@@ -26,12 +26,13 @@ nav a {
 .yellow {
   color: #fff027;
 }
+
 .logo {
-  max-height: 3.5em;
-  margin-top: -10px;
+  margin-top: -5px;
+  margin-left: -20px;
 }
 .logo:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   transition-duration: 0.3s;
 }
 .navbar_link {
@@ -74,6 +75,10 @@ nav a {
     align-items: center;
     background: #32474d;
     transition: all 0.3s ease-in-out;
+  }
+
+  .navbar_items-sildeInDown .logo {
+    margin-top: -18px;
   }
 
   .show-nav .items {
@@ -175,7 +180,9 @@ nav a {
   .btnBurger:hover {
     cursor: pointer;
   }
-
+  .logo {
+    margin-top: -15px;
+  }
   .navbar_item {
     transform: translateY(100vh) !important;
   }

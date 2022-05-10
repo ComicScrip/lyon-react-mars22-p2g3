@@ -40,7 +40,6 @@ function MovieGif() {
             <h3 className="quote_intro">
               You can share your favorite GIFS from a movie
             </h3>
-            {/* <p className="paragraphe">We can share a famous GIFS from a movie</p> */}
             <form className="form_gif" onSubmit={handleSubmit}>
               <label htmlFor="name" className="label_form_gif">
                 {''}
