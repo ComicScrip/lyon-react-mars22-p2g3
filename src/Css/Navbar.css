@@ -5,11 +5,10 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 60px;
+  height: 70px;
   color: #fcfdef;
   background-color: #32474d;
   font-family: 'Roboto', sans-serif;
-
   font-weight: bold;
   text-decoration: none;
   z-index: 2 !important;
@@ -28,13 +27,12 @@ nav a {
   color: #fff027;
 }
 
-/* .logo {
-  margin-top: -2px;
-  margin-left: -2px;
-} */
-
+.logo {
+  margin-top: -5px;
+  margin-left: -20px;
+}
 .logo:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   transition-duration: 0.3s;
 }
 .navbar_link {
@@ -50,7 +48,7 @@ nav a {
 .btnBurger {
   width: 40px;
   height: 40px;
-  /* display: none; */
+  display: none;
   background: transparent;
   border: none;
   color: inherit;
@@ -80,12 +78,17 @@ nav a {
     transition: all 0.3s ease-in-out;
   }
 
+  .navbar_items-sildeInDown .logo {
+    margin-top: -18px;
+  }
+
   .show-nav .items {
     width: 100vw;
     visibility: visible;
     right: 0;
   }
   .navbar_link {
+    display: block;
     padding: 1rem;
     font-size: 3vw;
     color: #fcfdef;
@@ -179,7 +182,9 @@ nav a {
   .btnBurger:hover {
     cursor: pointer;
   }
-
+  .logo {
+    margin-top: -15px;
+  }
   .navbar_item {
     transform: translateY(100vh);
   }
