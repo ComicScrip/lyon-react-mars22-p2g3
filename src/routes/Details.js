@@ -18,9 +18,8 @@ export default function Details() {
       .get(
         `${process.env.REACT_APP_IMDB_TITLE}/${process.env.REACT_APP_KEY_API_IMDB}/${id}`
       )
-      .then((answer) => answer.data)
-      .then((data) => {
-        setMovie(data);
+      .then((answer) => {
+        setMovie(answer.data);
       })
       .finally(() => setLoader(false));
   }, []);
@@ -30,10 +29,7 @@ export default function Details() {
       .get(
         `${process.env.REACT_APP_IMDB_TRAILER}/${process.env.REACT_APP_KEY_API_IMDB}/${id}`
       )
-      .then((res) => res.data)
-      .then((data) => {
-        setTrailer(data);
-      });
+      .then((res) => setTrailer(res.data));
   }, []);
 
   const loadGif = require('../img/load.gif');
