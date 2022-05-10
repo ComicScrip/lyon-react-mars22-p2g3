@@ -33,7 +33,7 @@ function DisplayMovie({ movie, trailer }) {
             <p className="moviePlot">{movie.plot}</p>
             <div className="Cast">Cast</div>
             <div className="castContainer">
-              {movie.actorList.slice(0, 6).map((actor) => (
+              {movie.actorList.slice(0, 7).map((actor) => (
                 <div key={actor.id} className="actorsInfo">
                   <img
                     className="castPictures"
@@ -52,8 +52,8 @@ function DisplayMovie({ movie, trailer }) {
                 controls
                 onDuration
                 className="trailer"
-                width="600px"
-                height="360px"
+                width="60vw"
+                height="26vh"
               />
             </div>
           </div>
