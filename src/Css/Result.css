@@ -1,3 +1,9 @@
+.load-gif {
+  width: 10%;
+  display: block;
+  margin: 130px auto;
+}
+
 .title-result {
   text-align: center;
   color: #fff027;
@@ -27,6 +33,7 @@
   text-align: center;
   color: #fff027;
   background-color: #32474d;
+  margin: 10px;
 }
 
 .movie {

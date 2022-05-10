@@ -12,7 +12,7 @@ const teamMembers = [
     name: 'Félix Berger',
     image: ImageFB,
     description:
-      'Passionate about cinema since childhood, i’m a big fan of french movie',
+      'Passionate about cinema since childhood, I have always been and still am a big fan of french movies',
   },
   {
     name: 'Werner Mona',
@@ -23,7 +23,7 @@ const teamMembers = [
     name: 'Anna Boval',
     image: ImageAB,
     description:
-      'Passionate about cinema since I’m 8, I like Sci-Fi, thriller and detective films',
+      'Passionate about cinema since I’m 10, I enjoy watching Sci-Fi, thriller and detective films',
   },
   {
     name: 'Leo Laborie',

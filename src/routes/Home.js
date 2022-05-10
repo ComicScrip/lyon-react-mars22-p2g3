@@ -13,22 +13,20 @@ function Home() {
         <div className="overlay">
           <Sidebar />
           <h1 className="title">
-            <span className="welcome">Welcome to</span> CINECHILL !
+            <span className="welcome">Welcome to</span> CINECHILL
           </h1>
           <h3 className="underTitle">
-            Are you tired of spending more time looking for which movie or
-            series to see than watching the movie itself ? You've come to the
-            right place, Cinechill is a movie search and comparison engine that
-            will save you a lot of time !
+            If you're tired of spending more time choosing which movies to watch
+            rather than watching them, then you've come to the right place!
           </h3>
           <div className="blockButton">
             <Link to="/moviepicker" className="actionBtn">
-              ACTION !
+              ACTION!
             </Link>
           </div>
 
           <div className="homeContainerTwo">
-            <h1 className="titleTWo">HOW DOES IT WORK ?</h1>
+            <h1 className="titleTWo">HOW DOES IT WORK?</h1>
             <div className="workContainer">
               <div className="descriptionContainer">
                 <img
@@ -38,9 +36,9 @@ function Home() {
                   width="50px"
                 />
                 <h3 className="underTitle-2">
-                  Choose the category and the year of the film and our site will
-                  take care of offering you a personalized selection of movies
-                  that suits you and your friends.
+                  Choose the film category and its realease year. Our website
+                  will take care of offering you a personalized selection of
+                  films that will both suit you and your friends.
                 </h3>
               </div>
               <div className="descriptionContainer">
@@ -50,9 +48,9 @@ function Home() {
                   alt="icons"
                 />
                 <h3 className="underTitle-2">
-                  Our team is going to offer you a list of best movies since the
-                  80s that you could mark as favorites in your list. You can
-                  also suggest us your best films ever !
+                  Our team is going to offer you a list of the best movies since
+                  the 80s. You can also suggest us your favorite quotes and
+                  gifs!
                 </h3>
               </div>
             </div>
