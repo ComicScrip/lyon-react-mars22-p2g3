@@ -15,9 +15,9 @@ const categories = [
 ];
 
 const years = [
-  { name: '1980-2000', value: '1980,2000' },
-  { name: '2000-2010', value: '2000,2010' },
-  { name: '2010-2022', value: '2010,2022' },
+  { name: '1980 - 2000', value: '1980,2000' },
+  { name: '2000 - 2010', value: '2000,2010' },
+  { name: '2010 - 2022', value: '2010,2022' },
 ];
 
 const awardmovie = [

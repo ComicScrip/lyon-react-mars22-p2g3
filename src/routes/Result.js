@@ -12,6 +12,12 @@ function toObject(searchParams) {
   return res;
 }
 
+const countries = [
+  { name: 'France', value: 'fr' },
+  { name: 'USA', value: 'us' },
+  { name: 'UK', value: 'gb' },
+];
+
 export default function Result() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [results, setResults] = useState([]);
@@ -59,9 +65,6 @@ export default function Result() {
             </option>
           ))}
         </select>
-
-        <br />
-
         <select
           className="genre"
           value={searchParams.get('genres') || ''}
@@ -89,27 +92,6 @@ export default function Result() {
             </option>
           ))}
         </select>
-
-        <select
-          className="genre"
-          value={searchParams.get('groups') || ''}
-          onChange={(e) => {
-            setSearchParams({
-              ...toObject(searchParams),
-              groups: e.target.value,
-            });
-          }}
-        >
-          <option key={''} value={''}>
-            All
-          </option>
-          {['Oscar Winners'].map((award) => (
-            <option key={award} value={award}>
-              {award}
-            </option>
-          ))}
-        </select>
-
         <select
           className="genre"
           value={searchParams.get('countries') || ''}
@@ -123,9 +105,9 @@ export default function Result() {
           <option key={''} value={''}>
             All
           </option>
-          {['fr', 'us', 'gb'].map((country) => (
-            <option key={country} value={country}>
-              {country}
+          {countries.map((country) => (
+            <option key={country.name} value={country.value}>
+              {country.name}
             </option>
           ))}
         </select>
