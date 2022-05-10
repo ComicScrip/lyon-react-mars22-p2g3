@@ -28,6 +28,11 @@ nav a {
   color: #fff027;
 }
 
+/* .logo {
+  margin-top: -2px;
+  margin-left: -2px;
+} */
+
 .logo:hover {
   transform: scale(1.4);
   transition-duration: 0.3s;
@@ -45,7 +50,7 @@ nav a {
 .btnBurger {
   width: 40px;
   height: 40px;
-  display: none;
+  /* display: none; */
   background: transparent;
   border: none;
   color: inherit;
