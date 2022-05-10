@@ -159,7 +159,7 @@ textarea::placeholder {
 }
 
 .content_desktop {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column-reverse;
 }
