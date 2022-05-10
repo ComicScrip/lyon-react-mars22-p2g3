@@ -9,7 +9,6 @@
   color: #fcfdef;
   background-color: #32474d;
   font-family: 'Roboto', sans-serif;
-
   font-weight: bold;
   text-decoration: none;
   z-index: 2 !important;
@@ -29,6 +28,7 @@ nav a {
 }
 .logo {
   max-height: 3.5em;
+  margin-top: -10px;
 }
 .logo:hover {
   transform: scale(1.4);
@@ -57,7 +57,6 @@ nav a {
   .navbar {
     z-index: 100 !important;
   }
-
   .navbar ul li a {
     font-size: 23px;
   }
@@ -79,8 +78,8 @@ nav a {
 
   .show-nav .items {
     width: 100vw;
-    visibility: visible;
     right: 0;
+    visibility: visible;
   }
   .navbar_link {
     display: block;
@@ -109,16 +108,15 @@ nav a {
   .navbar_item::after {
     content: '';
     display: block;
-    margin: 0 auto;
-    width: 3vw;
-    height: 3px;
-    background-color: #fcfdef;
+    margin: 0 auto !important;
+    width: 3vw !important;
+    height: 1px !important;
+    background: #fcfdef !important;
   }
 
   .navbar_item:last-child::after {
     display: none;
   }
-
   .Burger_Line::before {
     transform: translateY(-8px);
   }
@@ -179,18 +177,18 @@ nav a {
   }
 
   .navbar_item {
-    transform: translateY(100vh);
+    transform: translateY(100vh) !important;
   }
   .show-nav .navbar_item {
-    transform: translateY(0);
+    transform: translateY(0) !important;
   }
   .show-nav .slideInDown-1 {
-    transition: all 1.1s ease-out;
+    transition: all 1.2s ease-out !important;
   }
   .show-nav .slideInDown-2 {
-    transition: all 1.2s ease-out;
+    transition: all 1.3s ease-out !important;
   }
   .show-nav .slideInDown-3 {
-    transition: all 1.3s ease-out;
+    transition: all 1.4s ease-out !important;
   }
 }

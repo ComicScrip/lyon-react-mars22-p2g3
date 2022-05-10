@@ -27,7 +27,7 @@ function Navabar() {
       </div>
 
       <ul className="items">
-        <li className="navbar_items-slideInDown-1">
+        <li className="navbar_item slideInDown-1">
           <NavLink
             to="/"
             className="navbar_link"
@@ -37,7 +37,7 @@ function Navabar() {
             Home
           </NavLink>
         </li>
-        <li className="navbar_item-slideInDown-2">
+        <li className="navbar_item slideInDown-2">
           <NavLink
             to="/moviepicker"
             style={getActiveLinkStyle}
@@ -47,7 +47,7 @@ function Navabar() {
             Movie Picker
           </NavLink>
         </li>
-        <li className="navbar_item-slideInDown-3">
+        <li className="navbar_item slideInDown-3">
           <NavLink
             to="/suggest"
             style={getActiveLinkStyle}
