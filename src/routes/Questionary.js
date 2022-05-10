@@ -36,7 +36,7 @@ function Questionary() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedYears, setSelectedYears] = useState(null);
   const navigate = useNavigate();
-  console.log(selectedYears);
+
   return (
     <div>
       <h1 className="question_title">QUESTIONS</h1>
