@@ -25,6 +25,7 @@ function Navabar() {
           />
         </NavLink>
       </div>
+
       <ul className="items">
         <li className="navbar_items-slideInDown-1">
           <NavLink
