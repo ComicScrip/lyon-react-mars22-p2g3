@@ -162,7 +162,6 @@ function Questionary() {
                       if (count < formSteps.length) {
                         setCount(count + 1);
                       }
-                      toBottomPage();
                     }}
                   >
                     {country.name}
