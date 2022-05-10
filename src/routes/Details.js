@@ -10,6 +10,7 @@ import { useParams } from 'react-router-dom';
 export default function Details() {
   const [movie, setMovie] = useState('');
   const [trailer, setTrailer] = useState('');
+  const [loader, setLoader] = useState(true);
   const { id } = useParams();
 
   useEffect(() => {
@@ -20,7 +21,8 @@ export default function Details() {
       .then((answer) => answer.data)
       .then((data) => {
         setMovie(data);
-      });
+      })
+      .finally(() => setLoader(false));
   }, []);
 
   useEffect(() => {
@@ -34,10 +36,22 @@ export default function Details() {
       });
   }, []);
 
+  const loadGif = require('../img/load.gif');
+
   return (
     <div className="main">
-      <SocialMedia url={window.location.href} />
-      <DisplayMovie movie={movie} trailer={trailer} />
+      {loader ? (
+        <img
+          className="load-gif"
+          src={loadGif}
+          alt="wait until the page loads"
+        />
+      ) : (
+        <>
+          <SocialMedia url={window.location.href} />
+          <DisplayMovie movie={movie} trailer={trailer} />
+        </>
+      )}
     </div>
   );
 }

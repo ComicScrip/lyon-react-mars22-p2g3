@@ -18,11 +18,15 @@ const countries = [
   { name: 'UK', value: 'gb' },
 ];
 
+const loadGif = require('../img/load.gif');
+
 export default function Result() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [results, setResults] = useState([]);
+  const [loader, setLoader] = useState(true);
 
   useEffect(() => {
+    setLoader(true);
     axios
       .get(
         `${process.env.REACT_APP_IMDB_SEARCH}/${process.env.REACT_APP_KEY_API_IMDB}?title_type=feature&${searchParams}`
@@ -33,11 +37,12 @@ export default function Result() {
       })
       .catch(() => {
         alert('No search results');
-      });
+      })
+      .finally(() => setLoader(false));
   }, [searchParams]);
 
   return (
-    <>
+    <div>
       <h1 className="title-result">Movies</h1>
       <form className="filters">
         <select
@@ -112,7 +117,15 @@ export default function Result() {
           ))}
         </select>
       </form>
-      <Card movie={results} />
-    </>
+      {loader ? (
+        <img
+          className="load-gif"
+          src={loadGif}
+          alt="wait until the page loads"
+        />
+      ) : (
+        <Card movie={results} />
+      )}
+    </div>
   );
 }
