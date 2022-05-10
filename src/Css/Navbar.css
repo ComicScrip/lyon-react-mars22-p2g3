@@ -5,11 +5,10 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 60px;
+  height: 70px;
   color: #fcfdef;
   background-color: #32474d;
   font-family: 'Roboto', sans-serif;
-
   font-weight: bold;
   text-decoration: none;
   z-index: 2 !important;
@@ -27,11 +26,13 @@ nav a {
 .yellow {
   color: #fff027;
 }
+
 .logo {
-  max-height: 3.5em;
+  margin-top: -5px;
+  margin-left: -20px;
 }
 .logo:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   transition-duration: 0.3s;
 }
 .navbar_link {
@@ -75,6 +76,10 @@ nav a {
     align-items: center;
     background: #32474d;
     transition: all 0.3s ease-in-out;
+  }
+
+  .navbar_items-sildeInDown .logo {
+    margin-top: -18px;
   }
 
   .show-nav .items {
@@ -177,7 +182,9 @@ nav a {
   .btnBurger:hover {
     cursor: pointer;
   }
-
+  .logo {
+    margin-top: -15px;
+  }
   .navbar_item {
     transform: translateY(100vh);
   }

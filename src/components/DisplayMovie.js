@@ -33,7 +33,7 @@ function DisplayMovie({ movie, trailer }) {
             <p className="moviePlot">{movie.plot}</p>
             <div className="Cast">Cast</div>
             <div className="castContainer">
-              {movie.actorList.slice(0, 7).map((actor) => (
+              {movie.actorList.map((actor) => (
                 <div key={actor.id} className="actorsInfo">
                   <img
                     className="castPictures"
@@ -49,8 +49,7 @@ function DisplayMovie({ movie, trailer }) {
               <ReactPlayer
                 url={trailer.videoUrl}
                 alt={`${trailer.title}trailer`}
-                controls
-                onDuration
+                controls={trailer.controls}
                 className="trailer"
                 width="60vw"
                 height="26vh"
