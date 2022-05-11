@@ -49,7 +49,7 @@ function DisplayMovie({ movie, trailer }) {
               <ReactPlayer
                 url={trailer.videoUrl}
                 alt={`${trailer.title}trailer`}
-                controls={trailer.controls}
+                controls
                 className="trailer"
                 width="60vw"
                 height="26vh"
